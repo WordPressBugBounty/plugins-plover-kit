@@ -1,0 +1,1710 @@
+# Copyright (C) 2025 WP Plover
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Plover Kit 1.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plover-kit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-01-27T10:02:52+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: plover-kit\n"
+
+#. Plugin Name of the plugin
+#: plover-kit.php
+#: src/Services/DashboardServiceProvider.php:55
+#: src/Services/DashboardServiceProvider.php:56
+msgid "Plover Kit"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: plover-kit.php
+msgid "https://wpplover.com/plugins/plover-kit"
+msgstr ""
+
+#. Description of the plugin
+#: plover-kit.php
+msgid "Plover kit have pluggable modules that enhance the Gutenberg core blocks and also provide extended features."
+msgstr ""
+
+#. Author of the plugin
+#: plover-kit.php
+msgid "WP Plover"
+msgstr ""
+
+#. Author URI of the plugin
+#: plover-kit.php
+msgid "https://www.wpplover.com"
+msgstr ""
+
+#: src/Controllers/IconLibrariesController.php:33
+msgid "Sorry, you are not allowed to access icon libraries."
+msgstr ""
+
+#: src/Controllers/IconLibrariesController.php:58
+msgid "Sorry, you are not allowed to access this icon library."
+msgstr ""
+
+#. translators: %s: Parameter name: "icon_library_settings".
+#: src/Controllers/IconLibrariesController.php:81
+msgid "%s parameter must be a valid JSON string."
+msgstr ""
+
+#. translators: %s: Name of the reset setting parameter.
+#: src/Controllers/IconLibrariesController.php:119
+#: src/Controllers/IconsController.php:362
+msgid "%s cannot be empty."
+msgstr ""
+
+#. translators: %s: Icon library slug.
+#: src/Controllers/IconLibrariesController.php:306
+msgid "A icon library with slug \"%s\" already exists."
+msgstr ""
+
+#. translators: %s: force=true
+#: src/Controllers/IconLibrariesController.php:330
+msgid "Icon libraries do not support trashing. Set \"%s\" to delete."
+msgstr ""
+
+#: src/Controllers/IconLibrariesController.php:435
+#: src/Controllers/IconsController.php:463
+msgid "Unique identifier for the post."
+msgstr ""
+
+#: src/Controllers/IconLibrariesController.php:441
+#: src/Controllers/IconsController.php:469
+msgid "Version of the theme.json schema used for the icon settings."
+msgstr ""
+
+#: src/Controllers/IconLibrariesController.php:449
+msgid "The IDs of the child icons in the icon library."
+msgstr ""
+
+#: src/Controllers/IconLibrariesController.php:457
+msgid "icon-library definition."
+msgstr ""
+
+#: src/Controllers/IconLibrariesController.php:462
+msgid "Name of the icon library preset, translatable."
+msgstr ""
+
+#: src/Controllers/IconLibrariesController.php:469
+msgid "Kebab-case unique identifier for the icon library preset."
+msgstr ""
+
+#: src/Controllers/IconsController.php:33
+#: src/Controllers/IconsController.php:61
+#: src/Controllers/IconsController.php:477
+msgid "The ID for the parent icon library of the icon."
+msgstr ""
+
+#: src/Controllers/IconsController.php:66
+msgid "Unique identifier for the icon."
+msgstr ""
+
+#: src/Controllers/IconsController.php:87
+msgid "Whether to bypass Trash and force deletion."
+msgstr ""
+
+#: src/Controllers/IconsController.php:111
+msgid "Sorry, you are not allowed to access icons."
+msgstr ""
+
+#: src/Controllers/IconsController.php:135
+msgid "Sorry, you are not allowed to access this icon."
+msgstr ""
+
+#: src/Controllers/IconsController.php:165
+msgid "Limit result set to items with particular parent IDs."
+msgstr ""
+
+#. translators: %d: A post id.
+#: src/Controllers/IconsController.php:223
+#: src/Controllers/IconsController.php:254
+msgid "The icon does not belong to the specified icon library with id of \"%d\"."
+msgstr ""
+
+#. translators: %s: force=true
+#: src/Controllers/IconsController.php:266
+msgid "Icons do not support trashing. Set \"%s\" to delete."
+msgstr ""
+
+#: src/Controllers/IconsController.php:285
+msgid "Invalid post parent ID."
+msgstr ""
+
+#: src/Controllers/IconsController.php:340
+msgid "icon_settings parameter must be a valid JSON string."
+msgstr ""
+
+#: src/Controllers/IconsController.php:486
+msgid "Name of the icon, translatable."
+msgstr ""
+
+#: src/Controllers/IconsController.php:493
+msgid "Kebab-case unique identifier for the icon."
+msgstr ""
+
+#: src/Controllers/IconsController.php:500
+msgid "Raw SVG string."
+msgstr ""
+
+#: src/Controllers/IconsController.php:546
+msgid "Invalid svg file."
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:21
+#: src/Extensions/CodeSnippets.php:98
+#: static/scripts/block-extensions/code-snippets/entry.jsx:63
+msgid "Code Snippets"
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:22
+msgid "Insert code snippets to site header or footer section like Google Analytics code, AdSense Code, Facebook Pixels code, and more."
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:99
+msgid "Code Snippet"
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:174
+msgid "Code Snippets Attributes"
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:218
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:143
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:72
+msgid "Location"
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:222
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:148
+msgid "Header"
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:225
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:149
+msgid "Footer"
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:233
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:161
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:69
+msgid "Priority"
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:243
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:162
+msgid "Used to specify the order in which code snippets are output, the higher the priority the earlier they are output."
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:435
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:167
+msgid "Very High"
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:439
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:168
+msgid "High"
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:443
+#: src/Extensions/PremiumEntranceAnimation.php:36
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:169
+#: static/scripts/block-extensions/entrance-animation__premium_only/EntranceAnimationControls.jsx:38
+msgid "Normal"
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:447
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:170
+msgid "Low"
+msgstr ""
+
+#: src/Extensions/CodeSnippets.php:451
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:171
+msgid "Very Low"
+msgstr ""
+
+#: src/Extensions/Counter.php:25
+msgid "Counter Block"
+msgstr ""
+
+#: src/Extensions/Counter.php:26
+msgid "Introduce a counter block enables you to add an animated numbered counter to your page."
+msgstr ""
+
+#: src/Extensions/IconLibrary.php:22
+msgid "Icon library"
+msgstr ""
+
+#: src/Extensions/IconLibrary.php:23
+msgid "Icon library allows you to manage icon libraries and upload your custom svg icons."
+msgstr ""
+
+#: src/Extensions/IconLibrary.php:76
+msgid "Icon Libraries"
+msgstr ""
+
+#: src/Extensions/IconLibrary.php:77
+msgid "Icon Library"
+msgstr ""
+
+#: src/Extensions/IconLibrary.php:106
+msgid "Icons"
+msgstr ""
+
+#: src/Extensions/IconLibrary.php:107
+msgid "Icon"
+msgstr ""
+
+#. translators: %1$s and %3$s - strong HTML tags, %2$s - file URL, %4$s - br HTML tag, %5$s - error code, %6$s - error message.
+#: src/Extensions/IconLibrary.php:269
+#: src/Extensions/PatternLibrary.php:304
+msgid "An error occurred: %1$s - %2$s."
+msgstr ""
+
+#: src/Extensions/Measures.php:28
+msgid "Block Measures"
+msgstr ""
+
+#: src/Extensions/Measures.php:29
+msgid "You can set height, width, [min/max]-height and [min/max]-width css properties for blocks, responsive!"
+msgstr ""
+
+#: src/Extensions/PatternLibrary.php:21
+msgid "Pattern library"
+msgstr ""
+
+#: src/Extensions/PatternLibrary.php:22
+msgid "Add beautiful, ready-to-go layouts to your site with one click."
+msgstr ""
+
+#: src/Extensions/PremiumEntranceAnimation.php:31
+msgid "Default duration"
+msgstr ""
+
+#: src/Extensions/PremiumEntranceAnimation.php:37
+#: static/scripts/block-extensions/entrance-animation__premium_only/EntranceAnimationControls.jsx:39
+msgid "Slow"
+msgstr ""
+
+#: src/Extensions/PremiumEntranceAnimation.php:38
+#: static/scripts/block-extensions/entrance-animation__premium_only/EntranceAnimationControls.jsx:40
+msgid "Fast"
+msgstr ""
+
+#: src/Extensions/PremiumEntranceAnimation.php:44
+msgid "Default delay (ms)"
+msgstr ""
+
+#: src/Extensions/PremiumEntranceAnimation.php:53
+msgid "Enable ordered by default"
+msgstr ""
+
+#: src/Extensions/PremiumEntranceAnimation.php:54
+#: static/scripts/block-extensions/entrance-animation__premium_only/EntranceAnimationControls.jsx:57
+msgid "When multiple elements display on the screen at the same time, the ordered elements will be animated one by one."
+msgstr ""
+
+#: src/Extensions/PremiumEntranceAnimation.php:60
+msgid "Ordered animation interval (ms)"
+msgstr ""
+
+#: src/Extensions/PremiumHighlight.php:31
+#: static/scripts/dashboard/upsell/code-highlight-upsell.js:40
+msgid "Show line numbers by default"
+msgstr ""
+
+#: src/Extensions/PremiumHighlight.php:36
+msgid "Show language by default"
+msgstr ""
+
+#: src/Extensions/PremiumHighlight.php:41
+#: static/scripts/dashboard/upsell/code-highlight-upsell.js:50
+msgid "Show copy button by default"
+msgstr ""
+
+#: src/Extensions/PremiumParticles.php:64
+msgid "Polygon Bubbles"
+msgstr ""
+
+#: src/Extensions/PremiumParticles.php:68
+msgid "Circle Bubbles"
+msgstr ""
+
+#: src/Extensions/PremiumParticles.php:72
+msgid "Gather"
+msgstr ""
+
+#: src/Extensions/PremiumParticles.php:76
+msgid "Parallax"
+msgstr ""
+
+#: src/Extensions/PremiumParticles.php:80
+msgid "Fire Spark"
+msgstr ""
+
+#: src/Extensions/PremiumParticles.php:84
+msgid "Confetti"
+msgstr ""
+
+#: src/Extensions/PremiumParticles.php:88
+msgid "Fireworks"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:34
+msgctxt "Shapes"
+msgid "Mountains (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:39
+msgctxt "Shapes"
+msgid "Drops  (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:44
+msgctxt "Shapes"
+msgid "Zigzag (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:49
+msgctxt "Shapes"
+msgid "Pyramids (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:54
+msgctxt "Shapes"
+msgid "Triangle Asymmetrical (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:59
+msgctxt "Shapes"
+msgid "Tilt Opacity (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:64
+msgctxt "Shapes"
+msgid "Fan Opacity (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:69
+msgctxt "Shapes"
+msgid "Curve (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:74
+msgctxt "Shapes"
+msgid "Curve Asymmetrical (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:79
+msgctxt "Shapes"
+msgid "Waves (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:84
+msgctxt "Shapes"
+msgid "Waves Brush (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:89
+msgctxt "Shapes"
+msgid "Waves Pattern (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:94
+msgctxt "Shapes"
+msgid "Arrow (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:99
+msgctxt "Shapes"
+msgid "Split (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:104
+msgctxt "Shapes"
+msgid "Book (Pro)"
+msgstr ""
+
+#: src/Extensions/PremiumShapeDivider.php:109
+msgctxt "Shapes"
+msgid "Clouds (Pro)"
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:28
+msgid "Force Smooth scrolling"
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:29
+msgid "Click on the table of contents link and the window scrolls smoothly to the target."
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:44
+msgid "Enable JavaScript scrolling by default"
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:45
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:28
+msgid "Using JavaScript for page scrolling gives you more control."
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:57
+msgid "Default scroll align value"
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:58
+msgid "Default alignment of the heading in the resulting viewport. Only works when JavaScript scrolling is enabled."
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:66
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:97
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:51
+msgid "Top"
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:67
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:98
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:52
+msgid "Middle"
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:68
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:99
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:53
+msgid "Bottom"
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:74
+msgid "Default scroll offset value"
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:75
+msgid "The default offset from the heading position after scrolling. Only works when JavaScript scrolling is enabled."
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:83
+msgid "Default scroll duration value"
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:84
+msgid "The default scrolling duration in milliseconds. Only works when JavaScript scrolling is enabled."
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:99
+#: src/Extensions/TableOfContents.php:331
+msgid "Table of Contents"
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:100
+msgid "Introduce a Table of Contents block to your posts and pages."
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:145
+msgid "Hashtag"
+msgstr ""
+
+#: src/Extensions/TableOfContents.php:149
+msgid "None"
+msgstr ""
+
+#: src/helpers.php:450
+msgid "Sorry, you are not allowed to install plugins on this site."
+msgstr ""
+
+#: src/helpers.php:532
+msgid "Unable to connect to the filesystem. Please confirm your credentials."
+msgstr ""
+
+#: src/Services/DashboardServiceProvider.php:66
+msgid "Plover Kit Modules"
+msgstr ""
+
+#: src/Services/DashboardServiceProvider.php:67
+msgid "Modules"
+msgstr ""
+
+#: src/Services/DashboardServiceProvider.php:96
+msgid "Plover Theme"
+msgstr ""
+
+#: src/Services/DashboardServiceProvider.php:97
+msgid "Looking for a WordPress theme? Plover Theme works perfectly with Plover Kit. As a Full Site Editing theme, Plover utilizes the WordPress block editor and the extensions provided by the Plover Kit to create unique and eye-catching web design."
+msgstr ""
+
+#: src/Services/DashboardServiceProvider.php:124
+msgid "Sorry, you are not allowed to install this theme."
+msgstr ""
+
+#: src/Toolkits/Theme.php:30
+msgid "Sorry, you are not allowed to swicth themes on this site."
+msgstr ""
+
+#: src/Toolkits/Theme.php:37
+msgid "Something went wrong."
+msgstr ""
+
+#: src/Toolkits/Theme.php:38
+msgid "The requested theme does not exist."
+msgstr ""
+
+#: src/Toolkits/Theme.php:57
+msgid "Install Themes"
+msgstr ""
+
+#: src/Toolkits/Theme.php:64
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: src/Toolkits/Theme.php:69
+msgid "Update Theme"
+msgstr ""
+
+#: src/Toolkits/Theme.php:74
+msgid "Install Theme"
+msgstr ""
+
+#: src/Toolkits/Theme.php:81
+msgid "Done!"
+msgstr ""
+
+#: src/Toolkits/Theme.php:99
+msgid "Sorry, you are not allowed to update themes for this site."
+msgstr ""
+
+#: src/Toolkits/Theme.php:126
+msgid "Sorry, you are not allowed to install themes on this site."
+msgstr ""
+
+#. translators: %s is the premium text and link.
+#: static/blocks/code-snippet/edit.jsx:38
+#: static/blocks/counter/edit.jsx:37
+msgid "Upgrade to %s to access this block."
+msgstr ""
+
+#: static/blocks/code-snippet/edit.jsx:39
+#: static/blocks/counter/edit.jsx:38
+#: static/blocks/toc/edit.jsx:249
+#: static/blocks/toc/extension.js:73
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:192
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:48
+#: static/scripts/dashboard/upsell/code-highlight-upsell.js:33
+#: static/scripts/dashboard/upsell/table-of-contents-upsell.js:33
+msgid "Premium"
+msgstr ""
+
+#: static/blocks/code-snippet/edit.jsx:48
+#: static/blocks/counter/edit.jsx:47
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:85
+msgid "Learn More ↗"
+msgstr ""
+
+#: static/blocks/code-snippet/edit.jsx:99
+#: static/blocks/counter/edit.jsx:61
+#: static/blocks/toc/edit.jsx:195
+msgid "Read Documentation ↗"
+msgstr ""
+
+#: static/blocks/code-snippet/edit.jsx:104
+msgid "Plover: Code Snippet"
+msgstr ""
+
+#: static/blocks/counter/edit.jsx:29
+msgid "Plover: Counter"
+msgstr ""
+
+#: static/blocks/patterns/components/modal.jsx:50
+msgid "Reloading..."
+msgstr ""
+
+#: static/blocks/patterns/components/modal.jsx:83
+msgid "Pattern Library"
+msgstr ""
+
+#: static/blocks/patterns/components/pattern-actions.jsx:31
+#: static/scripts/dashboard/Module.jsx:86
+#: static/scripts/dashboard/PrimarySidebar.jsx:79
+msgid "Upgrade"
+msgstr ""
+
+#: static/blocks/patterns/components/pattern-actions.jsx:35
+msgid "Importing..."
+msgstr ""
+
+#: static/blocks/patterns/components/pattern-actions.jsx:57
+msgid "Import"
+msgstr ""
+
+#: static/blocks/patterns/components/pattern-detail.jsx:48
+#: static/blocks/patterns/components/patterns.jsx:46
+#: static/blocks/patterns/components/patterns.jsx:67
+msgid "Loading..."
+msgstr ""
+
+#: static/blocks/patterns/components/pattern-detail.jsx:90
+msgid "Downloads"
+msgstr ""
+
+#: static/blocks/patterns/components/pattern-detail.jsx:94
+msgid "Color Mode"
+msgstr ""
+
+#: static/blocks/patterns/components/pattern-detail.jsx:101
+msgid "Tags"
+msgstr ""
+
+#: static/blocks/patterns/components/pattern-detail.jsx:108
+msgid "Categories"
+msgstr ""
+
+#: static/blocks/patterns/components/pattern-detail.jsx:115
+msgid "Required Plugins"
+msgstr ""
+
+#: static/blocks/patterns/components/patterns.jsx:138
+msgid "Load More"
+msgstr ""
+
+#: static/blocks/patterns/components/patterns.jsx:141
+msgid "End Of Content"
+msgstr ""
+
+#: static/blocks/patterns/components/search-control.jsx:18
+msgid "Search"
+msgstr ""
+
+#: static/blocks/patterns/edit.jsx:32
+#: static/blocks/patterns/entry.js:41
+msgid "Plover Patterns"
+msgstr ""
+
+#: static/blocks/patterns/edit.jsx:33
+msgid "Use Pattern Importer to import pre-designed patterns and layouts instead of start your design from scratch."
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:89
+msgid "Links are disabled in the editor."
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:133
+#: static/blocks/toc/edit.jsx:134
+msgid "Convert to unordered list"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:142
+#: static/blocks/toc/edit.jsx:143
+msgid "Convert to ordered list"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:151
+#: static/blocks/toc/edit.jsx:152
+msgid "Indent list"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:160
+#: static/blocks/toc/edit.jsx:161
+msgid "Outdent list"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:184
+msgid "Convert to static list"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:198
+#: static/scripts/dashboard/Module.jsx:92
+#: static/scripts/dashboard/ModuleSettings.jsx:151
+msgid "Settings"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:205
+msgid "Only include current page"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:212
+msgid "Only including headings from the current page (if the post is paginated)."
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:216
+msgid "Toggle to only include headings from the current page (if the post is paginated)."
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:224
+msgid "Absolute urls"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:231
+msgid "Adds the permalink url to the fragment."
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:235
+msgid "Fragment only, no permanent URL."
+msgstr ""
+
+#. translators: %s is the premium text and link.
+#. translators: %s: Premium version text & link.
+#: static/blocks/toc/edit.jsx:248
+#: static/blocks/toc/extension.js:72
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:191
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:47
+#: static/scripts/dashboard/upsell/code-highlight-upsell.js:32
+#: static/scripts/dashboard/upsell/table-of-contents-upsell.js:32
+msgid "Upgrade to %s to access these features:"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:259
+#: static/scripts/dashboard/upsell/table-of-contents-upsell.js:43
+msgid "Anchor scroll offset"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:267
+#: static/scripts/dashboard/upsell/table-of-contents-upsell.js:51
+msgid "Anchor scroll alignment"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:275
+#: static/scripts/dashboard/upsell/table-of-contents-upsell.js:59
+msgid "More list style options"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:281
+#: static/blocks/toc/extension.js:97
+#: static/packages/dashboard/upgrade/index.js:41
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:225
+#: static/scripts/dashboard/upsell/code-highlight-upsell.js:62
+#: static/scripts/dashboard/upsell/table-of-contents-upsell.js:65
+msgid "Upgrade Now ↗"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:293
+msgid "Heading Levels"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:299
+msgid "Select all"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:310
+msgid "Heading 1 (h1)"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:316
+msgid "Heading 2 (h2)"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:322
+msgid "Heading 3 (h3)"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:328
+msgid "Heading 4 (h4)"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:334
+msgid "Heading 5 (h5)"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:340
+msgid "Heading 6 (h6)"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:345
+msgid "Select the heading levels to considered when generating the TOC; unselected heading levels will be excluded."
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:357
+msgid "Wrap HTML element"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:359
+msgid "Default (<nav>)"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:381
+#: static/blocks/toc/extension.js:27
+msgid "Plover: Table of Contents"
+msgstr ""
+
+#: static/blocks/toc/edit.jsx:382
+msgid "Start adding Heading blocks to create a table of contents."
+msgstr ""
+
+#: static/blocks/toc/extension.js:35
+msgid "Exclude from toc list"
+msgstr ""
+
+#: static/blocks/toc/extension.js:40
+msgid "This heading will be ignored when generating TOC list."
+msgstr ""
+
+#: static/blocks/toc/extension.js:44
+msgid "This heading will be displayed in the TOC list."
+msgstr ""
+
+#: static/blocks/toc/extension.js:51
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:49
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:73
+msgid "Learn more ↗"
+msgstr ""
+
+#: static/blocks/toc/extension.js:83
+msgid "Linkable heading"
+msgstr ""
+
+#: static/blocks/toc/extension.js:91
+msgid "Override JS scroll settings"
+msgstr ""
+
+#: static/packages/dashboard/upgrade/index.js:19
+msgid "Upgrade to the Premium plan to access this feature."
+msgstr ""
+
+#: static/packages/dashboard/upgrade/index.js:24
+msgid "Upgrade to premium plan."
+msgstr ""
+
+#: static/packages/dashboard/upgrade/index.js:30
+msgid "Upgrade now"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:97
+msgid "The code snippet is saved."
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:101
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:115
+#: static/scripts/block-extensions/code-snippets/components/DeleteCodeSnippetAction.js:35
+msgid "There was an error."
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:101
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:115
+#: static/scripts/block-extensions/code-snippets/components/DeleteCodeSnippetAction.js:35
+msgid " Please refresh the page and try again."
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:120
+msgid "Code gose here..."
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:129
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:58
+msgid "Snippet Name"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:200
+msgid "Exclude by post types"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:206
+msgid "Exclude by author"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:213
+msgid "Exclude by posts, pages or products"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:219
+msgid "Shortcode or snippet block for individual pages or posts"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:234
+msgid "Enable"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:248
+msgid "Saving"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:248
+msgid "Update"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:248
+msgid "Save"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:261
+msgid "Delete This Snippet"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:46
+msgid "ID"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:54
+msgid "Status"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:66
+msgid "Shortcode"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:76
+msgid "Date"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:108
+msgid "The \"%s\" is %s."
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:110
+msgid "Enabled"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:110
+msgid "Disabled"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:144
+msgid "Edit"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:160
+#: static/scripts/dashboard/PrimarySidebar.jsx:66
+msgid "Upgrade to Premium"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:207
+msgid "Search Snippets"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:213
+msgid "Items"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:220
+msgid "First page"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:228
+msgid "Previous page"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:237
+msgid "Next page"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:245
+msgid "Last page"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:278
+msgid "No Snippets"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:280
+#: static/scripts/block-extensions/code-snippets/entry.jsx:67
+msgid "Add New Snippet"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/DeleteCodeSnippetAction.js:31
+msgid "The code snippet is deleted!"
+msgstr ""
+
+#. translators: %s: The name of code snippet.
+#. translators: %s: The name of icon library.
+#: static/scripts/block-extensions/code-snippets/components/DeleteCodeSnippetAction.js:53
+#: static/scripts/block-extensions/icon-library/components/DeleteLibrary.jsx:64
+msgid "Delete %s?"
+msgstr ""
+
+#. translators: %s: The name of code snippet.
+#: static/scripts/block-extensions/code-snippets/components/DeleteCodeSnippetAction.js:60
+msgid "Are you sure you want to delete \"%s\"? This operation is not reversible."
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/DeleteCodeSnippetAction.js:71
+#: static/scripts/block-extensions/icon-library/components/DeleteLibrary.jsx:88
+msgid "Yes, please delete it."
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/DeleteCodeSnippetAction.js:80
+msgid "Delete"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/components/Loading.js:15
+msgid "Loading"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets/entry.jsx:63
+msgid "Code Snippet Editor"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets__premium_only/entry.jsx:57
+msgid "Exclude Post Types"
+msgstr ""
+
+#: static/scripts/block-extensions/code-snippets__premium_only/entry.jsx:86
+msgid "Exclude Authors"
+msgstr ""
+
+#. translators: %s is the name of post type/taxonomy.
+#: static/scripts/block-extensions/code-snippets__premium_only/entry.jsx:121
+msgid "Exclude %s"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:38
+msgid "Counter"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:40
+msgid "Starting Number"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:49
+msgid "Ending Number"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:59
+msgid "Number Prefix"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:68
+msgid "Number Suffix"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:78
+msgid "Animation Duration (ms)"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:88
+msgid "Thousand Separator"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:99
+msgid "Separator"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:107
+#: static/scripts/block-extensions/particles__premium_only/override/interactivity/controls.js:60
+msgid "Default"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:108
+msgid "Dot"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:109
+msgid "Space"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:110
+msgid "Underline"
+msgstr ""
+
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:111
+msgid "Apostrophe"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/entry.jsx:120
+msgid "Visibility"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/entry.jsx:134
+msgid "Visible"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/entry.jsx:135
+#: static/scripts/block-extensions/display__premium_only/OverflowControl.jsx:24
+msgid "Hidden"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/entry.jsx:136
+msgid "Collapse"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/entry.jsx:162
+msgid "Overflow"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/entry.jsx:192
+msgid "Box Sizing"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/entry.jsx:206
+msgid "Border Box"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/entry.jsx:207
+msgid "Content Box"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/OverflowControl.jsx:22
+msgid "Auto"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/OverflowControl.jsx:23
+msgid "Scroll"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/OverflowControl.jsx:96
+msgid "Unlink overflow"
+msgstr ""
+
+#: static/scripts/block-extensions/display__premium_only/OverflowControl.jsx:96
+msgid "Link overflow"
+msgstr ""
+
+#: static/scripts/block-extensions/entrance-animation__premium_only/EntranceAnimationControls.jsx:36
+msgid "Duration"
+msgstr ""
+
+#: static/scripts/block-extensions/entrance-animation__premium_only/EntranceAnimationControls.jsx:51
+msgid "Delay (ms)"
+msgstr ""
+
+#: static/scripts/block-extensions/entrance-animation__premium_only/EntranceAnimationControls.jsx:56
+msgid "Ordered"
+msgstr ""
+
+#: static/scripts/block-extensions/highlight__premium_only/entry.jsx:27
+msgid "Show line numbers"
+msgstr ""
+
+#: static/scripts/block-extensions/highlight__premium_only/entry.jsx:36
+msgid "Show language"
+msgstr ""
+
+#: static/scripts/block-extensions/highlight__premium_only/entry.jsx:45
+msgid "Show copy button"
+msgstr ""
+
+#: static/scripts/block-extensions/highlight__premium_only/entry.jsx:79
+msgid "Copy"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/AddNewLibrary.jsx:36
+msgid "Add new library"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/AddNewLibrary.jsx:44
+msgid "Press enter to save new library."
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/DeleteIconsModal.js:83
+msgid "Deleting... "
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/DeleteIconsModal.js:94
+msgid "Delete selected icons"
+msgstr ""
+
+#. translators: %s: the count of icons.
+#: static/scripts/block-extensions/icon-library/components/DeleteLibrary.jsx:72
+msgid "This library contains %s icon, once deleted, all icons will be deleted as well. This operation is not reversible."
+msgid_plural "This library contains %s icons, once deleted, all icons will be deleted as well. This operation is not reversible."
+msgstr[0] ""
+msgstr[1] ""
+
+#: static/scripts/block-extensions/icon-library/components/DeleteLibrary.jsx:99
+msgid "Delete this library"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/IconCollection.jsx:74
+#: static/scripts/block-extensions/icon-library/components/IconLibrary.jsx:96
+msgid "icons selected"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/IconCollection.jsx:107
+msgid "Upgrade to the Premium plan to access this icon collection."
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/IconLibrary.jsx:58
+msgid "Upgrade to the Premium plan to upload your own SVG icons."
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/IconLibrary.jsx:77
+msgid "Upload Icon"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/IconList.jsx:30
+msgid "Search icons"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/IconList.jsx:38
+msgid "Icon preview size"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/IconList.jsx:49
+msgid "No icons, Import icons to this library"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/IconList.jsx:51
+#: static/scripts/block-extensions/icon-library/layout/Content.jsx:23
+msgid "Read Documentation"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/ImportIconsModal.jsx:80
+msgid "Invalid library."
+msgstr ""
+
+#. translators: %s: the count of icons.
+#: static/scripts/block-extensions/icon-library/components/ImportIconsModal.jsx:109
+msgid "Import %s icon to library"
+msgid_plural "Import %s icons to library"
+msgstr[0] ""
+msgstr[1] ""
+
+#: static/scripts/block-extensions/icon-library/components/ImportIconsModal.jsx:125
+msgid "No available libraries, please create one first."
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/ImportIconsModal.jsx:134
+msgid "Importing: "
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/ImportIconsModal.jsx:141
+msgid "Select a library to add"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/ImportIconsModal.jsx:159
+msgid "Import icons to library"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/ImportIconsModal.jsx:167
+msgid "Import to library"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/NoContent.jsx:11
+msgid "Icon library background"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/UploadIconsForm.jsx:99
+msgid "Uploading..."
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/UploadIconsForm.jsx:112
+msgid "Upload icons"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/components/UploadIconsForm.jsx:113
+msgid "Accept formats: .svg"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/layout/Content.jsx:21
+msgid "Manage the icons on your site"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/layout/Sidebar.jsx:88
+msgid "Created libraries"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/layout/Sidebar.jsx:113
+msgid "Available collections"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/layout/Sidebar.jsx:128
+msgid "premium"
+msgstr ""
+
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:26
+msgid "Plover: Measures"
+msgstr ""
+
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:29
+msgid "Those properties may break your layout, use them only if you're 100% sure what you're doing."
+msgstr ""
+
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:55
+msgid "CSS min-with support"
+msgstr ""
+
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:60
+msgid "CSS max-with support"
+msgstr ""
+
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:65
+msgid "CSS min-height support"
+msgstr ""
+
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:70
+msgid "CSS max-height support"
+msgstr ""
+
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:75
+msgid "CSS width support"
+msgstr ""
+
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:80
+msgid "CSS height support"
+msgstr ""
+
+#: static/scripts/block-extensions/measures/MeasuresPanel.jsx:91
+msgid "Documentation ↗"
+msgstr ""
+
+#: static/scripts/block-extensions/measures__premium_only/entry.jsx:141
+msgid "Min-Width"
+msgstr ""
+
+#: static/scripts/block-extensions/measures__premium_only/entry.jsx:158
+msgid "Max-Width"
+msgstr ""
+
+#: static/scripts/block-extensions/measures__premium_only/entry.jsx:175
+msgid "Min-Height"
+msgstr ""
+
+#: static/scripts/block-extensions/measures__premium_only/entry.jsx:192
+msgid "Max-Height"
+msgstr ""
+
+#: static/scripts/block-extensions/measures__premium_only/entry.jsx:209
+msgid "Width"
+msgstr ""
+
+#: static/scripts/block-extensions/measures__premium_only/entry.jsx:226
+msgid "Height"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/controls/range.jsx:49
+msgid "Single value"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/controls/range.jsx:50
+msgid "Range value"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/controls/range.jsx:67
+msgid "Min"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/controls/range.jsx:80
+msgid "Max"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/entry.jsx:41
+msgid "Custom particle JSON"
+msgstr ""
+
+#. translators: %s is "online editor".
+#: static/scripts/block-extensions/particles__premium_only/entry.jsx:47
+msgid "Use the %s to generate custom particle effects JSON."
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/entry.jsx:48
+msgid "online editor"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/override/interactivity/controls.js:32
+#: static/scripts/block-extensions/particles__premium_only/override/interactivity/controls.js:46
+msgid "Interactivity detects on"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/override/interactivity/controls.js:61
+msgid "Window"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/override/interactivity/controls.js:62
+msgid "Canvas"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/override/opacity/controls.js:28
+#: static/scripts/block-extensions/particles__premium_only/override/opacity/controls.js:42
+msgid "Particles opacity"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/override/opacity/controls.js:76
+#: static/scripts/block-extensions/particles__premium_only/override/opacity/controls.js:91
+msgid "Links opacity"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/override/quantity/controls.js:28
+#: static/scripts/block-extensions/particles__premium_only/override/quantity/controls.js:42
+msgid "Particles quantity"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/override/shape/controls.js:28
+#: static/scripts/block-extensions/particles__premium_only/override/shape/controls.js:60
+msgid "Particles shape"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/override/size/controls.js:28
+#: static/scripts/block-extensions/particles__premium_only/override/size/controls.js:42
+msgid "Particles size"
+msgstr ""
+
+#: static/scripts/block-extensions/particles__premium_only/override/speed/controls.js:28
+#: static/scripts/block-extensions/particles__premium_only/override/speed/controls.js:43
+msgid "Particles speed"
+msgstr ""
+
+#: static/scripts/block-extensions/sticky__premium_only/entry.jsx:51
+msgid "Disable if screen is smaller than"
+msgstr ""
+
+#: static/scripts/block-extensions/sticky__premium_only/entry.jsx:58
+msgid "Sticky state CSS"
+msgstr ""
+
+#: static/scripts/block-extensions/sticky__premium_only/entry.jsx:59
+msgid "Don't add any CSS selectors, keep every line format as \"property: value;\"."
+msgstr ""
+
+#: static/scripts/block-extensions/sticky__premium_only/Responsive.js:16
+msgid "Mobile"
+msgstr ""
+
+#: static/scripts/block-extensions/sticky__premium_only/Responsive.js:17
+msgid "Tablet"
+msgstr ""
+
+#: static/scripts/block-extensions/sticky__premium_only/Responsive.js:29
+msgid "Set custom value"
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:28
+msgid "Linkable"
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:40
+msgid "Show a hashtag button before the heading, visitors can click on to locate the heading."
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:56
+msgid "Override scroll settings"
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:64
+msgid "Turn on allows you to override the Plover: TOC block's scroll settings if the block has JavaScript scrolling enabled."
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:90
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:44
+msgid "Scroll align"
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:91
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:45
+msgid "Alignment of the heading in the resulting viewport."
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:103
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:57
+msgid "Scroll offset"
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:104
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:58
+msgid "The offset from the heading position after scrolling."
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/ListStyle.jsx:18
+msgid "Table of Contents list"
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/ListStyle.jsx:20
+msgid "Nested list indent size"
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:23
+msgid "JavaScript scrolling"
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:68
+msgid "Scroll duration"
+msgstr ""
+
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:69
+msgid "The scrolling duration in milliseconds."
+msgstr ""
+
+#: static/scripts/dashboard/Module.jsx:80
+#: static/scripts/dashboard/PrimarySidebar.jsx:34
+msgid "Documentation"
+msgstr ""
+
+#: static/scripts/dashboard/ModuleDetails.jsx:23
+msgid "Description"
+msgstr ""
+
+#: static/scripts/dashboard/Modules.jsx:82
+msgid "Toggle all"
+msgstr ""
+
+#: static/scripts/dashboard/Modules.jsx:90
+msgid "Filter..."
+msgstr ""
+
+#: static/scripts/dashboard/Modules.jsx:97
+msgid "Save changes"
+msgstr ""
+
+#: static/scripts/dashboard/ModuleSettings.jsx:82
+msgid "Reset to default"
+msgstr ""
+
+#: static/scripts/dashboard/ModuleSettings.jsx:131
+msgid "Save Changes"
+msgstr ""
+
+#: static/scripts/dashboard/NotResult.jsx:12
+msgid "No Result"
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:11
+msgid "Useful Links"
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:21
+msgid "Plugin Homepage"
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:47
+#: static/scripts/dashboard/PrimarySidebar.jsx:93
+msgid "Support Forum"
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:56
+msgid "Rate Us 5 Stars"
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:70
+msgid "Upgrade to Premium Edition to support our development and get more features and functionality to help you create powerful and feature-rich websites."
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:84
+msgid "Free vs Premium"
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:97
+msgid "If you have any question about using this theme, feel free to create a new topic in the support forum."
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:105
+msgid "Create a Topic"
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:112
+msgid "Affiliation"
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:117
+msgid "Like the plugin? Become our ambassador and earn cash ;-)"
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:120
+msgid "Refer new customers to our plugin and earn 30% commission on each successful sale you refer!"
+msgstr ""
+
+#: static/scripts/dashboard/PrimarySidebar.jsx:139
+msgid "Become an affiliate"
+msgstr ""
+
+#: static/scripts/dashboard/ThemePromotion.jsx:39
+msgid "Install & Activate"
+msgstr ""
+
+#: static/scripts/dashboard/ThemePromotion.jsx:46
+msgid "Learn More"
+msgstr ""
+
+#: static/scripts/dashboard/ThemePromotion.jsx:53
+msgid "Try it online ↗"
+msgstr ""
+
+#: static/scripts/dashboard/ThemePromotion.jsx:60
+msgid "Theme screenshot"
+msgstr ""
+
+#: static/scripts/dashboard/upsell/code-highlight-upsell.js:45
+msgid "Show languages by default"
+msgstr ""
+
+#: static/scripts/dashboard/upsell/code-highlight-upsell.js:55
+msgid "More highlight themes"
+msgstr ""
+
+#: static/blocks/code-snippet/block.json
+msgctxt "block title"
+msgid "Plover: Code Snippet"
+msgstr ""
+
+#: static/blocks/code-snippet/block.json
+msgctxt "block description"
+msgid "Insert code snippets to current post"
+msgstr ""
+
+#: static/blocks/code-snippet/block.json
+msgctxt "block keyword"
+msgid "code"
+msgstr ""
+
+#: static/blocks/code-snippet/block.json
+msgctxt "block keyword"
+msgid "snippet"
+msgstr ""
+
+#: static/blocks/counter/block.json
+msgctxt "block title"
+msgid "Plover: Counter"
+msgstr ""
+
+#: static/blocks/counter/block.json
+msgctxt "block description"
+msgid "Add an animated numbered counter to your page"
+msgstr ""
+
+#: static/blocks/counter/block.json
+msgctxt "block keyword"
+msgid "counter"
+msgstr ""
+
+#: static/blocks/counter/block.json
+msgctxt "block keyword"
+msgid "number"
+msgstr ""
+
+#: static/blocks/patterns/block.json
+msgctxt "block title"
+msgid "Plover: Patterns"
+msgstr ""
+
+#: static/blocks/patterns/block.json
+msgctxt "block description"
+msgid "Add beautiful, ready-to-go layouts to your site with one click."
+msgstr ""
+
+#: static/blocks/patterns/block.json
+msgctxt "block keyword"
+msgid "template"
+msgstr ""
+
+#: static/blocks/patterns/block.json
+msgctxt "block keyword"
+msgid "pattern"
+msgstr ""
+
+#: static/blocks/patterns/block.json
+msgctxt "block keyword"
+msgid "layout"
+msgstr ""
+
+#: static/blocks/patterns/block.json
+msgctxt "block keyword"
+msgid "import"
+msgstr ""
+
+#: static/blocks/toc/block.json
+msgctxt "block title"
+msgid "Plover: Table of Contents"
+msgstr ""
+
+#: static/blocks/toc/block.json
+msgctxt "block description"
+msgid "Add a Table of Contents block to your posts and pages."
+msgstr ""
+
+#: static/blocks/toc/block.json
+msgctxt "block keyword"
+msgid "toc"
+msgstr ""
+
+#: static/blocks/toc/block.json
+msgctxt "block keyword"
+msgid "table of content"
+msgstr ""

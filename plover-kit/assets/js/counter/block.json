@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "plover-kit/counter",
+  "title": "Plover: Counter",
+  "category": "plover-blocks",
+  "description": "Add an animated numbered counter to your page",
+  "keywords": [
+    "counter",
+    "number"
+  ],
+  "textdomain": "plover-kit",
+  "version": "1.0.0",
+  "attributes": {
+    "align": {
+      "type": "string"
+    },
+    "justification": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "__experimentalBorder": {
+      "radius": true,
+      "color": true,
+      "width": true,
+      "style": true,
+      "__experimentalDefaultControls": {
+        "radius": true,
+        "color": true,
+        "width": true,
+        "style": true
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "style": "file:./style-index.min.css"
+}

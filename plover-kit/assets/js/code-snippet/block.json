@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "plover-kit/code-snippet",
+  "title": "Plover: Code Snippet",
+  "category": "plover-blocks",
+  "description": "Insert code snippets to current post",
+  "keywords": [
+    "code",
+    "snippet"
+  ],
+  "textdomain": "plover-kit",
+  "version": "1.0.0",
+  "attributes": {
+    "snippet": {
+      "type": "number"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.min.css",
+  "style": "file:./style-index.min.css",
+  "render": "file:./render.php"
+}

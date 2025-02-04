@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "plover-kit/patterns",
+  "title": "Plover: Patterns",
+  "category": "plover-blocks",
+  "description": "Add beautiful, ready-to-go layouts to your site with one click.",
+  "keywords": [
+    "template",
+    "pattern",
+    "layout",
+    "import"
+  ],
+  "textdomain": "plover-kit",
+  "version": "1.0.0",
+  "attributes": {},
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.min.css",
+  "style": "file:./style-index.min.css"
+}

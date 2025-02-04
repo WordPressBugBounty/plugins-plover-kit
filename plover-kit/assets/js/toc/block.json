@@ -1,0 +1,99 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "plover-kit/toc",
+  "title": "Plover: Table of Contents",
+  "category": "plover-blocks",
+  "description": "Add a Table of Contents block to your posts and pages.",
+  "keywords": [
+    "toc",
+    "table of content"
+  ],
+  "textdomain": "plover-kit",
+  "version": "1.0.0",
+  "attributes": {
+    "ordered": {
+      "type": "boolean",
+      "default": false
+    },
+    "indent": {
+      "type": "boolean",
+      "default": true
+    },
+    "onlyIncludeCurrentPage": {
+      "type": "boolean",
+      "default": false
+    },
+    "absoluteUrls": {
+      "type": "boolean",
+      "default": false
+    },
+    "headingLevels": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "default": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "tagName": {
+      "type": "string",
+      "default": "nav"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true,
+      "link": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "interactivity": {
+      "clientNavigation": true
+    },
+    "__experimentalBorder": {
+      "radius": true,
+      "color": true,
+      "width": true,
+      "style": true,
+      "__experimentalDefaultControls": {
+        "radius": true,
+        "color": true,
+        "width": true,
+        "style": true
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.min.css",
+  "style": "file:./style-index.min.css"
+}

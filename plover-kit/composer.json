@@ -1,0 +1,17 @@
+{
+  "name": "wp-plover/plover-kit",
+  "autoload": {
+    "psr-4": {
+      "Plover\\Kit\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "authors": [],
+  "require": {
+    "ext-json": "*",
+    "ext-dom": "*",
+    "ext-libxml": "*"
+  }
+}
