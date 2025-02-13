@@ -1,7 +1,7 @@
 === Plover Kit - Blocks, Patterns and Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 Requires at least: 6.2
 Tested up to: 6.7
 Requires PHP: 7.4
@@ -43,6 +43,10 @@ The Hover Animation allow you to add mouse hover animation effect for elements o
 #### [Counter Block](https://wpplover.com/docs/plover-kit/modules/counter-block/)
 
 Introduce a counter block enables you to add an animated numbered counter to your page.
+
+#### [Reading Time Block](https://wpplover.com/docs/plover-kit/modules/reading-time-block/)
+
+Let’s you easily add an estimated reading time to your WordPress posts.
 
 #### [Code Snippets](https://wpplover.com/docs/plover-kit/modules/code-snippets/)
 
@@ -124,6 +128,12 @@ No, it only works with the block editor.
 7. JavaScript Event Handler
 
 == Changelog ==
+
+= 1.5.1 =
+
+* Add: Premium reading time block
+* Ref: Update core to v1.2.1
+* Fix: Image and button shadow errors
 
 = 1.5.0 =
 

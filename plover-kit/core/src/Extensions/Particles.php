@@ -17,7 +17,6 @@ class Particles extends Extension {
 	 */
 	public function register() {
 		$this->modules->register( self::MODULE_NAME, array(
-			'recent'  => true,
 			'label'   => __( 'Particles Effect', 'plover' ),
 			'excerpt' => __( 'Add cool particle effects to your designs!', 'plover' ),
 			'icon'    => esc_url( $this->core->core_url( 'assets/images/particles-effect.png' ) ),

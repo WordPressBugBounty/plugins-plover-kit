@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plover Kit 1.5.0\n"
+"Project-Id-Version: Plover Kit 1.5.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plover-kit\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-27T10:02:52+00:00\n"
+"POT-Creation-Date: 2025-02-13T09:27:09+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: plover-kit\n"
@@ -267,11 +267,11 @@ msgstr ""
 msgid "An error occurred: %1$s - %2$s."
 msgstr ""
 
-#: src/Extensions/Measures.php:28
+#: src/Extensions/Measures.php:26
 msgid "Block Measures"
 msgstr ""
 
-#: src/Extensions/Measures.php:29
+#: src/Extensions/Measures.php:27
 msgid "You can set height, width, [min/max]-height and [min/max]-width css properties for blocks, responsive!"
 msgstr ""
 
@@ -436,6 +436,65 @@ msgctxt "Shapes"
 msgid "Clouds (Pro)"
 msgstr ""
 
+#: src/Extensions/ReadingTime.php:28
+msgid "Default Label"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:29
+msgid "Reading Time:"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:33
+msgid "Default Postfix"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:34
+msgid "minutes"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:38
+msgid "Default Postfix Singular"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:39
+msgid "minute"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:43
+msgid "Default Words Per Minute"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:48
+msgid "Default Word Count Strategy"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:55
+#: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:120
+msgid "Words"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:59
+#: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:121
+msgid "Characters Excluding Spaces"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:63
+#: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:122
+msgid "Characters Including Spaces"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:75
+msgid "Reading Time Block"
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:76
+msgid "Let’s you easily add an estimated reading time to your WordPress posts."
+msgstr ""
+
+#: src/Extensions/ReadingTime.php:255
+msgid "< 1"
+msgstr ""
+
 #: src/Extensions/TableOfContents.php:28
 msgid "Force Smooth scrolling"
 msgstr ""
@@ -583,11 +642,13 @@ msgstr ""
 #. translators: %s is the premium text and link.
 #: static/blocks/code-snippet/edit.jsx:38
 #: static/blocks/counter/edit.jsx:37
+#: static/blocks/reading-time/edit.jsx:37
 msgid "Upgrade to %s to access this block."
 msgstr ""
 
 #: static/blocks/code-snippet/edit.jsx:39
 #: static/blocks/counter/edit.jsx:38
+#: static/blocks/reading-time/edit.jsx:38
 #: static/blocks/toc/edit.jsx:249
 #: static/blocks/toc/extension.js:73
 #: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:192
@@ -599,12 +660,14 @@ msgstr ""
 
 #: static/blocks/code-snippet/edit.jsx:48
 #: static/blocks/counter/edit.jsx:47
+#: static/blocks/reading-time/edit.jsx:47
 #: static/scripts/block-extensions/measures/MeasuresPanel.jsx:85
 msgid "Learn More ↗"
 msgstr ""
 
 #: static/blocks/code-snippet/edit.jsx:99
 #: static/blocks/counter/edit.jsx:61
+#: static/blocks/reading-time/edit.jsx:61
 #: static/blocks/toc/edit.jsx:195
 msgid "Read Documentation ↗"
 msgstr ""
@@ -686,6 +749,10 @@ msgstr ""
 msgid "Use Pattern Importer to import pre-designed patterns and layouts instead of start your design from scratch."
 msgstr ""
 
+#: static/blocks/reading-time/edit.jsx:29
+msgid "Plover: Reading Time"
+msgstr ""
+
 #: static/blocks/toc/edit.jsx:89
 msgid "Links are disabled in the editor."
 msgstr ""
@@ -715,6 +782,7 @@ msgid "Convert to static list"
 msgstr ""
 
 #: static/blocks/toc/edit.jsx:198
+#: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:74
 #: static/scripts/dashboard/Module.jsx:92
 #: static/scripts/dashboard/ModuleSettings.jsx:151
 msgid "Settings"
@@ -1433,6 +1501,34 @@ msgstr ""
 msgid "Particles speed"
 msgstr ""
 
+#: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:76
+msgid "Label"
+msgstr ""
+
+#: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:85
+msgid "Postfix"
+msgstr ""
+
+#: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:94
+msgid "Postfix Singular"
+msgstr ""
+
+#: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:104
+msgid "Words per minute"
+msgstr ""
+
+#: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:105
+msgid "A rough estimate of the average reading rate across multiple languages."
+msgstr ""
+
+#: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:117
+msgid "Word count strategy"
+msgstr ""
+
+#: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:118
+msgid "Words is suitable for most languages where words are separated by spaces; for Chinese, Japanese and Korean, it is separated by characters."
+msgstr ""
+
 #: static/scripts/block-extensions/sticky__premium_only/entry.jsx:51
 msgid "Disable if screen is smaller than"
 msgstr ""
@@ -1687,6 +1783,26 @@ msgstr ""
 #: static/blocks/patterns/block.json
 msgctxt "block keyword"
 msgid "import"
+msgstr ""
+
+#: static/blocks/reading-time/block.json
+msgctxt "block title"
+msgid "Plover: Reading Time"
+msgstr ""
+
+#: static/blocks/reading-time/block.json
+msgctxt "block description"
+msgid "Let’s you easily add an estimated reading time to your WordPress posts."
+msgstr ""
+
+#: static/blocks/reading-time/block.json
+msgctxt "block keyword"
+msgid "reading"
+msgstr ""
+
+#: static/blocks/reading-time/block.json
+msgctxt "block keyword"
+msgid "time"
 msgstr ""
 
 #: static/blocks/toc/block.json

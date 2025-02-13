@@ -18,6 +18,12 @@ class Shadow extends Extension {
 		'core/featured-image',
 	);
 
+	private const INNER_ELEMENTS_BLOCKS = array(
+		'core/button',
+		'core/image',
+		'core/featured-image',
+	);
+
 	/**
 	 * @return void
 	 */
@@ -264,8 +270,7 @@ class Shadow extends Extension {
 		}
 
 		$wrap->add_styles( [
-			'--plover-text-shadow' => $text_shadow,
-			'text-shadow'          => $text_shadow
+			'text-shadow' => $text_shadow
 		] );
 	}
 
@@ -301,10 +306,13 @@ class Shadow extends Extension {
 			              ) . ')';
 		}
 
-		$wrap->add_styles( [
-			'box-shadow'          => $box_shadow,
-			'--plover-box-shadow' => $box_shadow,
-		] );
+		if ( in_array( $block_name, self::INNER_ELEMENTS_BLOCKS ) ) { // add shadow to inner elements
+			$styles = [ '--plover-box-shadow' => $box_shadow ];
+		} else {
+			$styles = [ 'box-shadow' => $box_shadow ];
+		}
+
+		$wrap->add_styles( $styles );
 	}
 
 	/**

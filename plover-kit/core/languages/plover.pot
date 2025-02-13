@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-27T10:00:32+00:00\n"
+"POT-Creation-Date: 2025-02-13T09:22:00+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: plover\n"
@@ -240,65 +240,65 @@ msgstr ""
 msgid "No such icon library."
 msgstr ""
 
-#: src/Extensions/Particles.php:21
+#: src/Extensions/Particles.php:20
 msgid "Particles Effect"
 msgstr ""
 
-#: src/Extensions/Particles.php:22
+#: src/Extensions/Particles.php:21
 msgid "Add cool particle effects to your designs!"
 msgstr ""
 
-#: src/Extensions/Particles.php:178
+#: src/Extensions/Particles.php:177
 msgid "Basic"
 msgstr ""
 
-#: src/Extensions/Particles.php:182
+#: src/Extensions/Particles.php:181
 msgid "Snow"
 msgstr ""
 
-#: src/Extensions/Particles.php:186
+#: src/Extensions/Particles.php:185
 msgid "NASA"
 msgstr ""
 
-#: src/Extensions/Particles.php:190
+#: src/Extensions/Particles.php:189
 msgid "Colorful Bubbles"
 msgstr ""
 
-#: src/Extensions/Position.php:24
+#: src/Extensions/Position.php:23
 msgid "CSS Position"
 msgstr ""
 
-#: src/Extensions/Position.php:25
+#: src/Extensions/Position.php:24
 msgid "You can set position and z-index css properties for blocks, responsive!"
 msgstr ""
 
-#: src/Extensions/Shadow.php:27
+#: src/Extensions/Shadow.php:33
 msgid "Block shadow"
 msgstr ""
 
-#: src/Extensions/Shadow.php:28
+#: src/Extensions/Shadow.php:34
 msgid "Extra text-shadow, drop-shadow, and box-shadow support for core blocks."
 msgstr ""
 
-#: src/Extensions/ShapeDivider.php:24
+#: src/Extensions/ShapeDivider.php:23
 msgid "Shape Divider"
 msgstr ""
 
-#: src/Extensions/ShapeDivider.php:25
+#: src/Extensions/ShapeDivider.php:24
 msgid "Shape divider is used to create visual separation between different sections of content."
 msgstr ""
 
-#: src/Extensions/ShapeDivider.php:180
+#: src/Extensions/ShapeDivider.php:179
 msgctxt "Shapes name"
 msgid "None"
 msgstr ""
 
-#: src/Extensions/ShapeDivider.php:184
+#: src/Extensions/ShapeDivider.php:183
 msgctxt "Shapes name"
 msgid "Tilt"
 msgstr ""
 
-#: src/Extensions/ShapeDivider.php:188
+#: src/Extensions/ShapeDivider.php:187
 msgctxt "Shapes name"
 msgid "Triangle"
 msgstr ""

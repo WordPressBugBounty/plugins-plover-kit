@@ -17,6 +17,7 @@ use Plover\Kit\Extensions\PremiumHoverAnimation;
 use Plover\Kit\Extensions\PremiumParticles;
 use Plover\Kit\Extensions\PremiumShapeDivider;
 use Plover\Kit\Extensions\PremiumSticky;
+use Plover\Kit\Extensions\ReadingTime;
 use Plover\Kit\Extensions\TableOfContents;
 /**
  * Bootstrap plugin features.
@@ -41,6 +42,7 @@ class PluginServiceProvider extends ServiceProvider {
         add_filter( 'plover_core_editor_data', [$this, 'localize_current_plan'] );
         $extensions->register( 'plover-kit-code-snippets', CodeSnippets::class );
         $extensions->register( 'plover-kit-icons', IconLibrary::class );
+        $extensions->register( 'plover-kit-reading-time', ReadingTime::class );
         $extensions->register( 'plover-kit-toc', TableOfContents::class );
         $extensions->register( 'plover-kit-patterns', PatternLibrary::class );
         $extensions->register( 'plover-kit-measures', Measures::class );

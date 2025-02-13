@@ -7,7 +7,6 @@ use Plover\Core\Services\Extensions\Contract\Extension;
 use Plover\Core\Toolkits\Format;
 use Plover\Core\Toolkits\Html\Document;
 use Plover\Core\Toolkits\Responsive;
-use Plover\Core\Toolkits\StyleEngine;
 /**
  * Add height, width, min/max height and min/max width options in Plover: Measures panel.
  *
@@ -21,7 +20,6 @@ class Measures extends Extension {
      */
     public function register( Blocks $blocks ) {
         $this->modules->register( self::MODULE_NAME, array(
-            'recent'  => true,
             'premium' => true,
             'label'   => __( 'Block Measures', 'plover-kit' ),
             'excerpt' => __( 'You can set height, width, [min/max]-height and [min/max]-width css properties for blocks, responsive!', 'plover-kit' ),

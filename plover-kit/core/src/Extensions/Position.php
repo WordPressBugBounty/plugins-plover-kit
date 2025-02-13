@@ -20,7 +20,6 @@ class Position extends Extension {
 	 */
 	public function register( Blocks $blocks ) {
 		$this->modules->register( self::MODULE_NAME, array(
-			'recent'  => true,
 			'label'   => __( 'CSS Position', 'plover' ),
 			'excerpt' => __( 'You can set position and z-index css properties for blocks, responsive!', 'plover' ),
 			'icon'    => esc_url( $this->core->core_url( 'assets/images/css-position.png' ) ),

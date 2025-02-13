@@ -20,7 +20,6 @@ class ShapeDivider extends Extension {
 	 */
 	public function register( Blocks $blocks ) {
 		$this->modules->register( self::MODULE_NAME, array(
-			'recent'  => true,
 			'label'   => __( 'Shape Divider', 'plover' ),
 			'excerpt' => __( 'Shape divider is used to create visual separation between different sections of content.', 'plover' ),
 			'icon'    => esc_url( $this->core->core_url( 'assets/images/shape-divider.png' ) ),
