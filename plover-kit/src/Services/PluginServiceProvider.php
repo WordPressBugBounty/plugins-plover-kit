@@ -19,6 +19,7 @@ use Plover\Kit\Extensions\PremiumShapeDivider;
 use Plover\Kit\Extensions\PremiumSticky;
 use Plover\Kit\Extensions\ReadingTime;
 use Plover\Kit\Extensions\TableOfContents;
+use Plover\Kit\Extensions\TypingAnimation;
 /**
  * Bootstrap plugin features.
  *
@@ -47,6 +48,7 @@ class PluginServiceProvider extends ServiceProvider {
         $extensions->register( 'plover-kit-patterns', PatternLibrary::class );
         $extensions->register( 'plover-kit-measures', Measures::class );
         $extensions->register( 'plover-kit-counter', Counter::class );
+        $extensions->register( 'plover-kit-typing-animation', TypingAnimation::class );
     }
 
     /**

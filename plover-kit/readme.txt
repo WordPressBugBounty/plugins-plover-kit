@@ -1,7 +1,7 @@
 === Plover Kit - Blocks, Patterns and Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.5.1
+Stable tag: 1.5.2
 Requires at least: 6.2
 Tested up to: 6.7
 Requires PHP: 7.4
@@ -39,6 +39,10 @@ Entrance animation adding dynamic movement to elements as they appear on screen.
 #### [Hover Animation](https://wpplover.com/docs/plover-kit/modules/hover-animation/)
 
 The Hover Animation allow you to add mouse hover animation effect for elements on your WordPress website.
+
+#### [Typing Animation](https://wpplover.com/docs/plover-kit/modules/typing-animation/)
+
+Add dynamic typing effects to your text.
 
 #### [Counter Block](https://wpplover.com/docs/plover-kit/modules/counter-block/)
 
@@ -128,6 +132,12 @@ No, it only works with the block editor.
 7. JavaScript Event Handler
 
 == Changelog ==
+
+= 1.5.2 =
+
+* Add: Premium typing animation module
+* Ref: Update core to v1.2.2
+* Fix: Dashboard translation error
 
 = 1.5.1 =
 

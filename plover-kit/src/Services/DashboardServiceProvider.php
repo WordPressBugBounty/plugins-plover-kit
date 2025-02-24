@@ -41,12 +41,13 @@ class DashboardServiceProvider extends ServiceProvider {
 		) );
 
 		$scripts->enqueue_dashboard_asset( 'plover-dashboard-script', array(
-			'src'       => plover_kit()->app_url( 'assets/js/dashboard/index.min.js' ),
-			'path'      => plover_kit()->app_path( 'assets/js/dashboard/index.min.js' ),
-			'asset'     => plover_kit()->app_path( 'assets/js/dashboard/index.min.asset.php' ),
-			'ver'       => $this->core->is_debug() ? time() : PLOVER_KIT_VERSION,
-			'condition' => [ $this, 'is_dashboard_screen' ],
-			'deps'      => [ 'plover-dashboard-data' ],
+			'src'         => plover_kit()->app_url( 'assets/js/dashboard/index.min.js' ),
+			'path'        => plover_kit()->app_path( 'assets/js/dashboard/index.min.js' ),
+			'asset'       => plover_kit()->app_path( 'assets/js/dashboard/index.min.asset.php' ),
+			'ver'         => $this->core->is_debug() ? time() : PLOVER_KIT_VERSION,
+			'condition'   => [ $this, 'is_dashboard_screen' ],
+			'deps'        => [ 'plover-dashboard-data' ],
+			'translation' => 'plover-kit',
 		) );
 	}
 

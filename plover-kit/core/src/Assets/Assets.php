@@ -81,14 +81,15 @@ abstract class Assets {
 	 */
 	protected function parse_asset_args( $args, $extra_deps = array() ) {
 		$args = wp_parse_args( $args, array(
-			'raw'       => '',      // inline code
-			'device'    => 'all',   // responsive option, css only
-			'src'       => '',
-			'path'      => '',
-			'deps'      => array(),
-			'ver'       => false,
-			'keywords'  => [],
-			'condition' => true,
+			'raw'         => '',      // inline code
+			'device'      => 'all',   // responsive option, css only
+			'src'         => '',
+			'path'        => '',
+			'deps'        => array(),
+			'ver'         => false,
+			'keywords'    => [],
+			'condition'   => true,
+			'translation' => null,
 		) );
 
 		if ( isset( $args['asset'] ) && is_file( $args['asset'] ) ) {

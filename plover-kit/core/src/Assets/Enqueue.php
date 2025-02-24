@@ -269,6 +269,10 @@ class Enqueue {
 				$script_args['footer'] ?? false
 			);
 
+			if ( ! empty( $script_args['translation'] ) ) {
+				wp_set_script_translations( $handle, $script_args['translation'] );
+			}
+
 			wp_enqueue_script( $handle );
 
 			$this->enqueue_core_styles_from_deps( $deps );
