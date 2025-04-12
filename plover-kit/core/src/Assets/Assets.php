@@ -72,6 +72,17 @@ abstract class Assets {
 	}
 
 	/**
+	 * Dequeue the asset file in fronted and editor.
+	 *
+	 * @param string $handle
+	 *
+	 * @return void
+	 */
+	public function dequeue_asset( string $handle ) {
+		unset( $this->assets[ $handle ] );
+	}
+
+	/**
 	 * Parse asset args.
 	 *
 	 * @param $args
@@ -143,6 +154,22 @@ abstract class Assets {
 	}
 
 	/**
+	 * Dequeue the asset file in editor only.
+	 *
+	 * @param string $handle
+	 * @param array $args
+	 *
+	 * @return void
+	 */
+	public function dequeue_editor_asset( string $handle ) {
+		if ( ! is_admin() ) {
+			return;
+		}
+
+		unset( $this->editor_assets[ $handle ] );
+	}
+
+	/**
 	 * Enqueue the asset file in admin dashboard.
 	 *
 	 * @param string $handle
@@ -160,6 +187,22 @@ abstract class Assets {
 		$this->dashboard_assets[ $handle ] = $this->parse_asset_args( $args, [
 			'script' => $has_localize ? array( 'plover-dashboard-data' ) : array()
 		] );
+	}
+
+	/**
+	 * Dequeue the asset file in admin dashboard.
+	 *
+	 * @param string $handle
+	 * @param array $args
+	 *
+	 * @return void
+	 */
+	public function dequeue_dashboard_asset( string $handle ) {
+		if ( ! is_admin() ) {
+			return;
+		}
+
+		unset( $this->dashboard_assets[ $handle ] );
 	}
 
 	/**

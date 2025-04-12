@@ -22,7 +22,7 @@ class Plover extends Container {
 	 * @since 1.0.0
 	 * @var string
 	 */
-	const VERSION = '1.2.2';
+	const VERSION = '1.2.3';
 
 	/**
 	 * The core instance.
@@ -98,7 +98,7 @@ class Plover extends Container {
 		// TODO: A generic approach to get core path.
 		$core_path = untrailingslashit( dirname( __DIR__ ) );
 		$app_url   = $base_url ?: content_url( Path::get_segment( $app_path, - 2 ) );
-		$core_url  = $app_url . str_replace( $app_path, '', $core_path );
+		$core_url  = $app_url . str_replace( '\\', '/', str_replace( $app_path, '', $core_path ) );
 
 		$this->instance( 'core.path', $core_path );
 		$this->instance( 'core.url', $core_url );

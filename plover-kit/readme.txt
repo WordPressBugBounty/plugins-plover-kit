@@ -1,9 +1,9 @@
 === Plover Kit - Blocks, Patterns and Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.5.2
+Stable tag: 1.5.3
 Requires at least: 6.2
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.4
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -31,6 +31,10 @@ Shape divider is used to create visual separation between different sections of 
 #### [Particles Effect](https://wpplover.com/docs/plover-kit/modules/particles-effect/)
 
 Add cool particle effects to your designs!
+
+#### [Rough Notation](https://wpplover.com/docs/plover-kit/modules/rough-notation/)
+
+Create and animate hand-draw style notations on a page.
 
 #### [Entrance Animation](https://wpplover.com/docs/plover-kit/modules/entrance-animation/)
 
@@ -132,6 +136,11 @@ No, it only works with the block editor.
 7. JavaScript Event Handler
 
 == Changelog ==
+
+= 1.5.3 =
+
+* Add: New Rough Notation Module
+* Fix: Nonce check error when importing patterns
 
 = 1.5.2 =
 

@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plover Kit 1.5.2\n"
+"Project-Id-Version: Plover Kit 1.5.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plover-kit\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-02-24T10:15:04+00:00\n"
+"POT-Creation-Date: 2025-04-12T09:46:58+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: plover-kit\n"
@@ -1221,6 +1221,7 @@ msgid "Number Suffix"
 msgstr ""
 
 #: static/scripts/block-extensions/counter__premium_only/edit.jsx:78
+#: static/scripts/block-extensions/rough-notation__premium_only/entry.jsx:85
 msgid "Animation Duration (ms)"
 msgstr ""
 
@@ -1613,6 +1614,46 @@ msgstr ""
 
 #: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:118
 msgid "Words is suitable for most languages where words are separated by spaces; for Chinese, Japanese and Korean, it is separated by characters."
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation__premium_only/entry.jsx:22
+msgid "Wave Line"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation__premium_only/entry.jsx:23
+msgid "Box"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation__premium_only/entry.jsx:24
+msgid "Circle"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation__premium_only/entry.jsx:25
+msgid "Strike Through"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation__premium_only/entry.jsx:26
+msgid "Crossed Off"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation__premium_only/entry.jsx:27
+msgid "Bracket"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation__premium_only/entry.jsx:51
+msgid "Wave Amplitude"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation__premium_only/entry.jsx:62
+msgid "Wave Frequency"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation__premium_only/entry.jsx:76
+msgid "Animation (Frontend Only)"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation__premium_only/entry.jsx:96
+msgid "RTL"
 msgstr ""
 
 #: static/scripts/block-extensions/sticky__premium_only/entry.jsx:51

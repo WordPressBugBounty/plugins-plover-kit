@@ -22,7 +22,7 @@ class Enqueue {
 	/**
 	 * All core libs.
 	 */
-	protected const CORE_LIBS = [ 'scroll-observer' ];
+	protected const CORE_LIBS = [ 'scroll-observer', 'rough-notation' ];
 
 	/**
 	 * Plover core instance.

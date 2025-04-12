@@ -38,7 +38,7 @@ if ( ! function_exists( 'plover_kit_get_auth_data' ) ) {
 		$install_id       = $site->id;
 		$site_private_key = $site->secret_key;
 
-		$nonce       = current_time( 'timestamp' );
+		$nonce       = current_time( 'timestamp', true );
 		$pk_hash     = hash( 'sha512', $site_private_key . '|' . $nonce );
 		$auth_string = base64_encode( $pk_hash . '|' . $nonce );
 

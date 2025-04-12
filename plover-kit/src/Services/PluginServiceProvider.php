@@ -18,6 +18,7 @@ use Plover\Kit\Extensions\PremiumParticles;
 use Plover\Kit\Extensions\PremiumShapeDivider;
 use Plover\Kit\Extensions\PremiumSticky;
 use Plover\Kit\Extensions\ReadingTime;
+use Plover\Kit\Extensions\PremiumRoughNotation;
 use Plover\Kit\Extensions\TableOfContents;
 use Plover\Kit\Extensions\TypingAnimation;
 /**

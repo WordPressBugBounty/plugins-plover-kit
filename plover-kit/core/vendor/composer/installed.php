@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'plover/plover-core',
-        'pretty_version' => 'v1.2.2',
-        'version' => '1.2.2.0',
-        'reference' => '537b85898866c105415b87e9a88dada66718dc44',
+        'pretty_version' => 'v1.2.3',
+        'version' => '1.2.3.0',
+        'reference' => '51422770e8d2615bc23972fc29ef80212cd56ca8',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'plover/plover-core' => array(
-            'pretty_version' => 'v1.2.2',
-            'version' => '1.2.2.0',
-            'reference' => '537b85898866c105415b87e9a88dada66718dc44',
+            'pretty_version' => 'v1.2.3',
+            'version' => '1.2.3.0',
+            'reference' => '51422770e8d2615bc23972fc29ef80212cd56ca8',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

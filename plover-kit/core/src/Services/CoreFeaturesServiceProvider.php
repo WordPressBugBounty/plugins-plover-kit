@@ -307,6 +307,7 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 			$extensions->register( 'shape-divider', \Plover\Core\Extensions\ShapeDivider::class );
 			$extensions->register( 'hover-animation', \Plover\Core\Extensions\HoverAnimation::class );
 			$extensions->register( 'entrance-animation', \Plover\Core\Extensions\EntranceAnimation::class );
+			$extensions->register( 'rough-notation', \Plover\Core\Extensions\RoughNotation::class );
 		}, 5 );
 	}
 

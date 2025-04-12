@@ -1,3 +1,9 @@
+= 1.2.3 =
+
+* Add: New Rough Notation module
+* Refactor: Update icon-library-not-available css class
+* Fix: Core url format error under Windows system
+
 = 1.2.2 =
 
 * Add: Script translation option

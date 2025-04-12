@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-02-24T09:27:43+00:00\n"
+"POT-Creation-Date: 2025-04-12T09:40:50+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: plover\n"
@@ -272,6 +272,14 @@ msgstr ""
 msgid "You can set position and z-index css properties for blocks, responsive!"
 msgstr ""
 
+#: src/Extensions/RoughNotation.php:17
+msgid "Rough Notation"
+msgstr ""
+
+#: src/Extensions/RoughNotation.php:18
+msgid "Create and animate hand-draw style notations on a page."
+msgstr ""
+
 #: src/Extensions/Shadow.php:33
 msgid "Block shadow"
 msgstr ""
@@ -440,16 +448,19 @@ msgid "Mobile mode"
 msgstr ""
 
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:27
+#: static/scripts/block-extensions/rough-notation/edit.jsx:85
 msgid "Style"
 msgstr ""
 
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:33
+#: static/scripts/block-extensions/rough-notation/edit.jsx:97
 msgid "Highlight"
 msgstr ""
 
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:34
 #: static/scripts/block-extensions/icon/IconControls.jsx:180
 #: static/scripts/block-extensions/icon/IconControls.jsx:181
+#: static/scripts/block-extensions/rough-notation/edit.jsx:95
 #: static/scripts/block-extensions/shape-divider/ShapesSelect.jsx:43
 #: static/scripts/block-supports/display/DisplayPanel.jsx:48
 msgid "None"
@@ -469,6 +480,7 @@ msgstr ""
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:74
 #: static/scripts/block-extensions/particles/ParticlesControl.jsx:74
 #: static/scripts/block-extensions/particles/ParticlesControl.jsx:141
+#: static/scripts/block-extensions/rough-notation/edit.jsx:133
 #: static/scripts/block-extensions/shape-divider/ShapeDividerControls.jsx:42
 #: static/scripts/block-supports/display/DisplayPanel.jsx:130
 #: static/scripts/block-supports/entrance-animation/EntranceAnimationPanel.jsx:71
@@ -634,6 +646,28 @@ msgstr ""
 
 #: static/scripts/block-extensions/particles/ParticlesControl.jsx:165
 msgid "Enable"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation/edit.jsx:96
+msgid "Underline"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation/edit.jsx:104
+msgid "Color"
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation/edit.jsx:115
+msgid "Multiline"
+msgstr ""
+
+#. translators: %s is the premium text and link.
+#: static/scripts/block-extensions/rough-notation/edit.jsx:132
+msgid "Upgrade to %s for more rough notation styles and options."
+msgstr ""
+
+#: static/scripts/block-extensions/rough-notation/edit.jsx:164
+#: static/scripts/block-extensions/rough-notation/index.jsx:21
+msgid "Plover: Rough Notation"
 msgstr ""
 
 #: static/scripts/block-extensions/search/SearchControls.jsx:39
