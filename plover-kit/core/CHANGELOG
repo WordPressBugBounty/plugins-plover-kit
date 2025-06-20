@@ -1,3 +1,9 @@
+= 1.2.4 =
+
+* Fix: Side effects of plover-indicator on editor layout
+* Fix: Text/Drop-Box/Box shadow presets don't work in site editor
+* Fix: Drop shadow style preview error in site editor
+
 = 1.2.3 =
 
 * Add: New Rough Notation module

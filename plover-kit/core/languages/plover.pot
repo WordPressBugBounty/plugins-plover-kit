@@ -7,9 +7,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-04-12T09:40:50+00:00\n"
+"POT-Creation-Date: 2025-06-20T03:43:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover\n"
 
 #: src/Blocks/Code.php:26
@@ -387,22 +387,27 @@ msgid "The installation process is starting. This process may take a while on so
 msgstr ""
 
 #: src/Toolkits/Plugin.php:83
+#, php-format
 msgid "Upgrading %s ..."
 msgstr ""
 
 #: src/Toolkits/Plugin.php:89
+#, php-format
 msgid "Installing %s ..."
 msgstr ""
 
 #: src/Toolkits/Plugin.php:96
+#, php-format
 msgid "Activating %s ..."
 msgstr ""
 
 #: src/Toolkits/Plugin.php:100
+#, php-format
 msgid "%s installed successfully"
 msgstr ""
 
 #: src/Toolkits/Plugin.php:104
+#, php-format
 msgid "Could not install the %s plugin."
 msgstr ""
 
@@ -416,6 +421,7 @@ msgstr ""
 
 #. translators: %s is the type of color property, e.g., "background"
 #: static/packages/components/color-popover/index.jsx:112
+#, js-format
 msgid "Color %s styles"
 msgstr ""
 
@@ -474,6 +480,7 @@ msgstr ""
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:73
 #: static/scripts/block-supports/display/DisplayPanel.jsx:129
 #: static/scripts/block-supports/sticky/StickyPanel.jsx:133
+#, js-format
 msgid "Upgrade to %s to access these features:"
 msgstr ""
 
@@ -532,6 +539,7 @@ msgstr ""
 
 #. translators: %s is the plover kit plugin name
 #: static/scripts/block-extensions/icon/IconControls.jsx:219
+#, js-format
 msgid "Use the %s plugin to get more icons from the Icon Library."
 msgstr ""
 
@@ -621,6 +629,7 @@ msgstr ""
 
 #. translators: %s is the premium text and link.
 #: static/scripts/block-extensions/particles/ParticlesControl.jsx:73
+#, js-format
 msgid "Upgrade to %s version to access more presets or create custom particles using the online editor."
 msgstr ""
 
@@ -637,6 +646,7 @@ msgstr ""
 
 #. translators: %s is the premium text and link.
 #: static/scripts/block-extensions/particles/ParticlesControl.jsx:140
+#, js-format
 msgid "Upgrade to %s version to access more particle presets and particle options."
 msgstr ""
 
@@ -662,6 +672,7 @@ msgstr ""
 
 #. translators: %s is the premium text and link.
 #: static/scripts/block-extensions/rough-notation/edit.jsx:132
+#, js-format
 msgid "Upgrade to %s for more rough notation styles and options."
 msgstr ""
 
@@ -689,6 +700,7 @@ msgstr ""
 
 #. translators: %s is the premium text and link.
 #: static/scripts/block-extensions/shape-divider/ShapeDividerControls.jsx:41
+#, js-format
 msgid "Upgrade to %s to unlock 25+ premium shapes."
 msgstr ""
 
@@ -813,6 +825,7 @@ msgstr ""
 
 #. translators: %s is the premium text and link.
 #: static/scripts/block-supports/entrance-animation/EntranceAnimationPanel.jsx:70
+#, js-format
 msgid "Upgrade to %s for more entrance animations and options."
 msgstr ""
 
@@ -838,6 +851,7 @@ msgstr ""
 
 #. translators: %s is the premium text and link.
 #: static/scripts/block-supports/hover-animation/HoverAnimationPanel.jsx:61
+#, js-format
 msgid "Upgrade to %s for more hover animations."
 msgstr ""
 
@@ -878,6 +892,7 @@ msgstr ""
 #: static/scripts/block-supports/shadow/BoxShadowControls.jsx:71
 #: static/scripts/block-supports/shadow/DropShadowControls.jsx:80
 #: static/scripts/block-supports/shadow/TextShadowControls.jsx:61
+#, js-format
 msgid "Preview / %s"
 msgstr ""
 

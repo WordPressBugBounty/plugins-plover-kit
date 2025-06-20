@@ -65,7 +65,7 @@ class Shadow extends Extension {
 
 		add_filter( 'render_block', [ $this, 'render' ], 11, 2 );
 		add_filter( 'plover_core_editor_data', [ $this, 'localize_shadow_presets' ] );
-		add_filter( 'wp_theme_json_data_user', [ $this, 'add_shadow_presets' ] );
+		add_filter( 'wp_theme_json_data_theme', [ $this, 'add_shadow_presets' ] );
 	}
 
 	/**

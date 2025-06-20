@@ -2,16 +2,16 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plover Kit 1.5.3\n"
+"Project-Id-Version: Plover Kit 1.5.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plover-kit\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-04-12T09:46:58+00:00\n"
+"POT-Creation-Date: 2025-06-20T03:49:19+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover-kit\n"
 
 #. Plugin Name of the plugin
@@ -51,22 +51,26 @@ msgstr ""
 
 #. translators: %s: Parameter name: "icon_library_settings".
 #: src/Controllers/IconLibrariesController.php:81
+#, php-format
 msgid "%s parameter must be a valid JSON string."
 msgstr ""
 
 #. translators: %s: Name of the reset setting parameter.
 #: src/Controllers/IconLibrariesController.php:119
 #: src/Controllers/IconsController.php:362
+#, php-format
 msgid "%s cannot be empty."
 msgstr ""
 
 #. translators: %s: Icon library slug.
 #: src/Controllers/IconLibrariesController.php:306
+#, php-format
 msgid "A icon library with slug \"%s\" already exists."
 msgstr ""
 
 #. translators: %s: force=true
 #: src/Controllers/IconLibrariesController.php:330
+#, php-format
 msgid "Icon libraries do not support trashing. Set \"%s\" to delete."
 msgstr ""
 
@@ -125,11 +129,13 @@ msgstr ""
 #. translators: %d: A post id.
 #: src/Controllers/IconsController.php:223
 #: src/Controllers/IconsController.php:254
+#, php-format
 msgid "The icon does not belong to the specified icon library with id of \"%d\"."
 msgstr ""
 
 #. translators: %s: force=true
 #: src/Controllers/IconsController.php:266
+#, php-format
 msgid "Icons do not support trashing. Set \"%s\" to delete."
 msgstr ""
 
@@ -264,6 +270,7 @@ msgstr ""
 #. translators: %1$s and %3$s - strong HTML tags, %2$s - file URL, %4$s - br HTML tag, %5$s - error code, %6$s - error message.
 #: src/Extensions/IconLibrary.php:269
 #: src/Extensions/PatternLibrary.php:304
+#, php-format
 msgid "An error occurred: %1$s - %2$s."
 msgstr ""
 
@@ -657,6 +664,7 @@ msgstr ""
 #: static/blocks/code-snippet/edit.jsx:38
 #: static/blocks/counter/edit.jsx:37
 #: static/blocks/reading-time/edit.jsx:37
+#, js-format
 msgid "Upgrade to %s to access this block."
 msgstr ""
 
@@ -837,6 +845,7 @@ msgstr ""
 #: static/scripts/block-extensions/measures/MeasuresPanel.jsx:47
 #: static/scripts/dashboard/upsell/code-highlight-upsell.js:32
 #: static/scripts/dashboard/upsell/table-of-contents-upsell.js:32
+#, js-format
 msgid "Upgrade to %s to access these features:"
 msgstr ""
 
@@ -1101,6 +1110,7 @@ msgid "Date"
 msgstr ""
 
 #: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:108
+#, js-format
 msgid "The \"%s\" is %s."
 msgstr ""
 
@@ -1162,11 +1172,13 @@ msgstr ""
 #. translators: %s: The name of icon library.
 #: static/scripts/block-extensions/code-snippets/components/DeleteCodeSnippetAction.js:53
 #: static/scripts/block-extensions/icon-library/components/DeleteLibrary.jsx:64
+#, js-format
 msgid "Delete %s?"
 msgstr ""
 
 #. translators: %s: The name of code snippet.
 #: static/scripts/block-extensions/code-snippets/components/DeleteCodeSnippetAction.js:60
+#, js-format
 msgid "Are you sure you want to delete \"%s\"? This operation is not reversible."
 msgstr ""
 
@@ -1197,6 +1209,7 @@ msgstr ""
 
 #. translators: %s is the name of post type/taxonomy.
 #: static/scripts/block-extensions/code-snippets__premium_only/entry.jsx:121
+#, js-format
 msgid "Exclude %s"
 msgstr ""
 
@@ -1350,6 +1363,7 @@ msgstr ""
 
 #. translators: %s: the count of icons.
 #: static/scripts/block-extensions/icon-library/components/DeleteLibrary.jsx:72
+#, js-format
 msgid "This library contains %s icon, once deleted, all icons will be deleted as well. This operation is not reversible."
 msgid_plural "This library contains %s icons, once deleted, all icons will be deleted as well. This operation is not reversible."
 msgstr[0] ""
@@ -1399,6 +1413,7 @@ msgstr ""
 
 #. translators: %s: the count of icons.
 #: static/scripts/block-extensions/icon-library/components/ImportIconsModal.jsx:109
+#, js-format
 msgid "Import %s icon to library"
 msgid_plural "Import %s icons to library"
 msgstr[0] ""
@@ -1538,6 +1553,7 @@ msgstr ""
 
 #. translators: %s is "online editor".
 #: static/scripts/block-extensions/particles__premium_only/entry.jsx:47
+#, js-format
 msgid "Use the %s to generate custom particle effects JSON."
 msgstr ""
 
