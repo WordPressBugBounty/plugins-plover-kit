@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-06-20T03:43:52+00:00\n"
+"POT-Creation-Date: 2025-09-13T07:18:04+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover\n"
@@ -24,11 +24,11 @@ msgstr ""
 msgid "You can set display, visibility, order, overflow and box-sizing css properties for blocks, responsive!"
 msgstr ""
 
-#: src/Extensions/EntranceAnimation.php:23
+#: src/Extensions/EntranceAnimation.php:22
 msgid "Entrance Animation"
 msgstr ""
 
-#: src/Extensions/EntranceAnimation.php:24
+#: src/Extensions/EntranceAnimation.php:23
 msgid "Entrance animation adding dynamic movement to elements as they appear on screen."
 msgstr ""
 
@@ -92,11 +92,11 @@ msgstr ""
 msgid "Default language"
 msgstr ""
 
-#: src/Extensions/HoverAnimation.php:22
+#: src/Extensions/HoverAnimation.php:21
 msgid "Hover Animation"
 msgstr ""
 
-#: src/Extensions/HoverAnimation.php:23
+#: src/Extensions/HoverAnimation.php:22
 msgid "The Hover Animation allow you to add mouse hover animation effect for elements on your WordPress website."
 msgstr ""
 
@@ -333,7 +333,7 @@ msgid "Plover WooCommerce Blocks"
 msgstr ""
 
 #: src/Services/Settings/Modules.php:45
-#: static/packages/components/color-popover/index.jsx:145
+#: static/packages/components/color-popover/index.jsx:92
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:39
 msgid "Theme"
 msgstr ""
@@ -419,26 +419,31 @@ msgstr ""
 msgid "Return To Theme Page"
 msgstr ""
 
-#. translators: %s is the type of color property, e.g., "background"
-#: static/packages/components/color-popover/index.jsx:112
-#, js-format
-msgid "Color %s styles"
-msgstr ""
-
-#: static/packages/components/color-popover/index.jsx:161
+#: static/packages/components/color-popover/index.jsx:108
 msgid "Default"
 msgstr ""
 
-#: static/packages/components/color-popover/index.jsx:177
+#: static/packages/components/color-popover/index.jsx:124
 #: static/scripts/block-extensions/particles/ParticlesControl.jsx:41
 #: static/scripts/block-supports/shadow/utils.js:24
 msgid "Custom"
 msgstr ""
 
-#: static/packages/components/color-popover/index.jsx:192
+#: static/packages/components/color-popover/index.jsx:139
 #: static/scripts/block-supports/shadow/DropShadowControls.jsx:139
 #: static/scripts/block-supports/shadow/TextShadowControls.jsx:113
 msgid "Clear"
+msgstr ""
+
+#. translators: %s is the type of color property, e.g., "background"
+#: static/packages/components/color-popover/index.jsx:234
+#, js-format
+msgid "Color %s styles"
+msgstr ""
+
+#: static/packages/components/colors/index.jsx:46
+#: static/scripts/block-extensions/particles/controls/colors.jsx:71
+msgid "Reset"
 msgstr ""
 
 #: static/packages/components/responsive-control/index.js:59
@@ -583,10 +588,6 @@ msgstr ""
 
 #: static/scripts/block-extensions/icon/index.jsx:159
 msgid "Insert a SVG icon."
-msgstr ""
-
-#: static/scripts/block-extensions/particles/controls/colors.jsx:71
-msgid "Reset"
 msgstr ""
 
 #: static/scripts/block-extensions/particles/controls/colors.jsx:75

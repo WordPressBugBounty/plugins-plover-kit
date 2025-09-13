@@ -5,27 +5,26 @@ namespace Plover\Kit\Extensions;
 use Plover\Core\Services\Blocks\Blocks;
 use Plover\Core\Services\Extensions\Contract\Extension;
 use Plover\Core\Services\Settings\Control;
+use Plover\Core\Toolkits\StyleEngine;
 /**
- * Introduce a new reading time block
+ * Introduce a new breadcrumb block and shortcode
  *
- * @since 1.5.1
+ * @since 1.5.5
  */
-class ReadingTime extends Extension {
-    const MODULE_NAME = 'plover_reading_time_block';
+class Breadcrumb extends Extension {
+    const MODULE_NAME = 'plover_breadcrumb';
 
-    const BLOCK_NAME = 'plover-kit/reading-time';
+    const BLOCK_NAME = 'plover-kit/breadcrumb';
 
-    /**
-     * @return void
-     */
     public function register() {
         $fields = array();
         $this->modules->register( self::MODULE_NAME, array(
+            'recent'  => true,
             'premium' => true,
-            'label'   => __( 'Reading Time Block', 'plover-kit' ),
-            'excerpt' => __( 'Let’s you easily add an estimated reading time to your WordPress posts.', 'plover-kit' ),
-            'icon'    => esc_url( plover_kit()->app_url( 'assets/images/reading-time-block.png' ) ),
-            'doc'     => 'https://wpplover.com/docs/plover-kit/modules/reading-time-block/',
+            'label'   => __( 'Breadcrumb', 'plover-kit' ),
+            'excerpt' => __( 'Let’s you easily display breadcrumb navigation on your WordPress site, easy customization.', 'plover-kit' ),
+            'icon'    => esc_url( plover_kit()->app_url( 'assets/images/breadcrumb.png' ) ),
+            'doc'     => 'https://wpplover.com/docs/plover-kit/modules/breadcrumb/',
             'fields'  => $fields,
             'group'   => 'default',
         ) );
@@ -41,7 +40,7 @@ class ReadingTime extends Extension {
         if ( !$this->settings->checked( self::MODULE_NAME ) ) {
             return;
         }
-        // register reading time block
+        // register breadcrumb block
         add_action( 'init', [$this, 'register_blocks'] );
     }
 
@@ -52,7 +51,7 @@ class ReadingTime extends Extension {
      */
     public function register_blocks() {
         $attributes = array();
-        register_block_type_from_metadata( plover_kit()->app_path( 'assets/js/reading-time' ), array(
+        register_block_type_from_metadata( plover_kit()->app_path( 'assets/js/breadcrumb' ), array(
             'render_callback' => array($this, 'render_block'),
             'attributes'      => $attributes,
         ) );

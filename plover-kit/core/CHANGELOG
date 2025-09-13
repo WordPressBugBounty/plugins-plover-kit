@@ -1,3 +1,9 @@
+= 1.2.5 =
+
+* Add: Colors component
+* Add: Image select component
+* Add: Icon select component
+
 = 1.2.4 =
 
 * Fix: Side effects of plover-indicator on editor layout

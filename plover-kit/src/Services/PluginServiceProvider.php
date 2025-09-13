@@ -5,6 +5,7 @@ namespace Plover\Kit\Services;
 use Plover\Core\Assets\Styles;
 use Plover\Core\Framework\ServiceProvider;
 use Plover\Core\Services\Extensions\Extensions;
+use Plover\Kit\Extensions\Breadcrumb;
 use Plover\Kit\Extensions\CodeSnippets;
 use Plover\Kit\Extensions\Counter;
 use Plover\Kit\Extensions\IconLibrary;
@@ -45,6 +46,7 @@ class PluginServiceProvider extends ServiceProvider {
         $extensions->register( 'plover-kit-code-snippets', CodeSnippets::class );
         $extensions->register( 'plover-kit-icons', IconLibrary::class );
         $extensions->register( 'plover-kit-reading-time', ReadingTime::class );
+        $extensions->register( 'plover-kit-breadcrumb', Breadcrumb::class );
         $extensions->register( 'plover-kit-toc', TableOfContents::class );
         $extensions->register( 'plover-kit-patterns', PatternLibrary::class );
         $extensions->register( 'plover-kit-measures', Measures::class );

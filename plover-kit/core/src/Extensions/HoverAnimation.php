@@ -18,7 +18,6 @@ class HoverAnimation extends Extension {
 	 */
 	public function register() {
 		$this->modules->register( self::MODULE_NAME, array(
-			'recent'  => true,
 			'label'   => __( 'Hover Animation', 'plover' ),
 			'excerpt' => __( 'The Hover Animation allow you to add mouse hover animation effect for elements on your WordPress website.', 'plover' ),
 			'icon'    => esc_url( $this->core->core_url( 'assets/images/hover-animation.gif' ) ),

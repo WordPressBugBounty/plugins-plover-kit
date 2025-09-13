@@ -19,7 +19,6 @@ class EntranceAnimation extends Extension {
 	 */
 	public function register() {
 		$this->modules->register( self::MODULE_NAME, array(
-			'recent'  => true,
 			'label'   => __( 'Entrance Animation', 'plover' ),
 			'excerpt' => __( 'Entrance animation adding dynamic movement to elements as they appear on screen.', 'plover' ),
 			'icon'    => esc_url( $this->core->core_url( 'assets/images/entrance-animation.png' ) ),

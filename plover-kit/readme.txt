@@ -1,7 +1,7 @@
 === Plover Kit - Blocks, Patterns and Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.5.4
+Stable tag: 1.5.5
 Requires at least: 6.2
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -23,6 +23,10 @@ Add beautiful, ready-to-go layouts to your site with one click.
 #### [Table of Contents](https://wpplover.com/docs/plover-kit/modules/table-of-contents/)
 
 Introduce a Table of Contents block to your posts and pages. It shows a nested list of links to all the headings found in a post or page.
+
+#### [Breadcrumb](https://wpplover.com/docs/plover-kit/modules/breadcrumb/)
+
+Let’s you easily display breadcrumb navigation on your WordPress site, easy customization.
 
 #### [Shape Divider](https://wpplover.com/docs/plover-kit/modules/shape-divider/)
 
@@ -136,6 +140,12 @@ No, it only works with the block editor.
 7. JavaScript Event Handler
 
 == Changelog ==
+
+= 1.5.5 =
+
+* Ref: Update core to v1.2.5
+* Ref: Update Freemius SDK
+* Add: Premium breadcrumb module
 
 = 1.5.4 =
 

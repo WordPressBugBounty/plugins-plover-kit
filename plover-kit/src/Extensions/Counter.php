@@ -19,7 +19,6 @@ class Counter extends Extension {
      */
     public function register() {
         $this->modules->register( self::MODULE_NAME, array(
-            'recent'  => true,
             'premium' => true,
             'label'   => __( 'Counter Block', 'plover-kit' ),
             'excerpt' => __( 'Introduce a counter block enables you to add an animated numbered counter to your page.', 'plover-kit' ),

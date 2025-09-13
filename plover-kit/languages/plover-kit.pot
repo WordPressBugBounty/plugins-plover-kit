@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plover Kit 1.5.4\n"
+"Project-Id-Version: Plover Kit 1.5.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plover-kit\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-06-20T03:49:19+00:00\n"
+"POT-Creation-Date: 2025-09-13T07:21:47+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover-kit\n"
@@ -163,6 +163,172 @@ msgstr ""
 msgid "Invalid svg file."
 msgstr ""
 
+#: src/Extensions/Breadcrumb.php:26
+msgid "Output Format"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:33
+msgid "Schema.org BreadcrumbList (RDFa)"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:37
+msgid "Schema.org BreadcrumbList (RDFa) with WAI-ARIA"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:41
+msgid "Schema.org BreadcrumbList (microdata)"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:45
+msgid "No Markup (no Schema.org BreadcrumbList)"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:52
+msgid "Default Theme"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:60
+#: src/Extensions/Breadcrumb.php:342
+msgid "Theme 01"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:65
+#: src/Extensions/Breadcrumb.php:347
+msgid "Theme 02"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:70
+#: src/Extensions/Breadcrumb.php:352
+msgid "Theme 03"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:75
+#: src/Extensions/Breadcrumb.php:357
+msgid "Theme 04"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:80
+#: src/Extensions/Breadcrumb.php:362
+msgid "Theme 05"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:85
+#: src/Extensions/Breadcrumb.php:367
+msgid "Theme 06"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:90
+#: src/Extensions/Breadcrumb.php:372
+msgid "Theme 07"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:95
+#: src/Extensions/Breadcrumb.php:377
+msgid "Theme 08"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:103
+msgid "Default Separator"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:110
+#: src/Extensions/Breadcrumb.php:298
+msgid "N/A"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:115
+#: src/Extensions/Breadcrumb.php:303
+msgid "Separator 01"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:120
+#: src/Extensions/Breadcrumb.php:308
+msgid "Separator 02"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:125
+#: src/Extensions/Breadcrumb.php:313
+msgid "Separator 03"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:130
+#: src/Extensions/Breadcrumb.php:318
+msgid "Separator 04"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:138
+msgid "Default Home Item"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:145
+#: src/Extensions/TableOfContents.php:149
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:59
+#: static/scripts/block-extensions/typing-animation__premium_only/TypingAnimationPanel.js:55
+#: static/scripts/block-extensions/typing-animation__premium_only/TypingAnimationPanel.js:86
+msgid "None"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:149
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:60
+msgid "Text"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:153
+#: src/Extensions/IconLibrary.php:107
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:61
+msgid "Icon"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:157
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:62
+msgid "Site Title"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:164
+msgid "Default Home Text"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:165
+msgid "Home"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:169
+msgid "Default Home Icon"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:176
+#: src/Extensions/Breadcrumb.php:325
+msgid "Home 01"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:181
+#: src/Extensions/Breadcrumb.php:330
+msgid "Home 02"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:186
+#: src/Extensions/Breadcrumb.php:335
+msgid "Home 03"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:199
+#: src/Extensions/Breadcrumb.php:467
+msgid "Breadcrumb"
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:200
+msgid "Let’s you easily display breadcrumb navigation on your WordPress site, easy customization."
+msgstr ""
+
+#: src/Extensions/Breadcrumb.php:543
+msgid "404"
+msgstr ""
+
+#. translators: %s: Keywords searched by users
+#: src/Extensions/Breadcrumb.php:550
+msgid "Search Results for: "
+msgstr ""
+
 #: src/Extensions/CodeSnippets.php:21
 #: src/Extensions/CodeSnippets.php:98
 #: static/scripts/block-extensions/code-snippets/entry.jsx:63
@@ -235,11 +401,11 @@ msgstr ""
 msgid "Very Low"
 msgstr ""
 
-#: src/Extensions/Counter.php:25
+#: src/Extensions/Counter.php:24
 msgid "Counter Block"
 msgstr ""
 
-#: src/Extensions/Counter.php:26
+#: src/Extensions/Counter.php:25
 msgid "Introduce a counter block enables you to add an animated numbered counter to your page."
 msgstr ""
 
@@ -261,10 +427,6 @@ msgstr ""
 
 #: src/Extensions/IconLibrary.php:106
 msgid "Icons"
-msgstr ""
-
-#: src/Extensions/IconLibrary.php:107
-msgid "Icon"
 msgstr ""
 
 #. translators: %1$s and %3$s - strong HTML tags, %2$s - file URL, %4$s - br HTML tag, %5$s - error code, %6$s - error message.
@@ -490,15 +652,15 @@ msgstr ""
 msgid "Characters Including Spaces"
 msgstr ""
 
-#: src/Extensions/ReadingTime.php:75
+#: src/Extensions/ReadingTime.php:74
 msgid "Reading Time Block"
 msgstr ""
 
-#: src/Extensions/ReadingTime.php:76
+#: src/Extensions/ReadingTime.php:75
 msgid "Let’s you easily add an estimated reading time to your WordPress posts."
 msgstr ""
 
-#: src/Extensions/ReadingTime.php:255
+#: src/Extensions/ReadingTime.php:254
 msgid "< 1"
 msgstr ""
 
@@ -572,12 +734,6 @@ msgstr ""
 
 #: src/Extensions/TableOfContents.php:145
 msgid "Hashtag"
-msgstr ""
-
-#: src/Extensions/TableOfContents.php:149
-#: static/scripts/block-extensions/typing-animation__premium_only/TypingAnimationPanel.js:55
-#: static/scripts/block-extensions/typing-animation__premium_only/TypingAnimationPanel.js:86
-msgid "None"
 msgstr ""
 
 #: src/Extensions/TypingAnimation.php:25
@@ -657,10 +813,17 @@ msgstr ""
 msgid "Sorry, you are not allowed to install themes on this site."
 msgstr ""
 
+#: assets/js/breadcrumb/index.js:1
+#: static/blocks/breadcrumb/edit.jsx:28
+msgid "Plover: Breadcrumb"
+msgstr ""
+
 #. translators: %s is the premium text and link.
+#: assets/js/breadcrumb/index.js:2
 #: assets/js/code-snippet/index.js:2
 #: assets/js/counter/index.js:2
 #: assets/js/reading-time/index.js:2
+#: static/blocks/breadcrumb/edit.jsx:36
 #: static/blocks/code-snippet/edit.jsx:38
 #: static/blocks/counter/edit.jsx:37
 #: static/blocks/reading-time/edit.jsx:37
@@ -668,11 +831,13 @@ msgstr ""
 msgid "Upgrade to %s to access this block."
 msgstr ""
 
+#: assets/js/breadcrumb/index.js:2
 #: assets/js/code-snippet/index.js:2
 #: assets/js/counter/index.js:2
 #: assets/js/reading-time/index.js:2
 #: assets/js/toc/index.js:2
 #: assets/js/toc/index.js:3
+#: static/blocks/breadcrumb/edit.jsx:37
 #: static/blocks/code-snippet/edit.jsx:39
 #: static/blocks/counter/edit.jsx:38
 #: static/blocks/reading-time/edit.jsx:38
@@ -685,9 +850,11 @@ msgstr ""
 msgid "Premium"
 msgstr ""
 
+#: assets/js/breadcrumb/index.js:2
 #: assets/js/code-snippet/index.js:2
 #: assets/js/counter/index.js:2
 #: assets/js/reading-time/index.js:2
+#: static/blocks/breadcrumb/edit.jsx:46
 #: static/blocks/code-snippet/edit.jsx:48
 #: static/blocks/counter/edit.jsx:47
 #: static/blocks/reading-time/edit.jsx:47
@@ -695,10 +862,12 @@ msgstr ""
 msgid "Learn More ↗"
 msgstr ""
 
+#: assets/js/breadcrumb/index.js:2
 #: assets/js/code-snippet/index.js:2
 #: assets/js/counter/index.js:2
 #: assets/js/reading-time/index.js:2
 #: assets/js/toc/index.js:2
+#: static/blocks/breadcrumb/edit.jsx:60
 #: static/blocks/code-snippet/edit.jsx:99
 #: static/blocks/counter/edit.jsx:61
 #: static/blocks/reading-time/edit.jsx:61
@@ -1032,6 +1201,55 @@ msgstr ""
 msgid "Upgrade now"
 msgstr ""
 
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:33
+msgid "Breadcrumb Theme"
+msgstr ""
+
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:42
+msgid "Breadcrumb Settings"
+msgstr ""
+
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:45
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:99
+msgid "Separator"
+msgstr ""
+
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:57
+msgid "Home Item"
+msgstr ""
+
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:72
+msgid "Home Icon"
+msgstr ""
+
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:85
+msgid "Custom Home Text"
+msgstr ""
+
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:105
+msgid "Background"
+msgstr ""
+
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:106
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:113
+#: static/scripts/block-extensions/counter__premium_only/edit.jsx:107
+#: static/scripts/block-extensions/particles__premium_only/override/interactivity/controls.js:60
+msgid "Default"
+msgstr ""
+
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:107
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:114
+msgid "Hover"
+msgstr ""
+
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:108
+msgid "Current"
+msgstr ""
+
+#: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:112
+msgid "Border"
+msgstr ""
+
 #: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:97
 msgid "The code snippet is saved."
 msgstr ""
@@ -1240,15 +1458,6 @@ msgstr ""
 
 #: static/scripts/block-extensions/counter__premium_only/edit.jsx:88
 msgid "Thousand Separator"
-msgstr ""
-
-#: static/scripts/block-extensions/counter__premium_only/edit.jsx:99
-msgid "Separator"
-msgstr ""
-
-#: static/scripts/block-extensions/counter__premium_only/edit.jsx:107
-#: static/scripts/block-extensions/particles__premium_only/override/interactivity/controls.js:60
-msgid "Default"
 msgstr ""
 
 #: static/scripts/block-extensions/counter__premium_only/edit.jsx:108
@@ -1924,6 +2133,24 @@ msgstr ""
 
 #: static/scripts/dashboard/upsell/code-highlight-upsell.js:55
 msgid "More highlight themes"
+msgstr ""
+
+#: assets/js/breadcrumb/block.json
+#: static/blocks/breadcrumb/block.json
+msgctxt "block title"
+msgid "Plover: Breadcrumb"
+msgstr ""
+
+#: assets/js/breadcrumb/block.json
+#: static/blocks/breadcrumb/block.json
+msgctxt "block description"
+msgid "Let’s you easily display breadcrumb navigation on your WordPress site, easy customization."
+msgstr ""
+
+#: assets/js/breadcrumb/block.json
+#: static/blocks/breadcrumb/block.json
+msgctxt "block keyword"
+msgid "breadcrumb"
 msgstr ""
 
 #: assets/js/code-snippet/block.json
