@@ -32,6 +32,20 @@ class Element {
 	}
 
 	/**
+	 * Get all child elements
+	 * 
+	 * @return Element[]
+	 */
+	public function children() {
+		$elements = [];
+		foreach( $this->el->childNodes as $node ) {
+			$elements[] = new self( $node );
+		}
+
+		return $elements;
+	}
+
+	/**
 	 * @param Element $element
 	 *
 	 * @return void

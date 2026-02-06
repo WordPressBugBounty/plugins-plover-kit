@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-09-13T07:18:04+00:00\n"
+"POT-Creation-Date: 2026-01-26T13:40:08+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover\n"
@@ -240,6 +240,14 @@ msgstr ""
 msgid "No such icon library."
 msgstr ""
 
+#: src/Extensions/Magazine.php:29
+msgid "Magazine Layout"
+msgstr ""
+
+#: src/Extensions/Magazine.php:30
+msgid "Elevate your WordPress site with the Magazine Layout dynamic content presentation."
+msgstr ""
+
 #: src/Extensions/Particles.php:20
 msgid "Particles Effect"
 msgstr ""
@@ -332,53 +340,61 @@ msgstr ""
 msgid "Plover WooCommerce Blocks"
 msgstr ""
 
-#: src/Services/Settings/Modules.php:45
+#: src/Services/Settings/Modules.php:46
+msgid "Modules"
+msgstr ""
+
+#: src/Services/Settings/Modules.php:47
+msgid "Standalone feature, similar to a WordPress plugin."
+msgstr ""
+
+#: src/Services/Settings/Modules.php:51
 #: static/packages/components/color-popover/index.jsx:92
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:39
 msgid "Theme"
 msgstr ""
 
-#: src/Services/Settings/Modules.php:46
+#: src/Services/Settings/Modules.php:52
 msgid "Extensions provided by the active theme."
 msgstr ""
 
-#: src/Services/Settings/Modules.php:49
-msgid "Modules"
+#: src/Services/Settings/Modules.php:55
+msgid "Blog Tools"
 msgstr ""
 
-#: src/Services/Settings/Modules.php:50
-msgid "Standalone feature, similar to a WordPress plugin."
+#: src/Services/Settings/Modules.php:56
+msgid "Build professional blogs effortlessly with features tailored for both beginners and experienced bloggers."
 msgstr ""
 
-#: src/Services/Settings/Modules.php:53
+#: src/Services/Settings/Modules.php:59
 msgid "Motion Effects"
 msgstr ""
 
-#: src/Services/Settings/Modules.php:54
+#: src/Services/Settings/Modules.php:60
 msgid "Bring your website to life with dynamic motion effects!"
 msgstr ""
 
-#: src/Services/Settings/Modules.php:57
+#: src/Services/Settings/Modules.php:63
 msgid "Blocks"
 msgstr ""
 
-#: src/Services/Settings/Modules.php:58
+#: src/Services/Settings/Modules.php:64
 msgid "Blocks or block variations provided by this plugin."
 msgstr ""
 
-#: src/Services/Settings/Modules.php:61
+#: src/Services/Settings/Modules.php:67
 msgid "Block Extensions"
 msgstr ""
 
-#: src/Services/Settings/Modules.php:62
+#: src/Services/Settings/Modules.php:68
 msgid "Take your WordPress editing experience to the next level!"
 msgstr ""
 
-#: src/Services/Settings/Modules.php:65
+#: src/Services/Settings/Modules.php:71
 msgid "Block Styles"
 msgstr ""
 
-#: src/Services/Settings/Modules.php:66
+#: src/Services/Settings/Modules.php:72
 msgid "Empower your creativity: visual CSS tools for your design!"
 msgstr ""
 
@@ -490,6 +506,7 @@ msgid "Upgrade to %s to access these features:"
 msgstr ""
 
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:74
+#: static/scripts/block-extensions/magazine-layout/inspector.jsx:93
 #: static/scripts/block-extensions/particles/ParticlesControl.jsx:74
 #: static/scripts/block-extensions/particles/ParticlesControl.jsx:141
 #: static/scripts/block-extensions/rough-notation/edit.jsx:133
@@ -518,6 +535,7 @@ msgid "More highlight themes"
 msgstr ""
 
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:102
+#: static/scripts/block-extensions/magazine-layout/inspector.jsx:98
 #: static/scripts/block-extensions/shape-divider/ShapeDividerControls.jsx:47
 msgid "Upgrade Now ↗"
 msgstr ""
@@ -590,6 +608,52 @@ msgstr ""
 msgid "Insert a SVG icon."
 msgstr ""
 
+#: static/scripts/block-extensions/magazine-layout/edit.jsx:313
+msgid "No results found."
+msgstr ""
+
+#: static/scripts/block-extensions/magazine-layout/index.jsx:136
+msgid "Post Template"
+msgstr ""
+
+#: static/scripts/block-extensions/magazine-layout/inspector.jsx:75
+msgid "Plover: Magazine Layout"
+msgstr ""
+
+#. translators: %s is the premium text and link.
+#: static/scripts/block-extensions/magazine-layout/inspector.jsx:91
+#, js-format
+msgid "Upgrade to %s to unlock all magazine layouts."
+msgstr ""
+
+#: static/scripts/block-extensions/magazine-layout/inspector.jsx:104
+msgid "Max Height"
+msgstr ""
+
+#: static/scripts/block-extensions/magazine-layout/variations/magazine-query.js:15
+msgid "Plover: Magazine Query"
+msgstr ""
+
+#: static/scripts/block-extensions/magazine-layout/variations/magazine-query.js:17
+msgid "Query block for Magazine layout design."
+msgstr ""
+
+#: static/scripts/block-extensions/magazine-layout/variations/magazine-template.js:14
+msgid "Plover: Magazine Template"
+msgstr ""
+
+#: static/scripts/block-extensions/magazine-layout/variations/magazine-template.js:16
+msgid "Elevate your WordPress site with the Magazine Block dynamic content presentation."
+msgstr ""
+
+#: static/scripts/block-extensions/magazine-layout/variations/post-featured-image-cover.js:13
+msgid "Plover: Featured Image Cover"
+msgstr ""
+
+#: static/scripts/block-extensions/magazine-layout/variations/post-featured-image-cover.js:15
+msgid "Post's featured image with title overlay and full height."
+msgstr ""
+
 #: static/scripts/block-extensions/particles/controls/colors.jsx:75
 msgid "Add color"
 msgstr ""
@@ -598,11 +662,11 @@ msgstr ""
 msgid "Remove this color"
 msgstr ""
 
-#: static/scripts/block-extensions/particles/index.jsx:142
+#: static/scripts/block-extensions/particles/index.jsx:137
 msgid "Plover: Particles"
 msgstr ""
 
-#: static/scripts/block-extensions/particles/index.jsx:143
+#: static/scripts/block-extensions/particles/index.jsx:138
 msgid "A cover block with particles effect."
 msgstr ""
 

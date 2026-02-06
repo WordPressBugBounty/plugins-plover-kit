@@ -459,7 +459,8 @@ class Enqueue {
 			$localize_handle,
 			'PloverEditor',
 			apply_filters( 'plover_core_editor_data', array(
-				'upsell' => 'https://wpplover.com/plugins/plover-kit/#plans',
+				'upsell'          => 'https://wpplover.com/plugins/plover-kit/#plans',
+				'core_assets_url' => $this->core->core_url( 'assets' )
 			) )
 		);
 		wp_enqueue_script( $localize_handle );
@@ -502,7 +503,10 @@ class Enqueue {
 			wp_localize_script(
 				$localize_handle,
 				'PloverDashboard',
-				apply_filters( 'plover_core_dashboard_data', array() )
+				apply_filters( 'plover_core_dashboard_data', array(
+					'upsell'          => 'https://wpplover.com/plugins/plover-kit/#plans',
+					'core_assets_url' => $this->core->core_url( 'assets' )
+				) )
 			);
 			wp_enqueue_script( $localize_handle );
 		}

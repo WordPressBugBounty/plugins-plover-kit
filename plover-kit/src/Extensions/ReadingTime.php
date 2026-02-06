@@ -27,7 +27,7 @@ class ReadingTime extends Extension {
             'icon'    => esc_url( plover_kit()->app_url( 'assets/images/reading-time-block.png' ) ),
             'doc'     => 'https://wpplover.com/docs/plover-kit/modules/reading-time-block/',
             'fields'  => $fields,
-            'group'   => 'default',
+            'group'   => 'blog-tools',
         ) );
     }
 

@@ -1,3 +1,13 @@
+= 1.2.7 =
+
+* Add: Link style for navigation block
+* Add: New magazine layout module
+
+= 1.2.6 =
+
+* Fix: Colors component variant missing error
+* Ref: Update color popover component
+
 = 1.2.5 =
 
 * Add: Colors component

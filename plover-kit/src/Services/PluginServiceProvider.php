@@ -11,10 +11,12 @@ use Plover\Kit\Extensions\Counter;
 use Plover\Kit\Extensions\IconLibrary;
 use Plover\Kit\Extensions\Measures;
 use Plover\Kit\Extensions\PatternLibrary;
+use Plover\Kit\Extensions\Preloader;
 use Plover\Kit\Extensions\PremiumDisplay;
 use Plover\Kit\Extensions\PremiumEntranceAnimation;
 use Plover\Kit\Extensions\PremiumHighlight;
 use Plover\Kit\Extensions\PremiumHoverAnimation;
+use Plover\Kit\Extensions\PremiumMagazine;
 use Plover\Kit\Extensions\PremiumParticles;
 use Plover\Kit\Extensions\PremiumShapeDivider;
 use Plover\Kit\Extensions\PremiumSticky;
@@ -41,12 +43,13 @@ class PluginServiceProvider extends ServiceProvider {
     public function boot( Extensions $extensions, Styles $styles ) {
         $app = plover_kit();
         add_action( 'init', [$this, 'register_plugin_packages'] );
-        add_filter( 'plover_core_dashboard_data', [$this, 'localize_current_plan'] );
-        add_filter( 'plover_core_editor_data', [$this, 'localize_current_plan'] );
+        add_filter( 'plover_core_dashboard_data', [$this, 'localize_plugin_data'] );
+        add_filter( 'plover_core_editor_data', [$this, 'localize_plugin_data'] );
         $extensions->register( 'plover-kit-code-snippets', CodeSnippets::class );
         $extensions->register( 'plover-kit-icons', IconLibrary::class );
         $extensions->register( 'plover-kit-reading-time', ReadingTime::class );
         $extensions->register( 'plover-kit-breadcrumb', Breadcrumb::class );
+        $extensions->register( 'plover-kit-preloader', Preloader::class );
         $extensions->register( 'plover-kit-toc', TableOfContents::class );
         $extensions->register( 'plover-kit-patterns', PatternLibrary::class );
         $extensions->register( 'plover-kit-measures', Measures::class );
@@ -95,11 +98,13 @@ class PluginServiceProvider extends ServiceProvider {
      *
      * @return mixed
      */
-    public function localize_current_plan( $data ) {
+    public function localize_plugin_data( $data ) {
         $data['plan'] = ( plover_fs()->can_use_premium_code() ? 'premium' : 'free' );
         // $data['upsell']   = esc_url( admin_url( 'admin.php?page=plover-kit-pricing' ) );
         $data['upsell'] = 'https://wpplover.com/plugins/plover-kit/#plans';
         $data['is_debug'] = plover_kit_is_debug();
+        $data['assets_url'] = plover_kit()->app_url( 'assets' );
+        $data['version'] = ( plover_kit_is_debug() ? time() : PLOVER_KIT_VERSION );
         return $data;
     }
 

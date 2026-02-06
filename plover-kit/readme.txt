@@ -1,9 +1,9 @@
 === Plover Kit - Blocks, Patterns and Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.5.5
+Stable tag: 1.5.8
 Requires at least: 6.2
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -19,6 +19,10 @@ Plover kit provide pattern library and pluggable modules that enhance the Gutenb
 #### [Pattern Library](https://wpplover.com/docs/plover-kit/modules/pattern-library/)
 
 Add beautiful, ready-to-go layouts to your site with one click.
+
+#### [Magzine Layout](https://wpplover.com/docs/plover-kit/modules/magazine-layout/)
+
+Elevate your WordPress site with the Magazine Layout dynamic content presentation.
 
 #### [Table of Contents](https://wpplover.com/docs/plover-kit/modules/table-of-contents/)
 
@@ -106,6 +110,10 @@ Add icons to your design! 2000+ free icons available!
 
 Icon library allows you to manage icon libraries and upload your custom SVG icons.
 
+#### [Preloader](https://wpplover.com/docs/plover-kit/modules/preloader/)
+
+Animated elements that appear while website content loads make waiting more enjoyable.
+
 == Privacy ==
 
 The following features of this plugin require access to our [external services](https://api.wpplover.com/).
@@ -131,15 +139,39 @@ No, it only works with the block editor.
 
 == Screenshots ==
 
-1. Plover Kit Modules Management Screen
-2. Block Shadow Preview
-3. Block Sticky Options
-4. Code Highlight Options and Preview
-5. Icon Library Settings
-6. Icon Button & Icon Block
-7. JavaScript Event Handler
+1. Plover Kit Modules Screen 01
+2. Plover Kit Modules Screen 02
+3. Pattern Library
+4. Particles Effect
+5. Table of Contents
+6. Breadcrumb Settings
+7. Shape Divider
+8. Rough Notation
+9. Code Highlight Options and Preview
+10. Preloader
+11. Block Shadow Preview
+12. Block Sticky Options
+13. Icon Library Preloaders
+14. Icon Button & Icon Block
+15. JavaScript Event Handler
 
 == Changelog ==
+
+= 1.5.8 =
+
+* Ref: Update core to v1.2.7
+* Add: New magazine layout module
+
+= 1.5.7 =
+
+* Ref: WordPress v6.9 compatible
+* Ref: Update Freemius SDK
+* Fix: `sprintf` missing in toc extension
+
+= 1.5.6 =
+
+* Add: New Preloader module
+* Ref: Update Freemius SDK
 
 = 1.5.5 =
 

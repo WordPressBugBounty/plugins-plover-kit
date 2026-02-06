@@ -1,15 +1,15 @@
-# Copyright (C) 2025 WP Plover
+# Copyright (C) 2026 WP Plover
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plover Kit 1.5.5\n"
+"Project-Id-Version: Plover Kit 1.5.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plover-kit\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-09-13T07:21:47+00:00\n"
+"POT-Creation-Date: 2026-01-27T02:06:11+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover-kit\n"
@@ -261,7 +261,7 @@ msgid "Default Home Item"
 msgstr ""
 
 #: src/Extensions/Breadcrumb.php:145
-#: src/Extensions/TableOfContents.php:149
+#: src/Extensions/TableOfContents.php:150
 #: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:59
 #: static/scripts/block-extensions/typing-animation__premium_only/TypingAnimationPanel.js:55
 #: static/scripts/block-extensions/typing-animation__premium_only/TypingAnimationPanel.js:86
@@ -450,6 +450,38 @@ msgstr ""
 
 #: src/Extensions/PatternLibrary.php:22
 msgid "Add beautiful, ready-to-go layouts to your site with one click."
+msgstr ""
+
+#: src/Extensions/Preloader.php:21
+msgid "Preloader"
+msgstr ""
+
+#: src/Extensions/Preloader.php:22
+msgid "Animated elements that appear while website content loads make waiting more enjoyable."
+msgstr ""
+
+#: src/Extensions/Preloader.php:164
+msgid "Spinner"
+msgstr ""
+
+#: src/Extensions/Preloader.php:179
+msgid "Dots"
+msgstr ""
+
+#: src/Extensions/Preloader.php:194
+msgid "Bars"
+msgstr ""
+
+#: src/Extensions/Preloader.php:206
+msgid "Pie"
+msgstr ""
+
+#: src/Extensions/Preloader.php:212
+msgid "Progress"
+msgstr ""
+
+#: src/Extensions/Preloader.php:218
+msgid "Wobbling"
 msgstr ""
 
 #: src/Extensions/PremiumEntranceAnimation.php:31
@@ -724,7 +756,7 @@ msgid "The default scrolling duration in milliseconds. Only works when JavaScrip
 msgstr ""
 
 #: src/Extensions/TableOfContents.php:99
-#: src/Extensions/TableOfContents.php:331
+#: src/Extensions/TableOfContents.php:332
 msgid "Table of Contents"
 msgstr ""
 
@@ -732,7 +764,7 @@ msgstr ""
 msgid "Introduce a Table of Contents block to your posts and pages."
 msgstr ""
 
-#: src/Extensions/TableOfContents.php:145
+#: src/Extensions/TableOfContents.php:146
 msgid "Hashtag"
 msgstr ""
 
@@ -1227,6 +1259,7 @@ msgid "Custom Home Text"
 msgstr ""
 
 #: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:105
+#: static/scripts/block-extensions/preloader/layout/Settings.jsx:73
 msgid "Background"
 msgstr ""
 
@@ -1582,12 +1615,12 @@ msgstr[1] ""
 msgid "Delete this library"
 msgstr ""
 
-#: static/scripts/block-extensions/icon-library/components/IconCollection.jsx:74
+#: static/scripts/block-extensions/icon-library/components/IconCollection.jsx:75
 #: static/scripts/block-extensions/icon-library/components/IconLibrary.jsx:96
 msgid "icons selected"
 msgstr ""
 
-#: static/scripts/block-extensions/icon-library/components/IconCollection.jsx:107
+#: static/scripts/block-extensions/icon-library/components/IconCollection.jsx:110
 msgid "Upgrade to the Premium plan to access this icon collection."
 msgstr ""
 
@@ -1677,6 +1710,7 @@ msgid "Available collections"
 msgstr ""
 
 #: static/scripts/block-extensions/icon-library/layout/Sidebar.jsx:128
+#: static/scripts/block-extensions/preloader/layout/Sidebar.jsx:27
 msgid "premium"
 msgstr ""
 
@@ -1811,6 +1845,35 @@ msgstr ""
 #: static/scripts/block-extensions/particles__premium_only/override/speed/controls.js:28
 #: static/scripts/block-extensions/particles__premium_only/override/speed/controls.js:43
 msgid "Particles speed"
+msgstr ""
+
+#: static/scripts/block-extensions/preloader/layout/Content.jsx:46
+msgid "Upgrade Now – Turn Waiting into WOW!"
+msgstr ""
+
+#: static/scripts/block-extensions/preloader/layout/Content.jsx:47
+msgid "From boring to brilliant, we offer 150+ Loader styles make waiting no longer boring for users."
+msgstr ""
+
+#: static/scripts/block-extensions/preloader/layout/Settings.jsx:40
+msgid "Current Preloader"
+msgstr ""
+
+#: static/scripts/block-extensions/preloader/layout/Settings.jsx:44
+msgid "Clear"
+msgstr ""
+
+#: static/scripts/block-extensions/preloader/layout/Settings.jsx:66
+msgid "Colors"
+msgstr ""
+
+#: static/scripts/block-extensions/preloader/layout/Settings.jsx:75
+msgid "Loader"
+msgstr ""
+
+#: static/scripts/block-extensions/preloader/layout/Settings.jsx:88
+#: static/scripts/dashboard/ModuleSettings.jsx:131
+msgid "Save Changes"
 msgstr ""
 
 #: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:76
@@ -2052,10 +2115,6 @@ msgstr ""
 
 #: static/scripts/dashboard/ModuleSettings.jsx:82
 msgid "Reset to default"
-msgstr ""
-
-#: static/scripts/dashboard/ModuleSettings.jsx:131
-msgid "Save Changes"
 msgstr ""
 
 #: static/scripts/dashboard/NotResult.jsx:12

@@ -39,6 +39,7 @@ class TableOfContents extends Extension {
             'icon'    => esc_url( plover_kit()->app_url( 'assets/images/table-of-contents.png' ) ),
             'doc'     => 'https://wpplover.com/docs/plover-kit/modules/table-of-contents/',
             'fields'  => $fields,
+            'group'   => 'blog-tools',
         ) );
     }
 

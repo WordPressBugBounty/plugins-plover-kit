@@ -41,30 +41,41 @@ class Modules {
 		$this->core     = $core;
 		$this->settings = $settings;
 
-		$this->register_group( 'theme', array(
-			'label'       => __( 'Theme', 'plover' ),
-			'description' => __( 'Extensions provided by the active theme.', 'plover' ),
+		$module_groups = apply_filters( 'plover_core_module_groups', array(
+			'default'        => array(
+				'label'       => __( 'Modules', 'plover' ),
+				'description' => __( 'Standalone feature, similar to a WordPress plugin.', 'plover' ),
+			),
+			'theme'          => array(
+				'order'       => 5,
+				'label'       => __( 'Theme', 'plover' ),
+				'description' => __( 'Extensions provided by the active theme.', 'plover' ),
+			),
+			'blog-tools'     => array(
+				'label'       => __( 'Blog Tools', 'plover' ),
+				'description' => __( 'Build professional blogs effortlessly with features tailored for both beginners and experienced bloggers.', 'plover' ),
+			),
+			'motion-effects' => array(
+				'label'       => __( 'Motion Effects', 'plover' ),
+				'description' => __( 'Bring your website to life with dynamic motion effects!', 'plover' ),
+			),
+			'blocks'         => array(
+				'label'       => __( 'Blocks', 'plover' ),
+				'description' => __( 'Blocks or block variations provided by this plugin.', 'plover' ),
+			),
+			'extensions'     => array(
+				'label'       => __( 'Block Extensions', 'plover' ),
+				'description' => __( 'Take your WordPress editing experience to the next level!', 'plover' ),
+			),
+			'supports'       => array(
+				'label'       => __( 'Block Styles', 'plover' ),
+				'description' => __( 'Empower your creativity: visual CSS tools for your design!', 'plover' ),
+			)
 		) );
-		$this->register_group( 'default', array(
-			'label'       => __( 'Modules', 'plover' ),
-			'description' => __( 'Standalone feature, similar to a WordPress plugin.', 'plover' ),
-		) );
-		$this->register_group( 'motion-effects', array(
-			'label'       => __( 'Motion Effects', 'plover' ),
-			'description' => __( 'Bring your website to life with dynamic motion effects!', 'plover' ),
-		) );
-		$this->register_group( 'blocks', array(
-			'label'       => __( 'Blocks', 'plover' ),
-			'description' => __( 'Blocks or block variations provided by this plugin.', 'plover' ),
-		) );
-		$this->register_group( 'extensions', array(
-			'label'       => __( 'Block Extensions', 'plover' ),
-			'description' => __( 'Take your WordPress editing experience to the next level!', 'plover' ),
-		) );
-		$this->register_group( 'supports', array(
-			'label'       => __( 'Block Styles', 'plover' ),
-			'description' => __( 'Empower your creativity: visual CSS tools for your design!', 'plover' ),
-		) );
+
+		foreach ( $module_groups as $name => $module ) {
+			$this->register_group( $name, $module );
+		}
 
 		add_filter( 'plover_core_dashboard_data', function ( $data ) {
 			$data['modules']       = array_map( function ( $module ) {
@@ -90,7 +101,7 @@ class Modules {
 	 * @return void
 	 */
 	public function register_group( $slug, $args = array() ) {
-		static $order = 0;
+		static $order = 10;
 
 		$args = wp_parse_args( $args, array(
 			'label'       => '',

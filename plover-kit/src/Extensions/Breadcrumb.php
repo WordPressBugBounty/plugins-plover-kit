@@ -26,12 +26,12 @@ class Breadcrumb extends Extension {
             'icon'    => esc_url( plover_kit()->app_url( 'assets/images/breadcrumb.png' ) ),
             'doc'     => 'https://wpplover.com/docs/plover-kit/modules/breadcrumb/',
             'fields'  => $fields,
-            'group'   => 'default',
+            'group'   => 'blog-tools',
         ) );
     }
 
     /**
-     * Boot reading time block extension
+     * Boot breadcrumb block extension
      *
      * @return void
      */

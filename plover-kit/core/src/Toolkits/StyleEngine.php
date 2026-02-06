@@ -74,11 +74,12 @@ class StyleEngine {
 	 * Compile css declarations to string
 	 *
 	 * @param array $declarations
+	 * @param string $css_selector
 	 *
 	 * @return string
 	 */
-	public static function compile_css( array $declarations ): string {
-		return \WP_Style_Engine::compile_css( $declarations, '' );
+	public static function compile_css( array $declarations, $css_selector = '' ): string {
+		return \WP_Style_Engine::compile_css( $declarations, $css_selector );
 	}
 
 	/**

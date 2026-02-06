@@ -288,6 +288,7 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 			$blocks->extend( new \Plover\Core\Blocks\CoreList() );
 			$blocks->extend( new \Plover\Core\Blocks\PageList() );
 			$blocks->extend( new \Plover\Core\Blocks\TagCloud() );
+			$blocks->extend( new \Plover\Core\Blocks\Navigation() );
 			$blocks->extend( new \Plover\Core\Blocks\PloverDocList() );
 			// extend block supports
 			foreach ( $this->block_supports as $block_name => $supports ) {
@@ -308,6 +309,7 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 			$extensions->register( 'hover-animation', \Plover\Core\Extensions\HoverAnimation::class );
 			$extensions->register( 'entrance-animation', \Plover\Core\Extensions\EntranceAnimation::class );
 			$extensions->register( 'rough-notation', \Plover\Core\Extensions\RoughNotation::class );
+			$extensions->register( 'magazine-template', \Plover\Core\Extensions\Magazine::class );
 		}, 5 );
 	}
 
