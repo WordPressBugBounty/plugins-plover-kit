@@ -37,7 +37,6 @@ class PageList implements HasSupports, RenderableBlock {
 					'blockGap' => true,
 				],
 			],
-
 			'color'                => [
 				'gradients'                     => true,
 				'link'                          => true,
@@ -75,24 +74,6 @@ class PageList implements HasSupports, RenderableBlock {
 		$list  = $html->get_element_by_tags_priority( array( 'ul', 'ol' ) );
 		if ( ! $list ) {
 			return $block_content;
-		}
-
-		$list_styles = wp_style_engine_get_styles(
-			array(
-				'color'   => StyleEngine::get_block_color_styles( $attrs ),
-				'border'  => StyleEngine::get_block_border_styles( $attrs ),
-				'spacing' => array(
-					'padding' => $attrs['style']['spacing']['padding'] ?? null,
-					'margin'  => $attrs['style']['spacing']['margin'] ?? null,
-				),
-			)
-		);
-
-		if ( ! empty( $list_styles['classnames'] ) ) {
-			$list->add_classnames( $list_styles['classnames'] );
-		}
-		if ( ! empty( $list_styles['declarations'] ) ) {
-			$list->add_styles( $list_styles['declarations'] );
 		}
 
 		$gap = StyleEngine::get_block_gap_value( $attrs );

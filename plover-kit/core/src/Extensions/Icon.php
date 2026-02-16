@@ -456,10 +456,25 @@ class Icon extends Extension {
 	public function register_reset_api() {
 		$router = Router::v1();
 
+		$router->read( '/icon-libraries', array( $this, 'icon_libraries_api' ) )
+		       ->use( array( Auth::class, 'can_edit_posts' ) );
 		$router->read( '/icons/(?P<library>[0-9|a-z|_-]+)', array( $this, 'icons_api' ) )
 		       ->use( array( Auth::class, 'can_edit_posts' ) );
 
 		$router->register();
+	}
+
+	/**
+	 *  Rest api for getting icon libraries
+	 *
+	 * @param \WP_REST_Request|null $request
+	 *
+	 * @return \WP_Error|\WP_HTTP_Response|\WP_REST_Response
+	 * 
+	 * @since 1.2.8
+	 */
+	public function icon_libraries_api( ?\WP_REST_Request $request ) {
+		return rest_ensure_response( array( 'libraries' => $this->icons->get_libraries() ) );
 	}
 
 	/**

@@ -32,6 +32,11 @@ class Navigation implements HasSupports, RenderableBlock {
 				'gradients'                     => false,
 				'link'                          => true,
 			],
+			'spacing'                 => [
+				'padding'  => true,
+				'margin'   => true,
+				'blockGap' => true,
+			],
 		];
 	}
 

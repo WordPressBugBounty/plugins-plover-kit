@@ -1,3 +1,9 @@
+= 1.2.8 =
+
+* Ref: Update icon library
+* Ref: Implement additional core block supports from the server side
+* Add: Spacing & Border support for core/query-pagination block
+
 = 1.2.7 =
 
 * Add: Link style for navigation block

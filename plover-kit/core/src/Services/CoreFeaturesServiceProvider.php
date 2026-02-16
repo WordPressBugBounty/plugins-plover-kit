@@ -17,6 +17,23 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 	 * @var \array[][]
 	 */
 	protected $block_supports = [
+		'core/query-pagination' 	  => [
+			'spacing'                 => [
+				'padding'  => true,
+				'margin'   => true,
+				'blockGap' => true,
+			],
+			'__experimentalBorder'    => [
+				'radius'                        => true,
+				'width'                         => true,
+				'color'                         => true,
+				'style'                         => true,
+				'__experimentalDefaultControls' => [
+					'width' => true,
+					'color' => true,
+				],
+			],
+		],
 		'core/columns'             => [
 			'ploverEntranceAnimation' => true,
 			'ploverSticky'            => true,
@@ -273,6 +290,28 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 				]
 			]
 		],
+		'core/site-logo'		   => [
+			'color'                => [
+				'background' => true,
+				'gradients'  => true,
+				'link'       => false,
+				'text'       => true,
+			],
+			'__experimentalBorder' => [
+				'radius'                        => true,
+				'width'                         => true,
+				'color'                         => true,
+				'style'                         => true,
+				'__experimentalDefaultControls' => [
+					'width' => false,
+					'color' => false,
+				],
+			],
+			'ploverShadow'         => [
+				'drop' => true,
+				'box'  => true,
+			]
+		],
 	];
 
 	/**
@@ -283,7 +322,6 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 
 		$this->core->registered( function ( Blocks $blocks, Extensions $extensions ) {
 			// extend core blocks
-			$blocks->extend( new \Plover\Core\Blocks\SiteLogo() );
 			$blocks->extend( new \Plover\Core\Blocks\Code() );
 			$blocks->extend( new \Plover\Core\Blocks\CoreList() );
 			$blocks->extend( new \Plover\Core\Blocks\PageList() );

@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-01-26T13:40:08+00:00\n"
+"POT-Creation-Date: 2026-02-16T10:33:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover\n"
@@ -236,7 +236,7 @@ msgstr ""
 msgid "download"
 msgstr ""
 
-#: src/Extensions/Icon.php:478
+#: src/Extensions/Icon.php:493
 msgid "No such icon library."
 msgstr ""
 
@@ -485,8 +485,8 @@ msgid "Highlight"
 msgstr ""
 
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:34
-#: static/scripts/block-extensions/icon/IconControls.jsx:180
-#: static/scripts/block-extensions/icon/IconControls.jsx:181
+#: static/scripts/block-extensions/icon/IconControls.jsx:215
+#: static/scripts/block-extensions/icon/IconControls.jsx:216
 #: static/scripts/block-extensions/rough-notation/edit.jsx:95
 #: static/scripts/block-extensions/shape-divider/ShapesSelect.jsx:43
 #: static/scripts/block-supports/display/DisplayPanel.jsx:48
@@ -540,37 +540,17 @@ msgstr ""
 msgid "Upgrade Now ↗"
 msgstr ""
 
-#: static/scripts/block-extensions/icon/IconControls.jsx:59
-msgid "Filter"
-msgstr ""
-
-#: static/scripts/block-extensions/icon/IconControls.jsx:114
-msgid "No icons"
-msgstr ""
-
-#: static/scripts/block-extensions/icon/IconControls.jsx:156
-msgid "Icon library"
-msgstr ""
-
-#: static/scripts/block-extensions/icon/IconControls.jsx:172
-msgid "Select icon"
-msgstr ""
-
-#: static/scripts/block-extensions/icon/IconControls.jsx:206
-msgid "Icon"
-msgstr ""
-
 #. translators: %s is the plover kit plugin name
-#: static/scripts/block-extensions/icon/IconControls.jsx:219
+#: static/scripts/block-extensions/icon/IconControls.jsx:51
 #, js-format
-msgid "Use the %s plugin to get more icons from the Icon Library."
+msgid "Install the %s plugin to get more icons from the Icon Library."
 msgstr ""
 
-#: static/scripts/block-extensions/icon/IconControls.jsx:220
+#: static/scripts/block-extensions/icon/IconControls.jsx:52
 msgid "Plover Kit"
 msgstr ""
 
-#: static/scripts/block-extensions/icon/IconControls.jsx:224
+#: static/scripts/block-extensions/icon/IconControls.jsx:56
 #: static/scripts/block-supports/display/DisplayPanel.jsx:158
 #: static/scripts/block-supports/entrance-animation/EntranceAnimationPanel.jsx:80
 #: static/scripts/block-supports/event-handler/EventHandlerPanel.js:81
@@ -580,23 +560,43 @@ msgstr ""
 msgid "Documentation ↗"
 msgstr ""
 
-#: static/scripts/block-extensions/icon/IconControls.jsx:232
+#: static/scripts/block-extensions/icon/IconControls.jsx:85
+msgid "Filter"
+msgstr ""
+
+#: static/scripts/block-extensions/icon/IconControls.jsx:140
+msgid "No icons"
+msgstr ""
+
+#: static/scripts/block-extensions/icon/IconControls.jsx:191
+msgid "Icon library"
+msgstr ""
+
+#: static/scripts/block-extensions/icon/IconControls.jsx:207
+msgid "Select icon"
+msgstr ""
+
+#: static/scripts/block-extensions/icon/IconControls.jsx:249
+msgid "Icon"
+msgstr ""
+
+#: static/scripts/block-extensions/icon/IconControls.jsx:260
 msgid "Icon position"
 msgstr ""
 
-#: static/scripts/block-extensions/icon/IconControls.jsx:240
+#: static/scripts/block-extensions/icon/IconControls.jsx:268
 msgid "Left"
 msgstr ""
 
-#: static/scripts/block-extensions/icon/IconControls.jsx:241
+#: static/scripts/block-extensions/icon/IconControls.jsx:269
 msgid "Right"
 msgstr ""
 
-#: static/scripts/block-extensions/icon/IconControls.jsx:246
+#: static/scripts/block-extensions/icon/IconControls.jsx:274
 msgid "Icon Size"
 msgstr ""
 
-#: static/scripts/block-extensions/icon/IconControls.jsx:264
+#: static/scripts/block-extensions/icon/IconControls.jsx:292
 msgid "Clear icon"
 msgstr ""
 

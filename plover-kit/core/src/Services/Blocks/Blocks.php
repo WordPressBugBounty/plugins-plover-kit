@@ -52,8 +52,16 @@ class Blocks {
 			return $data;
 		} );
 
-		// Server side register ploverBlockID attribute
 		add_filter( 'register_block_type_args', function ( $args, $name ) {
+			// Add additional block supports
+			if ( isset( $this->block_supports[$name] ) ) {
+				$args['supports'] = array_merge(
+					isset($args['supports']) && is_array($args['supports']) ? $args['supports']: array(),
+					$this->block_supports[$name]
+				);
+			}
+			
+			// Server side register ploverBlockID attribute
 			if ( isset( $args['attributes'] ) ) {
 				$args['attributes'] = array_merge( $args['attributes'], array(
 					'ploverBlockID' => array(

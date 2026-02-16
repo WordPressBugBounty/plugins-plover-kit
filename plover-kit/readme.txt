@@ -1,7 +1,7 @@
 === Plover Kit - Blocks, Patterns and Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.5.8
+Stable tag: 1.5.9
 Requires at least: 6.2
 Tested up to: 6.9
 Requires PHP: 7.4
@@ -156,6 +156,11 @@ No, it only works with the block editor.
 15. JavaScript Event Handler
 
 == Changelog ==
+
+= 1.5.9 =
+
+* Ref: Update icon library design
+* Ref: Update core to v1.2.8
 
 = 1.5.8 =
 
