@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plover Kit 1.5.9\n"
+"Project-Id-Version: Plover Kit 1.5.10\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plover-kit\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-16T10:47:29+00:00\n"
+"POT-Creation-Date: 2026-02-23T15:46:07+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover-kit\n"
@@ -722,18 +722,21 @@ msgid "Default alignment of the heading in the resulting viewport. Only works wh
 msgstr ""
 
 #: src/Extensions/TableOfContents.php:66
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:137
 #: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:97
 #: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:51
 msgid "Top"
 msgstr ""
 
 #: src/Extensions/TableOfContents.php:67
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:136
 #: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:98
 #: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:52
 msgid "Middle"
 msgstr ""
 
 #: src/Extensions/TableOfContents.php:68
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:138
 #: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:99
 #: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:53
 msgid "Bottom"
@@ -920,7 +923,7 @@ msgstr ""
 #: assets/js/patterns/index.js:1
 #: static/blocks/patterns/components/pattern-actions.jsx:31
 #: static/scripts/dashboard/Module.jsx:86
-#: static/scripts/dashboard/PrimarySidebar.jsx:79
+#: static/scripts/dashboard/PrimarySidebar.jsx:86
 msgid "Upgrade"
 msgstr ""
 
@@ -1104,7 +1107,7 @@ msgstr ""
 #: static/blocks/toc/edit.jsx:198
 #: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:74
 #: static/scripts/dashboard/Module.jsx:92
-#: static/scripts/dashboard/ModuleSettings.jsx:151
+#: static/scripts/dashboard/ModuleSettings.jsx:157
 msgid "Settings"
 msgstr ""
 
@@ -1378,7 +1381,7 @@ msgid "Edit"
 msgstr ""
 
 #: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:160
-#: static/scripts/dashboard/PrimarySidebar.jsx:66
+#: static/scripts/dashboard/PrimarySidebar.jsx:70
 msgid "Upgrade to Premium"
 msgstr ""
 
@@ -1701,11 +1704,15 @@ msgstr ""
 msgid "Manage the icons on your site"
 msgstr ""
 
-#: static/scripts/block-extensions/icon-library/layout/IconLibraryModal.jsx:30
+#: static/scripts/block-extensions/icon-library/layout/IconLibraryModal.jsx:69
+msgid "Enable Icon Library"
+msgstr ""
+
+#: static/scripts/block-extensions/icon-library/layout/IconLibraryModal.jsx:84
 msgid "Plover Icon library"
 msgstr ""
 
-#: static/scripts/block-extensions/icon-library/layout/IconLibraryModal.jsx:48
+#: static/scripts/block-extensions/icon-library/layout/IconLibraryModal.jsx:118
 msgid "Manage All Icons"
 msgstr ""
 
@@ -1720,6 +1727,46 @@ msgstr ""
 #: static/scripts/block-extensions/icon-library/layout/Sidebar.jsx:128
 #: static/scripts/block-extensions/preloader/layout/Sidebar.jsx:27
 msgid "premium"
+msgstr ""
+
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:28
+msgid "Plover: Inline Icon"
+msgstr ""
+
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:126
+msgid "Vertical Align"
+msgstr ""
+
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:135
+msgid "Baseline"
+msgstr ""
+
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:139
+msgid "Text Top"
+msgstr ""
+
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:140
+msgid "Text Bottom"
+msgstr ""
+
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:141
+msgid "Superscript"
+msgstr ""
+
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:142
+msgid "Subscript"
+msgstr ""
+
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:147
+msgid "Icon Size"
+msgstr ""
+
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:157
+msgid "Color"
+msgstr ""
+
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:163
+msgid "Icon Color"
 msgstr ""
 
 #: static/scripts/block-extensions/measures/MeasuresPanel.jsx:26
@@ -1880,7 +1927,7 @@ msgid "Loader"
 msgstr ""
 
 #: static/scripts/block-extensions/preloader/layout/Settings.jsx:88
-#: static/scripts/dashboard/ModuleSettings.jsx:131
+#: static/scripts/dashboard/ModuleSettings.jsx:136
 msgid "Save Changes"
 msgstr ""
 
@@ -2101,27 +2148,27 @@ msgid "Add Word"
 msgstr ""
 
 #: static/scripts/dashboard/Module.jsx:80
-#: static/scripts/dashboard/PrimarySidebar.jsx:34
+#: static/scripts/dashboard/PrimarySidebar.jsx:35
 msgid "Documentation"
 msgstr ""
 
-#: static/scripts/dashboard/ModuleDetails.jsx:23
+#: static/scripts/dashboard/ModuleDetails.jsx:24
 msgid "Description"
 msgstr ""
 
-#: static/scripts/dashboard/Modules.jsx:82
+#: static/scripts/dashboard/Modules.jsx:88
 msgid "Toggle all"
 msgstr ""
 
-#: static/scripts/dashboard/Modules.jsx:90
+#: static/scripts/dashboard/Modules.jsx:96
 msgid "Filter..."
 msgstr ""
 
-#: static/scripts/dashboard/Modules.jsx:97
+#: static/scripts/dashboard/Modules.jsx:104
 msgid "Save changes"
 msgstr ""
 
-#: static/scripts/dashboard/ModuleSettings.jsx:82
+#: static/scripts/dashboard/ModuleSettings.jsx:84
 msgid "Reset to default"
 msgstr ""
 
@@ -2133,48 +2180,48 @@ msgstr ""
 msgid "Useful Links"
 msgstr ""
 
-#: static/scripts/dashboard/PrimarySidebar.jsx:21
+#: static/scripts/dashboard/PrimarySidebar.jsx:22
 msgid "Plugin Homepage"
 msgstr ""
 
-#: static/scripts/dashboard/PrimarySidebar.jsx:47
-#: static/scripts/dashboard/PrimarySidebar.jsx:93
+#: static/scripts/dashboard/PrimarySidebar.jsx:49
+#: static/scripts/dashboard/PrimarySidebar.jsx:101
 msgid "Support Forum"
 msgstr ""
 
-#: static/scripts/dashboard/PrimarySidebar.jsx:56
+#: static/scripts/dashboard/PrimarySidebar.jsx:60
 msgid "Rate Us 5 Stars"
 msgstr ""
 
-#: static/scripts/dashboard/PrimarySidebar.jsx:70
-msgid "Upgrade to Premium Edition to support our development and get more features and functionality to help you create powerful and feature-rich websites."
+#: static/scripts/dashboard/PrimarySidebar.jsx:74
+msgid "Take your site building to the next level with Premium. Unlock advanced modules and professional features that give you complete creative freedom — all while keeping your site fast with our modular design."
 msgstr ""
 
-#: static/scripts/dashboard/PrimarySidebar.jsx:84
+#: static/scripts/dashboard/PrimarySidebar.jsx:92
 msgid "Free vs Premium"
 msgstr ""
 
-#: static/scripts/dashboard/PrimarySidebar.jsx:97
+#: static/scripts/dashboard/PrimarySidebar.jsx:105
 msgid "If you have any question about using this plugin, feel free to create a new topic in the support forum."
 msgstr ""
 
-#: static/scripts/dashboard/PrimarySidebar.jsx:105
+#: static/scripts/dashboard/PrimarySidebar.jsx:118
 msgid "Create a Topic"
 msgstr ""
 
-#: static/scripts/dashboard/PrimarySidebar.jsx:112
+#: static/scripts/dashboard/PrimarySidebar.jsx:125
 msgid "Affiliation"
 msgstr ""
 
-#: static/scripts/dashboard/PrimarySidebar.jsx:117
+#: static/scripts/dashboard/PrimarySidebar.jsx:130
 msgid "Like the plugin? Become our ambassador and earn cash ;-)"
 msgstr ""
 
-#: static/scripts/dashboard/PrimarySidebar.jsx:120
+#: static/scripts/dashboard/PrimarySidebar.jsx:134
 msgid "Refer new customers to our plugin and earn 30% commission on each successful sale you refer!"
 msgstr ""
 
-#: static/scripts/dashboard/PrimarySidebar.jsx:139
+#: static/scripts/dashboard/PrimarySidebar.jsx:156
 msgid "Become an affiliate"
 msgstr ""
 

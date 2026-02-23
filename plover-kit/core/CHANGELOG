@@ -1,3 +1,12 @@
+= 1.2.9 =
+
+* Add: Add style and svg utils
+* Add: Inline Icon promation
+* Add: Z-Index control for particles block
+* Fix: .icon-library-not-available style error
+* Fix: Rough Notation may cause editor errors in certain situations
+* Ref: Move icons store to plover/data
+
 = 1.2.8 =
 
 * Ref: Update icon library

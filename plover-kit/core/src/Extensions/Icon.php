@@ -470,7 +470,7 @@ class Icon extends Extension {
 	 * @param \WP_REST_Request|null $request
 	 *
 	 * @return \WP_Error|\WP_HTTP_Response|\WP_REST_Response
-	 * 
+	 *
 	 * @since 1.2.8
 	 */
 	public function icon_libraries_api( ?\WP_REST_Request $request ) {

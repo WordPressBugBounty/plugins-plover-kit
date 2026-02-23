@@ -447,9 +447,17 @@ class TableOfContents extends Extension {
         $string_without_accents = remove_accents( $html_wo_nbs );
         // Sanitizes a title, replacing whitespace and a few other characters with dashes.
         $sanitized_string = sanitize_title_with_dashes( $string_without_accents );
-        // Encode for use in an url
-        $urlencoded = urlencode( $sanitized_string );
-        return $urlencoded;
+        // Keep letters, numbers, hyphens, and underscores, remove all other characters (such as emojis, special symbols, etc.).
+        $safe_id = preg_replace( '/[^\\p{L}\\p{N}_-]/u', '', $sanitized_string );
+        // If the result is empty (e.g., the title consists entirely of emojis), use the fallback ID.
+        if ( empty( $safe_id ) ) {
+            $safe_id = 'title-' . uniqid();
+        }
+        // Avoid IDs starting with numbers (to enhance CSS selector compatibility)
+        if ( preg_match( '/^[0-9]/', $safe_id ) ) {
+            $safe_id = 'title-' . $safe_id;
+        }
+        return $safe_id;
     }
 
 }

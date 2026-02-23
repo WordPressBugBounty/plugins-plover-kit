@@ -1,118 +1,74 @@
-=== Plover Kit - Blocks, Patterns and Editor Enhancements ===
+=== Plover Kit - Blocks, Patterns, and Gutenberg Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.5.9
-Requires at least: 6.2
+Stable tag: 1.5.10
 Tested up to: 6.9
-Requires PHP: 7.4
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Patterns library and all-in-one block editor enhancement toolkit.
+Enhance WordPress block editor: advanced controls, custom blocks, icons, animations, pattern library. Modular design, fast, no coding skills required.
 
 == Description ==
 
-Plover kit provide pattern library and pluggable modules that enhance the Gutenberg core blocks and also provide extended features. Creating unique and eye-catching web designs is pleasant and easy with the WordPress block editor and the extensions provided by Plover Kit.
+Tired of the limitations of the standard WordPress block editor? Plover Kit is a powerful WordPress blocks plugin that enhances the Gutenberg block editor with a beautiful pattern library, advanced custom blocks, and extensive design controls for core blocks. Add magazine layouts, table of contents, icons, animations, and more—all while keeping your site fast with its modular design. Build professional websites faster, without touching code.
 
-###  Featured Modules
+### 🚀 Key Features & Enhancements
 
-#### [Pattern Library](https://wpplover.com/docs/plover-kit/modules/pattern-library/)
+#### 🎨 Advanced Core Block Controls
 
-Add beautiful, ready-to-go layouts to your site with one click.
+Go beyond the default settings. Plover Kit adds advanced design options to standard WordPress blocks like **Cover**, **Columns**, **Query Pagination**, **Buttons**, and more. Gain precise control over:
 
-#### [Magzine Layout](https://wpplover.com/docs/plover-kit/modules/magazine-layout/)
+- **Spacing & Sizing**: Set height, width, min/max dimensions with responsive controls (**[Block Measures](https://wpplover.com/docs/plover-kit/modules/block-measures/)**).
+- **Visual Styles**: Apply advanced text-shadow, drop-shadow, and box-shadow (**[Block Shadow](https://wpplover.com/docs/plover-kit/modules/block-shadow/)**).
+- **Layout & Positioning**: Control CSS Position (relative, absolute, sticky, fixed), Z-Index (**[CSS Position](https://wpplover.com/docs/plover-kit/modules/css-position/)**), and Display properties (**[CSS Display](https://wpplover.com/docs/plover-kit/modules/css-display/)**).
+- **Block Sticky**: Make elements sticky on scroll (**[Block Sticky](https://wpplover.com/docs/plover-kit/modules/block-sticky/)**).
+- **Event Handler**: Add custom JavaScript event handlers (click, double-click, hover, etc.) to button block for advanced interactions (**[Event Handler](https://wpplover.com/docs/plover-kit/modules/block-event-handler/)**).
+- **Code Highlighting**: Enhance the core Code block with syntax highlighting (**[Code Highlight](https://wpplover.com/docs/plover-kit/modules/code-highlight/)**).
 
-Elevate your WordPress site with the Magazine Layout dynamic content presentation.
+#### 🆕 Powerful Custom Blocks
 
-#### [Table of Contents](https://wpplover.com/docs/plover-kit/modules/table-of-contents/)
+Instantly add complex functionality with dedicated blocks:
+    
+- **[Magazine Layout](https://wpplover.com/docs/plover-kit/modules/magazine-layout/)**: Elevate your WordPress site with the Magazine Layout dynamic content presentation..
+- **[Table of Contents](https://wpplover.com/docs/plover-kit/modules/table-of-contents/)**: Auto-generate a nested list of headings for better navigation.
+- **[Breadcrumb](https://wpplover.com/docs/plover-kit/modules/breadcrumb/)**: Simple, customizable breadcrumb navigation.
+- Icon & Icon Button: Access a library of 2000+ free icons to enrich your design.
+- **[Counter Block](https://wpplover.com/docs/plover-kit/modules/counter-block/)**: Animate numbered counters for stats and milestones.
+- **[Reading Time Block](https://wpplover.com/docs/plover-kit/modules/reading-time-block/)**: Display an estimated reading time for your articles.
+- **[Code Snippet Block (Premium)](https://wpplover.com/docs/plover-kit/modules/code-snippets/#code-snippet-block)**: Insert saved code snippets from your [Code Snippets library](https://wpplover.com/docs/plover-kit/modules/code-snippets/) anywhere on the page.
 
-Introduce a Table of Contents block to your posts and pages. It shows a nested list of links to all the headings found in a post or page.
+### 💎 Complete Icon Solution
 
-#### [Breadcrumb](https://wpplover.com/docs/plover-kit/modules/breadcrumb/)
+Add beautiful icons anywhere with our integrated icon system. Access a library of 2000+ free icons or upload your own SVGs.
 
-Let’s you easily display breadcrumb navigation on your WordPress site, easy customization.
+- **[Icon Block](https://wpplover.com/docs/plover-kit/modules/icon-block/)**: Place icons as standalone elements anywhere on the page.
+- **[Inline Icon (Premium)](https://wpplover.com/docs/plover-kit/modules/icon-block/#inline-icon)**: Insert icons directly inside any text or heading, right alongside your words.
+- **[Icon Button](https://wpplover.com/docs/plover-kit/modules/icon-button/)**: Easily add icons to the standard Button block to make your calls-to-action pop.
+- **[Icon Library](https://wpplover.com/docs/plover-kit/modules/icon-library/)**: Manage, upload, and organize your custom SVG icons or choose from 2000+ online icons — all in one place.
 
-#### [Shape Divider](https://wpplover.com/docs/plover-kit/modules/shape-divider/)
+#### ✨ Dynamic & Visual Effects
 
-Shape divider is used to create visual separation between different sections of content.
+Add motion and flair without slowing down your site:
 
-#### [Particles Effect](https://wpplover.com/docs/plover-kit/modules/particles-effect/)
+- **[Entrance Animation](https://wpplover.com/docs/plover-kit/modules/entrance-animation/)**: Bring elements to life as they scroll into view.
+- **[Hover Animation](https://wpplover.com/docs/plover-kit/modules/hover-animation/)**: Engage visitors with interactive hover effects.
+- **[Typing Animation](https://wpplover.com/docs/plover-kit/modules/typing-animation/)**: Create dynamic, eye-catching text animations.
+- **[Shape Divider](https://wpplover.com/docs/plover-kit/modules/shape-divider/)**: Craft beautiful visual separations between sections.
+- **[Particles Effect](https://wpplover.com/docs/plover-kit/modules/particles-effect/)**: Add subtle, modern background particle effects to your design.
+- **[Rough Notation](https://wpplover.com/docs/plover-kit/modules/rough-notation/)**: Mimic hand-drawn annotations like circles and underlines.
+- **[Preloader](https://wpplover.com/docs/plover-kit/modules/preloader/)**: Display animated elements while your site content loads.
 
-Add cool particle effects to your designs!
+### 🧩 Time-Saving Libraries
 
-#### [Rough Notation](https://wpplover.com/docs/plover-kit/modules/rough-notation/)
+- **[Pattern Library](https://wpplover.com/docs/plover-kit/modules/pattern-library/)**: Insert ready-made, professional layouts with a single click.
+- **[Icon Library](https://wpplover.com/docs/plover-kit/modules/icon-library/)**: Choose from 2000+ online icons or upload and manage your own custom SVG icons.
+- **[Code Snippets](https://wpplover.com/docs/plover-kit/modules/code-snippets/)**: Create and insert HTML, JavaScript, or CSS snippets to site header or footer section like Google Analytics code, AdSense Code, Facebook Pixels code, and more. No more editing theme files such as `header.php` — your code stays safe even when switching themes.
 
-Create and animate hand-draw style notations on a page.
+## Why Choose Plover Kit?
 
-#### [Entrance Animation](https://wpplover.com/docs/plover-kit/modules/entrance-animation/)
-
-Entrance animation adding dynamic movement to elements as they appear on screen.
-
-#### [Hover Animation](https://wpplover.com/docs/plover-kit/modules/hover-animation/)
-
-The Hover Animation allow you to add mouse hover animation effect for elements on your WordPress website.
-
-#### [Typing Animation](https://wpplover.com/docs/plover-kit/modules/typing-animation/)
-
-Add dynamic typing effects to your text.
-
-#### [Counter Block](https://wpplover.com/docs/plover-kit/modules/counter-block/)
-
-Introduce a counter block enables you to add an animated numbered counter to your page.
-
-#### [Reading Time Block](https://wpplover.com/docs/plover-kit/modules/reading-time-block/)
-
-Let’s you easily add an estimated reading time to your WordPress posts.
-
-#### [Code Snippets](https://wpplover.com/docs/plover-kit/modules/code-snippets/)
-
-Insert code snippets to site header or footer section like Google Analytics code, AdSense Code, Facebook Pixels code, and more.
-
-You no longer need to manually modify theme code such as header.php, and no code snippets are lost when switching or updating themes.
-
-#### [Block Shadow](https://wpplover.com/docs/plover-kit/modules/block-shadow/)
-
-Extra text-shadow, drop-shadow, and box-shadow support for core blocks.
-
-#### [Block Sticky](https://wpplover.com/docs/plover-kit/modules/block-sticky/)
-
-Make your content in the page visible at all times, making it permanently visible while scrolling.
-
-#### [Block Measures](https://wpplover.com/docs/plover-kit/modules/block-measures/)
-
-You can set height, width, [min/max]-height and [min/max]-width css properties for blocks, responsive!
-
-#### [CSS Position](https://wpplover.com/docs/plover-kit/modules/css-position/)
-
-You can set position and z-index css properties for blocks, responsive!
-
-#### [CSS Display](https://wpplover.com/docs/plover-kit/modules/css-display/)
-
-You can set display CSS properties for blocks, responsive!
-
-#### [Event Handler](https://wpplover.com/docs/plover-kit/modules/block-event-handler/)
-
-Adding event handler to blocks to execute custom JavaScript snippets.
-
-#### [Code Highlight](https://wpplover.com/docs/plover-kit/modules/code-highlight/)
-
-Add out-of-the-box code highlighting features for core/code block.
-
-#### [Icon Button](https://wpplover.com/docs/plover-kit/modules/icon-button/)
-
-Add icon to boring buttons!, 2000+ free icons available!
-
-#### [Icon Block](https://wpplover.com/docs/plover-kit/modules/icon-block/)
-
-Add icons to your design! 2000+ free icons available!
-
-#### [Icon Library](https://wpplover.com/docs/plover-kit/modules/icon-library/)
-
-Icon library allows you to manage icon libraries and upload your custom SVG icons.
-
-#### [Preloader](https://wpplover.com/docs/plover-kit/modules/preloader/)
-
-Animated elements that appear while website content loads make waiting more enjoyable.
+- **Modular Design**: Activate only the features you need for optimal performance.
+- **Built for the Block Editor**: Seamlessly integrates with WordPress and most block themes.
+- **Unlocks Design Potential**: Turns the block editor into a true page builder alternative.
 
 == Privacy ==
 
@@ -125,37 +81,81 @@ Read [Privacy policy](https://wpplover.com/privacy-policy/) and [Terms & Conditi
 
 == Frequently Asked Questions ==
 
-= Does this plugin work with the FSE theme & Site Editor? =
+= Does Plover Kit work with any WordPress theme? =
 
-Sure.
+Yes. Plover Kit is built for the block editor (Gutenberg) and works with any modern WordPress theme that supports blocks, including classic themes with the block editor enabled. For the best experience, we recommend using a block theme like [Plover Themes](https://wpplover.com/themes/), Twenty Twenty-Four, or any other FSE-compatible theme.
 
-= Does this plugin work with the Classic Theme? =
+= Will Plover Kit slow down my website? =
 
-Yes, as long as it works with the block editor.
+No. Plover Kit follows a modular design – you only enable the modules you actually need. Unused modules are completely disabled and do not load any code on your site. This ensures optimal performance and minimal impact on page speed.
 
-= Does this plugin work with the Classic Editor? =
+= Do I need coding skills to use Plover Kit? =
 
-No, it only works with the block editor.
+No coding required. All features are designed to be used directly within the WordPress block editor – no shortcodes, no custom PHP, no editing theme files. You can add icons, animations, layout controls, and more with just a few clicks.
+
+= What's the difference between the free and premium versions? =
+
+The free version includes most basic features, while some advanced options and modules require upgrading to the premium version. The Premium customers also receive priority and private technical support.
+
+Check our [Free vs Premium page](https://wpplover.com/plugins/plover-kit/#free-vs-premium) for details.
+
+= Can I use Plover Kit with other page builders (Elementor, Beaver Builder, etc.)? =
+
+Plover Kit is specifically designed for the WordPress block editor (Gutenberg). While it may coexist with other page builders, its features are only available when editing with blocks. We recommend using it with block-based themes and workflows.
+
+= How do I enable or disable specific modules? =
+
+After installing and activating the plugin, go to Plover Kit → Modules in your WordPress admin. You'll see a list of all available modules with toggle switches. Simply turn on the ones you need and turn off the ones you don't.
+
+= Does Plover Kit collect any data? / What about privacy? =
+
+Some features like Icon Library and Pattern Library fetch content from our external servers to provide up-to-date icons and patterns. No personal data is collected. You can review our full [Privacy policy](https://wpplover.com/privacy-policy/) and [Terms & Conditions](https://wpplover.com/terms-conditions/).
+
+= I'm missing a feature. Can I request it? =
+
+Absolutely! We love feedback. Please visit our [support forum](https://wordpress.org/support/plugin/plover-kit/) or contact us via our website to suggest new features.
+
+= Is there a multi-language support? =
+
+Yes. Plover Kit is translation-ready and has been translated into several languages. You can contribute translations via [translate.wordpress.org](https://translate.wordpress.org/projects/wp-plugins/plover-kit/).
+
+= How do I get support? =
+
+For free users, please use the [WordPress.org support forum](https://wordpress.org/support/plugin/plover-kit/). Premium users get priority support via email – check your purchase receipt for details.
 
 == Screenshots ==
 
-1. Plover Kit Modules Screen 01
-2. Plover Kit Modules Screen 02
-3. Pattern Library
-4. Particles Effect
-5. Table of Contents
-6. Breadcrumb Settings
-7. Shape Divider
-8. Rough Notation
-9. Code Highlight Options and Preview
-10. Preloader
-11. Block Shadow Preview
-12. Block Sticky Options
-13. Icon Library Preloaders
-14. Icon Button & Icon Block
-15. JavaScript Event Handler
+1. Plover Kit Modules Screen
+2. Pattern Library
+3. Icon Tools
+4. Icon Library
+5. Magazine Layout Block
+6. Particles Effect
+7. Hover animation
+8. Typing Animation
+9. Entrance Animation
+10. Counter Block
+11. Rough Notation
+12. Table of Contents
+13. Breadcrumb Settings
+14. Shape Divider
+15. Code Highlight Options and Preview
+16. Preloader
+17. Block Shadow Preview
+18. Block Sticky Options
+19. JavaScript Event Handler
 
 == Changelog ==
+
+= 1.5.10 =
+
+* Add: Premium inline icon text format
+* Add: Z-Index control for particles block
+* Ref: Update icon library design
+* Ref: Update core to v1.2.9
+* Fix: .icon-library-not-available style error
+* Fix: Table of Contents JavaScript scrolling Invalid ID Error
+* Fix: Rough Notation may cause editor errors in certain situations
 
 = 1.5.9 =
 

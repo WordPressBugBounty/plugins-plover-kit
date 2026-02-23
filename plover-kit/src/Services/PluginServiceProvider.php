@@ -16,6 +16,7 @@ use Plover\Kit\Extensions\PremiumDisplay;
 use Plover\Kit\Extensions\PremiumEntranceAnimation;
 use Plover\Kit\Extensions\PremiumHighlight;
 use Plover\Kit\Extensions\PremiumHoverAnimation;
+use Plover\Kit\Extensions\PremiumIcon;
 use Plover\Kit\Extensions\PremiumMagazine;
 use Plover\Kit\Extensions\PremiumParticles;
 use Plover\Kit\Extensions\PremiumShapeDivider;

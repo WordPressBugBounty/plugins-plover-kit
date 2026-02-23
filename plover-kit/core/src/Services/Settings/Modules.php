@@ -77,19 +77,29 @@ class Modules {
 			$this->register_group( $name, $module );
 		}
 
-		add_filter( 'plover_core_dashboard_data', function ( $data ) {
-			$data['modules']       = array_map( function ( $module ) {
-				$module['label']       = esc_html( $module['label'] );
-				$module['excerpt']     = esc_html( $module['excerpt'] );
-				$module['order']       = absint( $module['order'] );
-				$module['description'] = wp_kses_post( $module['description'] );
+		add_filter( 'plover_core_editor_data', [ $this, 'localize_modules_data' ] );
+		add_filter( 'plover_core_dashboard_data', [ $this, 'localize_modules_data' ] );
+	}
 
-				return $module;
-			}, $this->modules );
-			$data['module_groups'] = $this->groups;
+	/**
+	 * Localize modules data
+	 *
+	 * @param $data
+	 *
+	 * @return mixed
+	 */
+	public function localize_modules_data( $data ) {
+		$data['modules']       = array_map( function ( $module ) {
+			$module['label']       = esc_html( $module['label'] );
+			$module['excerpt']     = esc_html( $module['excerpt'] );
+			$module['order']       = absint( $module['order'] );
+			$module['description'] = wp_kses_post( $module['description'] );
 
-			return $data;
-		} );
+			return $module;
+		}, $this->modules );
+		$data['module_groups'] = $this->groups;
+
+		return $data;
 	}
 
 	/**

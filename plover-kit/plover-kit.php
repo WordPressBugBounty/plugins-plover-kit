@@ -6,8 +6,8 @@
  * Description:         Plover kit have pluggable modules that enhance the Gutenberg core blocks and also provide extended features.
  * Author:              WP Plover
  * Author URI:          https://www.wpplover.com
- * Version:             1.5.9
- * Requires at least:   6.2
+ * Version:             1.5.10
+ * Requires at least:   6.4
  * Requires PHP:        7.4
  * License:             GPLv2
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
@@ -22,7 +22,7 @@ if ( !defined( 'PLOVER_KIT_SLUG' ) ) {
     define( 'PLOVER_KIT_SLUG', 'plover-kit' );
 }
 if ( !defined( 'PLOVER_KIT_VERSION' ) ) {
-    define( 'PLOVER_KIT_VERSION', '1.5.9' );
+    define( 'PLOVER_KIT_VERSION', '1.5.10' );
 }
 if ( !defined( 'PLOVER_KIT_PLUGIN_PATH' ) ) {
     define( 'PLOVER_KIT_PLUGIN_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );

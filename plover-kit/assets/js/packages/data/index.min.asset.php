@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('wp-data'), 'version' => 'a67df6b854b617d6b33a');
+<?php return array('dependencies' => array('plover-utils', 'wp-data'), 'version' => '704644c5d66072903efa');

@@ -91,13 +91,25 @@ class Particles extends Extension {
 			return $block_content;
 		}
 
+		// Add particles block classname
 		$wrap->add_classnames( 'plover-particles__block' );
+		// Add z-index css vars
+		if ( isset( $attrs['particleZIndex'] ) ) {
+			$z = intval( $attrs['particleZIndex'] );
+			$wrap->add_styles( [
+				'--plover--particles--canvas-z-index'        => $z,
+				'--plover--particles--inner-content-z-index' => $z + 1,
+			] );
+		}
+
+		// Insert particles canvas element
 		$id     = plover_block_id( $attrs );
 		$canvas = $html->create_element( 'div' );
 		$canvas->set_attribute( 'id', "plover-particles__canvas-{$id}" );
 		$canvas->set_attribute( 'class', 'plover-particles__canvas' );
 		$wrap->append_element( $canvas );
 
+		// Enqueue particle load script
 		$script = $this->get_particle_scripts( "plover-particles__canvas-{$id}", $attrs );
 		if ( ! empty( $script ) ) {
 			$this->scripts->enqueue_asset( "plover-particles-{$id}", array(
