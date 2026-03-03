@@ -6,7 +6,7 @@
  * Description:         Plover kit have pluggable modules that enhance the Gutenberg core blocks and also provide extended features.
  * Author:              WP Plover
  * Author URI:          https://www.wpplover.com
- * Version:             1.5.10
+ * Version:             1.5.11
  * Requires at least:   6.4
  * Requires PHP:        7.4
  * License:             GPLv2
@@ -22,7 +22,7 @@ if ( !defined( 'PLOVER_KIT_SLUG' ) ) {
     define( 'PLOVER_KIT_SLUG', 'plover-kit' );
 }
 if ( !defined( 'PLOVER_KIT_VERSION' ) ) {
-    define( 'PLOVER_KIT_VERSION', '1.5.10' );
+    define( 'PLOVER_KIT_VERSION', '1.5.11' );
 }
 if ( !defined( 'PLOVER_KIT_PLUGIN_PATH' ) ) {
     define( 'PLOVER_KIT_PLUGIN_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -54,19 +54,20 @@ if ( function_exists( 'plover_fs' ) ) {
                 // Include Freemius SDK.
                 require_once dirname( __FILE__ ) . '/freemius/start.php';
                 $plover_fs = fs_dynamic_init( array(
-                    'id'              => '15782',
-                    'slug'            => 'plover-kit',
-                    'type'            => 'plugin',
-                    'public_key'      => 'pk_100767648311be1f84cbfd9f5ea53',
-                    'is_premium'      => false,
-                    'premium_suffix'  => 'Premium',
-                    'has_addons'      => false,
-                    'has_paid_plans'  => true,
-                    'has_affiliation' => 'selected',
-                    'menu'            => array(
+                    'id'               => '15782',
+                    'slug'             => 'plover-kit',
+                    'type'             => 'plugin',
+                    'public_key'       => 'pk_100767648311be1f84cbfd9f5ea53',
+                    'is_premium'       => false,
+                    'premium_suffix'   => 'Premium',
+                    'has_addons'       => false,
+                    'has_paid_plans'   => true,
+                    'has_affiliation'  => 'selected',
+                    'menu'             => array(
                         'slug' => 'plover-kit',
                     ),
-                    'is_live'         => true,
+                    'is_live'          => true,
+                    'is_org_compliant' => true,
                 ) );
             }
             return $plover_fs;

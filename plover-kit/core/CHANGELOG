@@ -1,7 +1,12 @@
+= 1.2.10 =
+
+* Add: Accessibility controls to icon button
+* Ref: Update text shadow controls
+
 = 1.2.9 =
 
 * Add: Add style and svg utils
-* Add: Inline Icon promation
+* Add: Inline Icon promotion
 * Add: Z-Index control for particles block
 * Fix: .icon-library-not-available style error
 * Fix: Rough Notation may cause editor errors in certain situations

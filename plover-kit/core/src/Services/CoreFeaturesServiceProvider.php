@@ -17,13 +17,13 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 	 * @var \array[][]
 	 */
 	protected $block_supports = [
-		'core/query-pagination' 	  => [
-			'spacing'                 => [
+		'core/query-pagination'    => [
+			'spacing'              => [
 				'padding'  => true,
 				'margin'   => true,
 				'blockGap' => true,
 			],
-			'__experimentalBorder'    => [
+			'__experimentalBorder' => [
 				'radius'                        => true,
 				'width'                         => true,
 				'color'                         => true,
@@ -197,6 +197,7 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 			'ploverShadow'            => [
 				'text'            => true,
 				'drop'            => true,
+				'box'             => true,
 				'defaultControls' => [
 					'text' => true,
 					'drop' => true,
@@ -219,6 +220,8 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 			'shadow'                  => false,
 			'ploverShadow'            => [
 				'text'            => true,
+				'box'             => true,
+				'drop'            => true,
 				'defaultControls' => [
 					'text' => true,
 				]
@@ -230,6 +233,8 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 			'shadow'                  => false,
 			'ploverShadow'            => [
 				'text'            => true,
+				'box'             => true,
+				'drop'            => true,
 				'defaultControls' => [
 					'text' => true,
 				]
@@ -290,7 +295,7 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 				]
 			]
 		],
-		'core/site-logo'		   => [
+		'core/site-logo'           => [
 			'color'                => [
 				'background' => true,
 				'gradients'  => true,

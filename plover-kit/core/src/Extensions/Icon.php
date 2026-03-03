@@ -398,6 +398,14 @@ class Icon extends Extension {
 			$html->append_element( $wrap );
 		}
 
+		// accessibility attributes
+		if ( isset( $attrs['ariaLabel'] ) && $attrs['ariaLabel'] ) {
+			$el->set_attribute( 'aria-label', $attrs['ariaLabel'] );
+		}
+		if ( isset( $attrs['hideFromScreenReaders'] ) && $attrs['hideFromScreenReaders'] ) {
+			$el->set_attribute( 'aria-hidden', 'true' );
+		}
+
 		// add block gap
 		$gap = StyleEngine::get_block_gap_value( $attrs );
 		if ( isset( $gap ) ) {
