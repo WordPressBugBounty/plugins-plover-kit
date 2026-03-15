@@ -1,26 +1,27 @@
-=== Plover Kit - Blocks, Patterns, and Gutenberg Editor Enhancements ===
+=== Plover Kit – Blocks, Patterns, Responsive Layout and Gutenberg Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.5.11
+Stable tag: 1.6.0
 Tested up to: 6.9
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Enhance WordPress block editor: advanced controls, custom blocks, icons, animations, pattern library. Modular design, fast, no coding skills required.
+WordPress block editor Toolkit: responsive controls, blocks, icons, animations, pattern library. Modular design, fast, no coding skills required.
 
 == Description ==
 
-Tired of the limitations of the standard WordPress block editor? Plover Kit is a powerful WordPress blocks plugin that enhances the Gutenberg block editor with a beautiful pattern library, advanced custom blocks, and extensive design controls for core blocks. Add magazine layouts, table of contents, icons, animations, and more—all while keeping your site fast with its modular design. Build professional websites faster, without touching code.
+Tired of the limitations of the standard WordPress block editor? Plover Kit is a powerful WordPress blocks plugin that enhances the Gutenberg block editor with a beautiful pattern library, advanced custom blocks, and extensive responsive design controls for core blocks. Add magazine layouts, table of contents, icons, animations, and more—all while keeping your site fast with its modular design. Build professional websites faster, without touching code.
 
 ### 🚀 Key Features & Enhancements
 
-#### 🎨 Advanced Core Block Controls
+#### 🎨 Advanced Layout & Core Block Controls
 
 Go beyond the default settings. Plover Kit adds advanced design options to standard WordPress blocks like **Cover**, **Columns**, **Query Pagination**, **Buttons**, and more. Gain precise control over:
 
-- **Spacing & Sizing**: Set height, width, min/max dimensions with responsive controls (**[Block Measures](https://wpplover.com/docs/plover-kit/modules/block-measures/)**).
-- **Visual Styles**: Apply advanced text-shadow, drop-shadow, and box-shadow (**[Block Shadow](https://wpplover.com/docs/plover-kit/modules/block-shadow/)**).
-- **Layout & Positioning**: Control CSS Position (relative, absolute, sticky, fixed), Z-Index (**[CSS Position](https://wpplover.com/docs/plover-kit/modules/css-position/)**), and Display properties (**[CSS Display](https://wpplover.com/docs/plover-kit/modules/css-display/)**).
+- **Flex Layout**: Add responsive Flexbox Layout controls to WordPress core blocks, allowing you to create advanced and flexible layouts without any code. (**[Flex Layout](https://wpplover.com/docs/plover-kit/modules/advanced-layout/#flex-layout)**).
+- **Layout & Positioning**: Set block position (relative, absolute, sticky, fixed), Z-Index, Order (**[CSS Position](https://wpplover.com/docs/plover-kit/modules/advanced-layout/#css-position)**) and display properties with responsive controls (**[CSS Display](https://wpplover.com/docs/plover-kit/modules/advanced-layout/#css-display)**).
+- **Spacing & Sizing**: Set height, width, min/max dimensions with responsive controls (**[Block Sizing](https://wpplover.com/docs/plover-kit/modules/advanced-layout/#block-sizing)**).
+- **Visual Styles**: Apply advanced text-shadow, drop-shadow, and box-shadow to any blocks (**[Block Shadow](https://wpplover.com/docs/plover-kit/modules/block-shadow/)**).
 - **Block Sticky**: Make elements sticky on scroll (**[Block Sticky](https://wpplover.com/docs/plover-kit/modules/block-sticky/)**).
 - **Event Handler**: Add custom JavaScript event handlers (click, double-click, hover, etc.) to button block for advanced interactions (**[Event Handler](https://wpplover.com/docs/plover-kit/modules/block-event-handler/)**).
 - **Code Highlighting**: Enhance the core Code block with syntax highlighting (**[Code Highlight](https://wpplover.com/docs/plover-kit/modules/code-highlight/)**).
@@ -68,7 +69,7 @@ Add motion and flair without slowing down your site:
 
 - **Modular Design**: Activate only the features you need for optimal performance.
 - **Built for the Block Editor**: Seamlessly integrates with WordPress and most block themes.
-- **Unlocks Design Potential**: Turns the block editor into a true page builder alternative.
+- **Unlocks Design Potential**: Responsive layout, animations, advanced extensions —— Plover Kit Turns the block editor into a true page builder alternative.
 
 == Privacy ==
 
@@ -146,6 +147,17 @@ For free users, please use the [WordPress.org support forum](https://wordpress.o
 19. JavaScript Event Handler
 
 == Changelog ==
+
+= 1.6.0 =
+
+* Add: Responsive flex layout controls
+* Add: Responsive text-align controls
+* Add: New advanced layout modules
+* Add: Blocks select control that allow extension support any blocks
+* Ref: Update dashboard modules group
+* Ref: Track upsell link
+* Ref: Merge the Measure, Position, and Display modules into the Advanced Layout module
+* Ref: Update core to v1.3.0
 
 = 1.5.11 =
 

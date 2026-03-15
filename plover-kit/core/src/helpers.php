@@ -53,3 +53,24 @@ if ( ! function_exists( 'plover_block_id' ) ) {
 		return wp_generate_uuid4();
 	}
 }
+
+if ( ! function_exists( 'plover_upsell_url' ) ) {
+	/**
+	 * Manage upsell url in one place
+	 *
+	 * @return string
+	 *
+	 * @since 1.3.0
+	 */
+	function plover_upsell_url( $args = array() ) {
+		$args = wp_parse_args( $args, array(
+			'utm_source'   => 'product_upsell',
+			'utm_medium'   => 'wordpress',
+			'utm_campaign' => 'product_upsell',
+		) );
+
+		$upsell_url = apply_filters( 'plover_core_upsell_url', 'https://wpplover.com/plugins/plover-kit/#plans' );
+
+		return add_query_arg( $args, $upsell_url );
+	}
+}

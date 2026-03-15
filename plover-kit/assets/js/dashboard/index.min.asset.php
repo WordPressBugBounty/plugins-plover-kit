@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('plover-api', 'plover-components', 'plover-kit-dashboard', 'plover-kit-data', 'plover-utils', 'react', 'wp-components', 'wp-dom-ready', 'wp-element', 'wp-hooks', 'wp-i18n'), 'version' => 'ee9b2ff61d1a8ee03783');
+<?php return array('dependencies' => array('plover-api', 'plover-components', 'plover-kit-dashboard', 'plover-kit-data', 'plover-utils', 'react', 'wp-components', 'wp-dom-ready', 'wp-element', 'wp-hooks', 'wp-i18n'), 'version' => '72f061fd15cab60de92c');

@@ -15,6 +15,10 @@ class Control {
 	const T_SWITCH = 'switch';
 	const T_TAGS = 'tags';
 	const T_NUMBER = 'number';
+	/**
+	 * @since 1.3.0
+	 */
+	const T_BLOCK_SELECTOR = 'block_selector';
 
 	/**
 	 * @param $control

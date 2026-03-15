@@ -83,8 +83,11 @@ class DashboardServiceProvider extends ServiceProvider {
 	}
 
 	public function dashboard_data( $data ) {
-		$data['root']        = 'plover-kit-dashboard-page';
-		$data['affiliation'] = esc_url( admin_url( 'admin.php?page=plover-kit-affiliation' ) );
+		$data['root']              = 'plover-kit-dashboard-page';
+		$data['expert_page']       = 'https://wpplover.com/expert/';
+		$data['affiliation']       = esc_url( admin_url( 'admin.php?page=plover-kit-affiliation' ) );
+		$data['registered_blocks'] = $this->get_registered_blocks();
+
 		if ( get_template() !== 'plover' ) {
 			$data['theme'] = [
 				'install'     => add_query_arg( array(
@@ -128,5 +131,25 @@ class DashboardServiceProvider extends ServiceProvider {
 		}
 
 		Theme::install( $theme_slug, true );
+	}
+
+	/**
+	 * Get all registered block types
+	 *
+	 * @return array|array[]
+	 */
+	protected function get_registered_blocks() {
+		$block_types       = \WP_Block_Type_Registry::get_instance()->get_all_registered();
+		$registered_blocks = array();
+
+		foreach ( $block_types as $name => $block ) {
+			$registered_blocks[] = array(
+				'name'     => $name,
+				'title'    => $block->title ?? $name,
+				'category' => $block->category,
+			);
+		}
+
+		return $registered_blocks;
 	}
 }

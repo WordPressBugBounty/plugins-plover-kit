@@ -51,13 +51,7 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 				],
 			],
 			'ploverEntranceAnimation' => true,
-			'ploverSticky'            => true,
-			'ploverShadow'            => [
-				'box'             => true,
-				'defaultControls' => [
-					'box' => true,
-				]
-			]
+			'ploverSticky'            => true
 		],
 		'core/list'                => [
 			'spacing'                 => [
@@ -131,12 +125,6 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 					'onclick' => true,
 				],
 			],
-			'ploverShadow'            => [
-				'box'             => true,
-				'defaultControls' => [
-					'box' => true,
-				]
-			],
 			'ploverEntranceAnimation' => true,
 			'ploverHoverAnimation'    => true,
 		],
@@ -150,12 +138,6 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 				]
 			],
 			'shadow'                  => false,
-			'ploverShadow'            => [
-				'box'             => true,
-				'defaultControls' => [
-					'box' => true,
-				]
-			],
 			'ploverEntranceAnimation' => true,
 			'ploverHoverAnimation'    => true,
 		],
@@ -170,39 +152,16 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 				'padding' => true,
 			],
 			'shadow'                  => false,
-			'ploverShadow'            => [
-				'drop'            => true,
-				'box'             => true,
-				'defaultControls' => [
-					'drop' => true,
-				]
-			],
 			'ploverEntranceAnimation' => true,
 			'ploverHoverAnimation'    => true,
 		],
 		'core/post-featured-image' => [
 			'shadow'                  => false,
-			'ploverShadow'            => [
-				'drop'            => true,
-				'box'             => true,
-				'defaultControls' => [
-					'drop' => true,
-				]
-			],
 			'ploverEntranceAnimation' => true,
 			'ploverHoverAnimation'    => true,
 		],
 		'core/paragraph'           => [
 			'shadow'                  => false,
-			'ploverShadow'            => [
-				'text'            => true,
-				'drop'            => true,
-				'box'             => true,
-				'defaultControls' => [
-					'text' => true,
-					'drop' => true,
-				]
-			],
 			'__experimentalBorder'    => [
 				'radius'                        => true,
 				'width'                         => true,
@@ -218,61 +177,27 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 		],
 		'core/heading'             => [
 			'shadow'                  => false,
-			'ploverShadow'            => [
-				'text'            => true,
-				'box'             => true,
-				'drop'            => true,
-				'defaultControls' => [
-					'text' => true,
-				]
-			],
 			'ploverEntranceAnimation' => true,
 			'ploverHoverAnimation'    => true,
 		],
 		'core/post-title'          => [
 			'shadow'                  => false,
-			'ploverShadow'            => [
-				'text'            => true,
-				'box'             => true,
-				'drop'            => true,
-				'defaultControls' => [
-					'text' => true,
-				]
-			],
 			'ploverEntranceAnimation' => true,
 			'ploverHoverAnimation'    => true,
 		],
 		'core/post-excerpt'        => [
 			'shadow'                  => false,
-			'ploverShadow'            => [
-				'text'            => true,
-				'defaultControls' => [
-					'text' => true,
-				]
-			],
 			'ploverEntranceAnimation' => true,
 			'ploverHoverAnimation'    => true,
 		],
 		'core/cover'               => [
 			'shadow'                  => false,
-			'ploverShadow'            => [
-				'box'             => true,
-				'defaultControls' => [
-					'box' => true,
-				]
-			],
 			'ploverEntranceAnimation' => true,
 			'ploverHoverAnimation'    => true,
 		],
 		'core/group'               => [
 			'shadow'                  => false,
 			'ploverSticky'            => true,
-			'ploverShadow'            => [
-				'box'             => true,
-				'defaultControls' => [
-					'box' => true,
-				]
-			],
 			'ploverEntranceAnimation' => true,
 			'ploverHoverAnimation'    => true,
 		],
@@ -288,12 +213,6 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 					'color' => true,
 				],
 			],
-			'ploverShadow'         => [
-				'box'             => true,
-				'defaultControls' => [
-					'box' => true,
-				]
-			]
 		],
 		'core/site-logo'           => [
 			'color'                => [
@@ -311,10 +230,6 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 					'width' => false,
 					'color' => false,
 				],
-			],
-			'ploverShadow'         => [
-				'drop' => true,
-				'box'  => true,
 			]
 		],
 	];
@@ -341,8 +256,7 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 			// register core extensions
 			$extensions->register( 'block-shadow', \Plover\Core\Extensions\Shadow::class );
 			$extensions->register( 'block-sticky', \Plover\Core\Extensions\Sticky::class );
-			$extensions->register( 'block-display', \Plover\Core\Extensions\Display::class );
-			$extensions->register( 'block-position', \Plover\Core\Extensions\Position::class );
+			$extensions->register( 'advanced-layout', \Plover\Core\Extensions\AdvancedLayout::class );
 			$extensions->register( 'code-highlight', \Plover\Core\Extensions\Highlight::class );
 			$extensions->register( 'search-enhancement', \Plover\Core\Extensions\Search::class );
 			$extensions->register( 'block-event-handler', \Plover\Core\Extensions\EventHandler::class );

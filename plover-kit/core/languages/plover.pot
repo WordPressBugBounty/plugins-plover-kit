@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-03-03T03:07:21+00:00\n"
+"POT-Creation-Date: 2026-03-15T09:47:35+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover\n"
@@ -16,12 +16,88 @@ msgstr ""
 msgid "No Wrap"
 msgstr ""
 
-#: src/Extensions/Display.php:21
-msgid "CSS Display"
+#: src/Extensions/AdvancedLayout.php:28
+msgid "Advanced Layout"
 msgstr ""
 
-#: src/Extensions/Display.php:22
-msgid "You can set display, visibility, order, overflow and box-sizing css properties for blocks, responsive!"
+#: src/Extensions/AdvancedLayout.php:29
+msgid "Add responsive flexbox, text alignment, display, sizing, and positioning controls to core blocks. Create flexible, responsive layouts with ease."
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:35
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:35
+msgid "Display"
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:36
+msgid "You can set responsive display, visibility, overflow and box-sizing css properties for all blocks."
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:40
+#, php-format
+msgctxt "%s is upsell text and link"
+msgid "Upgrade to the %s edition to access visibility, overflow and box-sizing controls."
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:45
+#: src/Extensions/AdvancedLayout.php:113
+#: static/scripts/block-extensions/highlight/HighlightControls.jsx:74
+#: static/scripts/block-extensions/icon/format.jsx:45
+#: static/scripts/block-extensions/magazine-layout/inspector.jsx:93
+#: static/scripts/block-extensions/particles/ParticlesControl.jsx:86
+#: static/scripts/block-extensions/particles/ParticlesControl.jsx:185
+#: static/scripts/block-extensions/rough-notation/edit.jsx:138
+#: static/scripts/block-extensions/shape-divider/ShapeDividerControls.jsx:42
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:126
+#: static/scripts/block-supports/advanced-layout/sizing/SizingPanel.jsx:44
+#: static/scripts/block-supports/entrance-animation/EntranceAnimationPanel.jsx:71
+#: static/scripts/block-supports/hover-animation/HoverAnimationPanel.jsx:62
+#: static/scripts/block-supports/sticky/StickyPanel.jsx:134
+msgid "Premium"
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:49
+msgid "Flex Layout"
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:50
+msgid "Add responsive flex layout options to the selected block."
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:60
+msgid "Typography"
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:61
+msgid "Add responsive text alignment options to the selected block."
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:80
+msgid "Text Alignment"
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:88
+#: static/scripts/block-extensions/shape-divider/ShapeOptions.jsx:135
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:75
+msgid "Position"
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:89
+msgid "You can set position, order and z-index css properties for blocks, responsive!"
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:101
+msgid "Sizing"
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:102
+msgid "Add responsive height, width, [min/max]-height and [min/max]-width css properties to selected blocks."
+msgstr ""
+
+#: src/Extensions/AdvancedLayout.php:108
+#, php-format
+msgctxt "%s is upsell text and link"
+msgid "The sizing block options is available only in the %s edition."
 msgstr ""
 
 #: src/Extensions/EntranceAnimation.php:22
@@ -272,14 +348,6 @@ msgstr ""
 msgid "Colorful Bubbles"
 msgstr ""
 
-#: src/Extensions/Position.php:23
-msgid "CSS Position"
-msgstr ""
-
-#: src/Extensions/Position.php:24
-msgid "You can set position and z-index css properties for blocks, responsive!"
-msgstr ""
-
 #: src/Extensions/RoughNotation.php:17
 msgid "Rough Notation"
 msgstr ""
@@ -288,12 +356,35 @@ msgstr ""
 msgid "Create and animate hand-draw style notations on a page."
 msgstr ""
 
-#: src/Extensions/Shadow.php:33
+#: src/Extensions/Shadow.php:35
 msgid "Block shadow"
 msgstr ""
 
-#: src/Extensions/Shadow.php:34
+#: src/Extensions/Shadow.php:36
 msgid "Extra text-shadow, drop-shadow, and box-shadow support for core blocks."
+msgstr ""
+
+#: src/Extensions/Shadow.php:41
+msgid "Supported Blocks"
+msgstr ""
+
+#: src/Extensions/Shadow.php:123
+#: static/scripts/block-supports/shadow/ShadowPanel.jsx:44
+msgid "Text Shadow"
+msgstr ""
+
+#: src/Extensions/Shadow.php:128
+#: static/scripts/block-supports/shadow/ShadowPanel.jsx:72
+msgid "Box Shadow"
+msgstr ""
+
+#: src/Extensions/Shadow.php:133
+#: static/scripts/block-supports/shadow/ShadowPanel.jsx:58
+msgid "Drop Shadow"
+msgstr ""
+
+#: src/Extensions/Shadow.php:138
+msgid "Default Controls"
 msgstr ""
 
 #: src/Extensions/ShapeDivider.php:23
@@ -345,7 +436,7 @@ msgid "Modules"
 msgstr ""
 
 #: src/Services/Settings/Modules.php:47
-msgid "Standalone feature, similar to a WordPress plugin."
+msgid "Time-Saving libraries & standalone feature."
 msgstr ""
 
 #: src/Services/Settings/Modules.php:51
@@ -388,14 +479,6 @@ msgstr ""
 
 #: src/Services/Settings/Modules.php:68
 msgid "Take your WordPress editing experience to the next level!"
-msgstr ""
-
-#: src/Services/Settings/Modules.php:71
-msgid "Block Styles"
-msgstr ""
-
-#: src/Services/Settings/Modules.php:72
-msgid "Empower your creativity: visual CSS tools for your design!"
 msgstr ""
 
 #: src/Toolkits/Plugin.php:72
@@ -473,11 +556,12 @@ msgid "Plover Kit"
 msgstr ""
 
 #: static/packages/components/icon-picker/index.jsx:66
-#: static/scripts/block-supports/display/DisplayPanel.jsx:158
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:164
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:142
+#: static/scripts/block-supports/advanced-layout/sizing/SizingPanel.jsx:102
 #: static/scripts/block-supports/entrance-animation/EntranceAnimationPanel.jsx:80
 #: static/scripts/block-supports/event-handler/EventHandlerPanel.js:81
 #: static/scripts/block-supports/hover-animation/HoverAnimationPanel.jsx:71
-#: static/scripts/block-supports/position/PositionPanel.jsx:104
 #: static/scripts/block-supports/shadow/ShadowPanel.jsx:86
 msgid "Documentation ↗"
 msgstr ""
@@ -503,20 +587,36 @@ msgstr ""
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:34
 #: static/scripts/block-extensions/rough-notation/edit.jsx:95
 #: static/scripts/block-extensions/shape-divider/ShapesSelect.jsx:43
-#: static/scripts/block-supports/display/DisplayPanel.jsx:48
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:49
 msgid "None"
 msgstr ""
 
-#: static/packages/components/responsive-control/index.js:59
+#: static/packages/components/responsive-control/responsive-control.js:119
 msgid "Desktop mode"
 msgstr ""
 
-#: static/packages/components/responsive-control/index.js:68
+#: static/packages/components/responsive-control/responsive-control.js:128
 msgid "Tablet mode"
 msgstr ""
 
-#: static/packages/components/responsive-control/index.js:77
+#: static/packages/components/responsive-control/responsive-control.js:137
 msgid "Mobile mode"
+msgstr ""
+
+#: static/packages/components/responsive-control/responsive-toolbar/index.jsx:30
+msgid "Desktop"
+msgstr ""
+
+#: static/packages/components/responsive-control/responsive-toolbar/index.jsx:35
+msgid "Tablet"
+msgstr ""
+
+#: static/packages/components/responsive-control/responsive-toolbar/index.jsx:40
+msgid "Mobile"
+msgstr ""
+
+#: static/packages/components/responsive-control/responsive-toolbar/index.jsx:70
+msgid "Responsive View"
 msgstr ""
 
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:27
@@ -535,24 +635,11 @@ msgstr ""
 
 #. translators: %s is the premium text and link.
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:73
-#: static/scripts/block-supports/display/DisplayPanel.jsx:129
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:124
+#: static/scripts/block-supports/advanced-layout/sizing/SizingPanel.jsx:42
 #: static/scripts/block-supports/sticky/StickyPanel.jsx:133
 #, js-format
 msgid "Upgrade to %s to access these features:"
-msgstr ""
-
-#: static/scripts/block-extensions/highlight/HighlightControls.jsx:74
-#: static/scripts/block-extensions/icon/format.jsx:45
-#: static/scripts/block-extensions/magazine-layout/inspector.jsx:93
-#: static/scripts/block-extensions/particles/ParticlesControl.jsx:86
-#: static/scripts/block-extensions/particles/ParticlesControl.jsx:185
-#: static/scripts/block-extensions/rough-notation/edit.jsx:138
-#: static/scripts/block-extensions/shape-divider/ShapeDividerControls.jsx:42
-#: static/scripts/block-supports/display/DisplayPanel.jsx:130
-#: static/scripts/block-supports/entrance-animation/EntranceAnimationPanel.jsx:71
-#: static/scripts/block-supports/hover-animation/HoverAnimationPanel.jsx:62
-#: static/scripts/block-supports/sticky/StickyPanel.jsx:134
-msgid "Premium"
 msgstr ""
 
 #: static/scripts/block-extensions/highlight/HighlightControls.jsx:81
@@ -736,7 +823,8 @@ msgstr ""
 
 #: static/scripts/block-extensions/particles/ParticlesControl.jsx:94
 #: static/scripts/block-extensions/particles/ParticlesControl.jsx:193
-#: static/scripts/block-supports/display/DisplayPanel.jsx:152
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:156
+#: static/scripts/block-supports/advanced-layout/sizing/SizingPanel.jsx:94
 #: static/scripts/block-supports/sticky/StickyPanel.jsx:143
 msgid "Learn More ↗"
 msgstr ""
@@ -746,7 +834,7 @@ msgid "Particle Preset"
 msgstr ""
 
 #: static/scripts/block-extensions/particles/ParticlesControl.jsx:143
-#: static/scripts/block-supports/position/PositionPanel.jsx:69
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:39
 #: static/scripts/block-supports/sticky/StickyPanel.jsx:60
 msgid "Z-Index"
 msgstr ""
@@ -840,11 +928,6 @@ msgstr ""
 msgid "Shape position"
 msgstr ""
 
-#: static/scripts/block-extensions/shape-divider/ShapeOptions.jsx:135
-#: static/scripts/block-supports/position/PositionPanel.jsx:41
-msgid "Position"
-msgstr ""
-
 #: static/scripts/block-extensions/shape-divider/ShapeOptions.jsx:141
 msgid "Top"
 msgstr ""
@@ -868,53 +951,190 @@ msgstr ""
 msgid "Shape Z-Index"
 msgstr ""
 
-#: static/scripts/block-supports/display/DisplayPanel.jsx:34
-msgid "Display"
-msgstr ""
-
-#: static/scripts/block-supports/display/DisplayPanel.jsx:49
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:50
 msgid "Block"
 msgstr ""
 
-#: static/scripts/block-supports/display/DisplayPanel.jsx:50
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:51
 msgid "Flex"
 msgstr ""
 
-#: static/scripts/block-supports/display/DisplayPanel.jsx:51
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:52
 msgid "Inline"
 msgstr ""
 
-#: static/scripts/block-supports/display/DisplayPanel.jsx:52
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:54
 msgid "Inline Block"
 msgstr ""
 
-#: static/scripts/block-supports/display/DisplayPanel.jsx:53
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:57
 msgid "Inline Flex"
 msgstr ""
 
-#: static/scripts/block-supports/display/DisplayPanel.jsx:76
-msgid "Order"
-msgstr ""
-
-#: static/scripts/block-supports/display/DisplayPanel.jsx:110
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:109
 msgid "Plover: Display"
 msgstr ""
 
-#: static/scripts/block-supports/display/DisplayPanel.jsx:112
-#: static/scripts/block-supports/position/PositionPanel.jsx:36
-msgid "Those properties may break your layout, use them only if you're 100% sure what you're doing."
-msgstr ""
-
-#: static/scripts/block-supports/display/DisplayPanel.jsx:137
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:135
 msgid "CSS visibility support"
 msgstr ""
 
-#: static/scripts/block-supports/display/DisplayPanel.jsx:142
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:142
 msgid "CSS overflow support"
 msgstr ""
 
-#: static/scripts/block-supports/display/DisplayPanel.jsx:147
+#: static/scripts/block-supports/advanced-layout/display/DisplayPanel.jsx:149
 msgid "CSS box-sizing support"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:81
+msgid "Plover: Flex Layout"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:86
+msgid "Orientation"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:106
+msgid "Horizontal"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:111
+msgid "Vertical"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:116
+msgid "Horizontal Reverse"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:121
+msgid "Vertical Reverse"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:131
+msgid "Justification"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:143
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:179
+msgid "Justify items left"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:148
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:184
+msgid "Justify items center"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:153
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:189
+msgid "Justify items right"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:159
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:198
+msgid "Stretch to fill"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:160
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:197
+msgid "Space between items"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:167
+msgid "Align Items"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/flex/flex-layout-panel.jsx:209
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:123
+msgid "Reset All"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:36
+msgid "Plover: Position"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:57
+msgid "Order"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:90
+msgid "Static (Default)"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:93
+msgid "Relative"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:94
+msgid "Absolute"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:95
+msgid "Sticky"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:96
+msgid "Fixed"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/position/PositionPanel.jsx:114
+msgid "Positioned value"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/sizing/SizingPanel.jsx:25
+msgid "Plover: Sizing"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/sizing/SizingPanel.jsx:53
+msgid "CSS min-with support"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/sizing/SizingPanel.jsx:60
+msgid "CSS max-with support"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/sizing/SizingPanel.jsx:67
+msgid "CSS min-height support"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/sizing/SizingPanel.jsx:74
+msgid "CSS max-height support"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/sizing/SizingPanel.jsx:80
+msgid "CSS width support"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/sizing/SizingPanel.jsx:87
+msgid "CSS height support"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/typography/index.jsx:125
+msgid "Plover: Responsive text alignment"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/typography/index.jsx:131
+msgid "Plover: Alignment"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/typography/index.jsx:135
+msgid "Align Text"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/typography/text-alignment.jsx:20
+msgid "Align text left"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/typography/text-alignment.jsx:24
+msgid "Align text center"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/typography/text-alignment.jsx:28
+msgid "Align text right"
+msgstr ""
+
+#: static/scripts/block-supports/advanced-layout/typography/text-alignment.jsx:32
+msgid "Justify text"
 msgstr ""
 
 #: static/scripts/block-supports/entrance-animation/EntranceAnimationPanel.jsx:33
@@ -960,34 +1180,6 @@ msgstr ""
 #: static/scripts/block-supports/hover-animation/HoverAnimationPanel.jsx:61
 #, js-format
 msgid "Upgrade to %s for more hover animations."
-msgstr ""
-
-#: static/scripts/block-supports/position/PositionPanel.jsx:34
-msgid "Plover: Position"
-msgstr ""
-
-#: static/scripts/block-supports/position/PositionPanel.jsx:55
-msgid "Static (Default)"
-msgstr ""
-
-#: static/scripts/block-supports/position/PositionPanel.jsx:56
-msgid "Relative"
-msgstr ""
-
-#: static/scripts/block-supports/position/PositionPanel.jsx:57
-msgid "Absolute"
-msgstr ""
-
-#: static/scripts/block-supports/position/PositionPanel.jsx:58
-msgid "Sticky"
-msgstr ""
-
-#: static/scripts/block-supports/position/PositionPanel.jsx:59
-msgid "Fixed"
-msgstr ""
-
-#: static/scripts/block-supports/position/PositionPanel.jsx:96
-msgid "Positioned value"
 msgstr ""
 
 #. translators: %s is the name of shadow, e.g., "custom/solid"
@@ -1044,18 +1236,6 @@ msgstr ""
 
 #: static/scripts/block-supports/shadow/ShadowPanel.jsx:40
 msgid "Plover: Shadow"
-msgstr ""
-
-#: static/scripts/block-supports/shadow/ShadowPanel.jsx:44
-msgid "Text Shadow"
-msgstr ""
-
-#: static/scripts/block-supports/shadow/ShadowPanel.jsx:58
-msgid "Drop Shadow"
-msgstr ""
-
-#: static/scripts/block-supports/shadow/ShadowPanel.jsx:72
-msgid "Box Shadow"
 msgstr ""
 
 #: static/scripts/block-supports/shadow/ShadowValues.jsx:70

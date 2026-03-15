@@ -10,6 +10,33 @@ namespace Plover\Core\Toolkits;
 class Responsive {
 
 	/**
+	 * All devices names
+	 *
+	 * @since 1.3.0
+	 */
+	const  DEVICES = [ 'desktop', 'tablet', 'mobile' ];
+
+	/**
+	 * Promote scalar value into responsive and apply callback function to each value
+	 *
+	 * @param $value
+	 * @param $callback
+	 * @param bool $fill
+	 *
+	 * @return array
+	 * @since 1.3.0
+	 */
+	public static function value( $value, $callback, bool $fill = true ) {
+		$responsive_value = self::promote_scalar_value_into_responsive( $value, $fill );
+
+		foreach ( self::DEVICES as $device ) {
+			$responsive_value[ $device ] = call_user_func( $callback, $responsive_value[ $device ], $device );
+		}
+
+		return $responsive_value;
+	}
+
+	/**
 	 * @param $value
 	 * @param bool $fill
 	 *

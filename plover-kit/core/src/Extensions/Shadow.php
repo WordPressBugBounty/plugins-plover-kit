@@ -2,7 +2,9 @@
 
 namespace Plover\Core\Extensions;
 
+use Plover\Core\Services\Blocks\Blocks;
 use Plover\Core\Services\Extensions\Contract\Extension;
+use Plover\Core\Services\Settings\Control;
 use Plover\Core\Toolkits\Arr;
 use Plover\Core\Toolkits\Html\Document;
 
@@ -29,12 +31,121 @@ class Shadow extends Extension {
 	 */
 	public function register() {
 		$this->modules->register( self::MODULE_NAME, array(
-			'group'   => 'supports',
+			'group'   => 'extensions',
 			'label'   => __( 'Block shadow', 'plover' ),
 			'excerpt' => __( 'Extra text-shadow, drop-shadow, and box-shadow support for core blocks.', 'plover' ),
 			'icon'    => esc_url( $this->core->core_url( 'assets/images/block-shadow.png' ) ),
 			'doc'     => 'https://wpplover.com/docs/plover-kit/modules/block-shadow/',
-			'fields'  => array()
+			'fields'  => array(
+				'supported_blocks' => array(
+					'label'        => __( 'Supported Blocks', 'plover' ),
+					'default'      => array(
+						'core/column'              => array(
+							'text'            => 'no',
+							'drop'            => 'no',
+							'box'             => 'yes',
+							'defaultControls' => [ 'box' ]
+						),
+						'core/button'              => array(
+							'text'            => 'no',
+							'drop'            => 'no',
+							'box'             => 'yes',
+							'defaultControls' => [ 'box' ]
+						),
+						'core/read-more'           => array(
+							'text'            => 'no',
+							'drop'            => 'no',
+							'box'             => 'yes',
+							'defaultControls' => [ 'box' ]
+						),
+						'core/image'               => array(
+							'text'            => 'no',
+							'drop'            => 'yes',
+							'box'             => 'yes',
+							'defaultControls' => [ 'drop' ]
+						),
+						'core/post-featured-image' => array(
+							'drop'            => 'yes',
+							'box'             => 'yes',
+							'text'            => 'no',
+							'defaultControls' => [ 'drop' ]
+						),
+						'core/paragraph'           => array(
+							'text'            => 'yes',
+							'drop'            => 'yes',
+							'box'             => 'yes',
+							'defaultControls' => [ 'text', 'drop' ]
+						),
+						'core/heading'             => array(
+							'text'            => 'yes',
+							'box'             => 'yes',
+							'drop'            => 'yes',
+							'defaultControls' => [ 'text' ]
+						),
+						'core/post-title'          => array(
+							'text'            => 'yes',
+							'box'             => 'yes',
+							'drop'            => 'yes',
+							'defaultControls' => [ 'text' ]
+						),
+						'core/post-excerpt'        => array(
+							'text'            => 'yes',
+							'drop'            => 'no',
+							'box'             => 'no',
+							'defaultControls' => [ 'text' ]
+						),
+						'core/cover'               => array(
+							'text'            => 'no',
+							'drop'            => 'no',
+							'box'             => 'yes',
+							'defaultControls' => [ 'box' ]
+						),
+						'core/group'               => array(
+							'text'            => 'no',
+							'drop'            => 'no',
+							'box'             => 'yes',
+							'defaultControls' => [ 'box' ]
+						),
+						'core/details'             => array(
+							'box'             => 'yes',
+							'defaultControls' => [ 'box' ]
+						),
+						'core/site-logo'           => array(
+							'text' => 'no',
+							'drop' => 'yes',
+							'box'  => 'yes',
+						)
+					),
+					'control'      => Control::T_BLOCK_SELECTOR,
+					'control_args' => array(
+						'fields' => array(
+							'text'            => array(
+								'label'   => __( 'Text Shadow', 'plover' ),
+								'default' => 'yes',
+								'control' => Control::T_SWITCH
+							),
+							'box'             => array(
+								'label'   => __( 'Box Shadow', 'plover' ),
+								'default' => 'yes',
+								'control' => Control::T_SWITCH
+							),
+							'drop'            => array(
+								'label'   => __( 'Drop Shadow', 'plover' ),
+								'default' => 'yes',
+								'control' => Control::T_SWITCH
+							),
+							'defaultControls' => array(
+								'label'        => __( 'Default Controls', 'plover' ),
+								'default'      => array( 'text', 'box', 'drop' ),
+								'control'      => Control::T_TAGS,
+								'control_args' => array(
+									'suggestions' => array( 'text', 'box', 'drop' )
+								)
+							)
+						)
+					)
+				)
+			)
 		) );
 	}
 
@@ -43,10 +154,17 @@ class Shadow extends Extension {
 	 *
 	 * @return void
 	 */
-	public function boot() {
+	public function boot( Blocks $blocks ) {
 		// module is disabled.
 		if ( ! $this->settings->checked( self::MODULE_NAME ) ) {
 			return;
+		}
+
+		$supported_blocks = $this->settings->get( self::MODULE_NAME, 'supported_blocks' );
+		foreach ( $supported_blocks as $block => $args ) {
+			$blocks->extend_block_supports( $block, array(
+				'ploverShadow' => $args,
+			) );
 		}
 
 		$this->scripts->enqueue_editor_asset( 'plover-block-shadow', array(
@@ -224,6 +342,12 @@ class Shadow extends Extension {
 	 * @return string
 	 */
 	public function render( string $block_content, array $block ): string {
+		$block_name       = $block['blockName'] ?? '';
+		$supported_blocks = $this->settings->get( self::MODULE_NAME, 'supported_blocks' );
+		if ( ! isset( $supported_blocks[ $block_name ] ) ) {
+			return $block_content;
+		}
+
 		$text_shadow = $block['attrs']['textShadow'] ?? '';
 		$box_shadow  = $block['attrs']['boxShadow'] ?? '';
 		$drop_shadow = $block['attrs']['dropShadow'] ?? '';

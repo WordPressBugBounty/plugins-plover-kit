@@ -2,7 +2,7 @@
 
 namespace Plover\Core\Toolkits;
 
-use enshrined\svgSanitize\data\AllowedAttributes;
+use Plover\Core\Services\Settings\Control;
 use Plover\Core\Toolkits\Html\Document;
 
 /**
@@ -189,6 +189,105 @@ class Format {
 
 			return $input;
 		};
+	}
+
+	/**
+	 * Generates a closure to sanitize block selector control value.
+	 *
+	 * @param $args
+	 *
+	 * @return \Closure
+	 *
+	 * @since 1.3.0
+	 */
+	public static function create_block_selector_sanitizer( $args = array() ) {
+		return function ( $input ) use ( $args ) {
+			if ( ! is_array( $input ) ) {
+				return array();
+			}
+
+			$supported_namespace = array();
+			$registered_blocks   = array();
+
+			if ( isset( $args['collection'] ) ) {
+				foreach ( $args['collection'] as $collection => $value ) {
+					if ( is_bool( $value ) && $value ) { // namespace value, like 'core => true'
+						$supported_namespace[] = $collection;
+					} else if ( is_array( $value ) ) { // collection value
+						$registered_blocks = array_merge(
+							$registered_blocks,
+							array_values( Arr::pluck( $value['blocks'], 'name' ) ),
+						);
+					}
+				}
+			}
+
+			$result = array();
+
+			foreach ( $input as $block_name => $block_fields ) {
+				$block_name = self::sanitize_block_name( $block_name, $supported_namespace, $registered_blocks );
+				if ( empty( $block_name ) ) { // Invalid block name
+					continue;
+				}
+
+				// We need a new array to store the field values, and invalid fields will be ignored.
+				$fields_value = array();
+				// We have a configurable block, sanitize every block field
+				if ( isset( $args['fields'] ) && is_array( $args['fields'] ) ) {
+					foreach ( $args['fields'] as $field => $fieldArgs ) {
+						// create block field sanitizer
+						$sanitizer = Control::sanitize(
+							$fieldArgs['control'],
+							array_merge(
+								$fieldArgs['control_args'] ?? array(),
+								array( 'default' => $fieldArgs['default'] )
+							)
+						);
+
+						if ( $sanitizer ) {
+							$fields_value[ $field ] = call_user_func( $sanitizer, $block_fields[ $field ] ?? null );
+						}
+					}
+				}
+
+				$result[ $block_name ] = $fields_value;
+			}
+
+			return $result;
+		};
+	}
+
+	/**
+	 * Sanitize a block name to ensure it only contains lowercase letters, numbers, hyphens, underscores, and slash.
+	 * If `supported_namespace` and `registered_blocks` are provided,
+	 * checks will also be performed on the range of valid block names.
+	 *
+	 * @param string $raw_name The raw input block name.
+	 * @param array $supported_namespace The raw input block name.
+	 * @param array $registered_blocks The raw input block name.
+	 *
+	 * @return string Sanitized block name, or empty string if sanitization results in an empty value.
+	 *
+	 * @since 1.3.0
+	 */
+	public static function sanitize_block_name( $raw_name, $supported_namespace = array(), $registered_blocks = array() ) {
+		// Remove all illegal characters (allow only lowercase letters, numbers, underscore, hyphen, slash)
+		$block_name = preg_replace( '/[^a-z0-9_\/-]/', '', strtolower( trim( $raw_name ) ) );
+		// Allow all blocks
+		if ( empty( $supported_namespace ) && empty( $registered_blocks ) ) {
+			return $block_name;
+		}
+		// It's a registered block
+		if ( in_array( $block_name, $registered_blocks ) ) {
+			return $block_name;
+		}
+		// It's in the available block collection.
+		list( $namespace ) = explode( '/', $block_name );
+		if ( in_array( $namespace, $supported_namespace ) ) {
+			return $block_name;
+		}
+
+		return '';
 	}
 
 	/**

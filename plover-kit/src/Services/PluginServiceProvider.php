@@ -9,10 +9,9 @@ use Plover\Kit\Extensions\Breadcrumb;
 use Plover\Kit\Extensions\CodeSnippets;
 use Plover\Kit\Extensions\Counter;
 use Plover\Kit\Extensions\IconLibrary;
-use Plover\Kit\Extensions\Measures;
 use Plover\Kit\Extensions\PatternLibrary;
 use Plover\Kit\Extensions\Preloader;
-use Plover\Kit\Extensions\PremiumDisplay;
+use Plover\Kit\Extensions\PremiumAdvancedLayout;
 use Plover\Kit\Extensions\PremiumEntranceAnimation;
 use Plover\Kit\Extensions\PremiumHighlight;
 use Plover\Kit\Extensions\PremiumHoverAnimation;
@@ -53,7 +52,6 @@ class PluginServiceProvider extends ServiceProvider {
         $extensions->register( 'plover-kit-preloader', Preloader::class );
         $extensions->register( 'plover-kit-toc', TableOfContents::class );
         $extensions->register( 'plover-kit-patterns', PatternLibrary::class );
-        $extensions->register( 'plover-kit-measures', Measures::class );
         $extensions->register( 'plover-kit-counter', Counter::class );
         $extensions->register( 'plover-kit-typing-animation', TypingAnimation::class );
     }
@@ -102,7 +100,6 @@ class PluginServiceProvider extends ServiceProvider {
     public function localize_plugin_data( $data ) {
         $data['plan'] = ( plover_fs()->can_use_premium_code() ? 'premium' : 'free' );
         // $data['upsell']   = esc_url( admin_url( 'admin.php?page=plover-kit-pricing' ) );
-        $data['upsell'] = 'https://wpplover.com/plugins/plover-kit/#plans';
         $data['is_debug'] = plover_kit_is_debug();
         $data['assets_url'] = plover_kit()->app_url( 'assets' );
         $data['version'] = ( plover_kit_is_debug() ? time() : PLOVER_KIT_VERSION );

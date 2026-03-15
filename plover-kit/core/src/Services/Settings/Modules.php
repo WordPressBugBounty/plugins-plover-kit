@@ -44,7 +44,7 @@ class Modules {
 		$module_groups = apply_filters( 'plover_core_module_groups', array(
 			'default'        => array(
 				'label'       => __( 'Modules', 'plover' ),
-				'description' => __( 'Standalone feature, similar to a WordPress plugin.', 'plover' ),
+				'description' => __( 'Time-Saving libraries & standalone feature.', 'plover' ),
 			),
 			'theme'          => array(
 				'order'       => 5,
@@ -66,10 +66,6 @@ class Modules {
 			'extensions'     => array(
 				'label'       => __( 'Block Extensions', 'plover' ),
 				'description' => __( 'Take your WordPress editing experience to the next level!', 'plover' ),
-			),
-			'supports'       => array(
-				'label'       => __( 'Block Styles', 'plover' ),
-				'description' => __( 'Empower your creativity: visual CSS tools for your design!', 'plover' ),
 			)
 		) );
 
@@ -89,14 +85,7 @@ class Modules {
 	 * @return mixed
 	 */
 	public function localize_modules_data( $data ) {
-		$data['modules']       = array_map( function ( $module ) {
-			$module['label']       = esc_html( $module['label'] );
-			$module['excerpt']     = esc_html( $module['excerpt'] );
-			$module['order']       = absint( $module['order'] );
-			$module['description'] = wp_kses_post( $module['description'] );
-
-			return $module;
-		}, $this->modules );
+		$data['modules']       = $this->modules;
 		$data['module_groups'] = $this->groups;
 
 		return $data;
@@ -121,9 +110,9 @@ class Modules {
 
 		if ( ! empty( $args['label'] ) ) {
 			$this->groups[ $slug ] = array(
-				'label'       => esc_html( $args['label'] ),
-				'description' => esc_html( $args['description'] ),
-				'order'       => absint( $args['order'] ),
+				'label'       => $args['label'],
+				'description' => $args['description'],
+				'order'       => absint( $args['order']),
 			);
 		}
 	}
