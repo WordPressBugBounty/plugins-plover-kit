@@ -48,18 +48,19 @@ class AdvancedLayout extends Extension {
 				'flex_blocks'       => array(
 					'label'   => __( 'Flex Layout', 'plover' ),
 					'help'    => __( 'Add responsive flex layout options to the selected block.', 'plover' ),
-					'default' => array(
+					'default' => apply_filters( 'plover_core_flex_layout_supported_blocks', array(
 						'core/group'        => array(),
 						'core/buttons'      => array(),
 						'core/columns'      => array(),
 						'core/social-links' => array(),
-					),
+						'core/navigation' 	=> array(),
+					) ),
 					'control' => Control::T_BLOCK_SELECTOR,
 				),
 				'typography_blocks' => array(
 					'label'        => __( 'Typography', 'plover' ),
 					'help'         => __( 'Add responsive text alignment options to the selected block.', 'plover' ),
-					'default'      => array(
+					'default'      => apply_filters( 'plover_core_typography_supported_blocks', array(
 						'core/paragraph'    => array(
 							'alignment' => 'yes',
 						),
@@ -72,7 +73,7 @@ class AdvancedLayout extends Extension {
 						'core/post-excerpt' => array(
 							'alignment' => 'yes',
 						)
-					),
+					) ),
 					'control'      => Control::T_BLOCK_SELECTOR,
 					'control_args' => array(
 						'fields' => array(
@@ -87,23 +88,23 @@ class AdvancedLayout extends Extension {
 				'position_blocks'   => array(
 					'label'   => __( 'Position', 'plover' ),
 					'help'    => __( 'You can set position, order and z-index css properties for blocks, responsive!', 'plover' ),
-					'default' => array(
-						'core/group'   => array(),
-						'core/column'  => array(),
-						'core/columns' => array(),
-						'core/cover'   => array(),
-						'core/image'   => array(),
-					),
+					'default' => apply_filters( 'plover_core_position_supported_blocks', array(
+						'core/group'   		=> array(),
+						'core/column'  		=> array(),
+						'core/columns' 		=> array(),
+						'core/cover'   		=> array(),
+						'core/image'   		=> array(),
+					) ),
 					'control' => Control::T_BLOCK_SELECTOR,
 				),
 				'sizing_blocks'     => array(
 					'premium' => true,
 					'label'   => __( 'Sizing', 'plover' ),
 					'help'    => __( 'Add responsive height, width, [min/max]-height and [min/max]-width css properties to selected blocks.', 'plover' ),
-					'default' => array(
+					'default' => apply_filters( 'plover_core_sizing_supported_blocks', array(
 						'core/group' => array(),
 						'core/cover' => array(),
-					),
+					) ),
 					'upsell'  => sprintf(
 						_x(
 							'The sizing block options is available only in the %s edition.',
