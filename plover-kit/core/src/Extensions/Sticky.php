@@ -88,10 +88,6 @@ class Sticky extends Extension {
 			$wrap->set_attribute( 'data-sticky-container', $container );
 		}
 
-		if ( is_user_logged_in() ) {
-			$wrap->set_attribute( 'data-sticky-has-admin-bar', true );
-		}
-
 		apply_filters( 'plover_core_render_sticky', $wrap, $block );
 
 		return $html->save_html();

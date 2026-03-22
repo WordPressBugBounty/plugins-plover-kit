@@ -1,3 +1,7 @@
+= 1.3.2 =
+
+* Ref: better sticky when user logged in
+
 = 1.3.1 =
 
 * Fix: Multi same navigation block causing infinite loop error

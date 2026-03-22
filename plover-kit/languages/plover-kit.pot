@@ -2,22 +2,22 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plover Kit 1.6.1\n"
+"Project-Id-Version: Plover Kit 1.6.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plover-kit\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-03-19T14:36:02+00:00\n"
+"POT-Creation-Date: 2026-03-22T15:11:11+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover-kit\n"
 
 #. Plugin Name of the plugin
 #: plover-kit.php
-#: src/Services/DashboardServiceProvider.php:56
 #: src/Services/DashboardServiceProvider.php:57
+#: src/Services/DashboardServiceProvider.php:58
 msgid "Plover Kit"
 msgstr ""
 
@@ -780,63 +780,63 @@ msgstr ""
 msgid "Unable to connect to the filesystem. Please confirm your credentials."
 msgstr ""
 
-#: src/Services/DashboardServiceProvider.php:67
+#: src/Services/DashboardServiceProvider.php:68
 msgid "Plover Kit Modules"
 msgstr ""
 
-#: src/Services/DashboardServiceProvider.php:68
+#: src/Services/DashboardServiceProvider.php:69
 msgid "Modules"
 msgstr ""
 
-#: src/Services/DashboardServiceProvider.php:100
+#: src/Services/DashboardServiceProvider.php:101
 msgid "Plover Theme"
 msgstr ""
 
-#: src/Services/DashboardServiceProvider.php:101
+#: src/Services/DashboardServiceProvider.php:102
 msgid "Looking for a WordPress theme? Plover Theme works perfectly with Plover Kit. As a Full Site Editing theme, Plover utilizes the WordPress block editor and the extensions provided by the Plover Kit to create unique and eye-catching web design."
 msgstr ""
 
-#: src/Services/DashboardServiceProvider.php:128
+#: src/Services/DashboardServiceProvider.php:195
 msgid "Sorry, you are not allowed to install this theme."
 msgstr ""
 
-#: src/Toolkits/Theme.php:30
+#: src/Toolkits/Theme.php:85
 msgid "Sorry, you are not allowed to swicth themes on this site."
 msgstr ""
 
-#: src/Toolkits/Theme.php:37
+#: src/Toolkits/Theme.php:92
 msgid "Something went wrong."
 msgstr ""
 
-#: src/Toolkits/Theme.php:38
+#: src/Toolkits/Theme.php:93
 msgid "The requested theme does not exist."
 msgstr ""
 
-#: src/Toolkits/Theme.php:57
+#: src/Toolkits/Theme.php:112
 msgid "Install Themes"
 msgstr ""
 
-#: src/Toolkits/Theme.php:64
+#: src/Toolkits/Theme.php:119
 msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
-#: src/Toolkits/Theme.php:69
+#: src/Toolkits/Theme.php:124
 msgid "Update Theme"
 msgstr ""
 
-#: src/Toolkits/Theme.php:74
+#: src/Toolkits/Theme.php:129
 msgid "Install Theme"
 msgstr ""
 
-#: src/Toolkits/Theme.php:81
+#: src/Toolkits/Theme.php:136
 msgid "Done!"
 msgstr ""
 
-#: src/Toolkits/Theme.php:99
+#: src/Toolkits/Theme.php:154
 msgid "Sorry, you are not allowed to update themes for this site."
 msgstr ""
 
-#: src/Toolkits/Theme.php:126
+#: src/Toolkits/Theme.php:181
 msgid "Sorry, you are not allowed to install themes on this site."
 msgstr ""
 
@@ -928,44 +928,44 @@ msgid "Import"
 msgstr ""
 
 #: assets/js/patterns/index.js:1
-#: static/blocks/patterns/components/pattern-detail.jsx:48
-#: static/blocks/patterns/components/patterns.jsx:46
-#: static/blocks/patterns/components/patterns.jsx:67
+#: static/blocks/patterns/components/pattern-detail.jsx:60
+#: static/blocks/patterns/components/patterns.jsx:57
+#: static/blocks/patterns/components/patterns.jsx:100
 msgid "Loading..."
 msgstr ""
 
 #: assets/js/patterns/index.js:1
-#: static/blocks/patterns/components/pattern-detail.jsx:90
+#: static/blocks/patterns/components/pattern-detail.jsx:89
 msgid "Downloads"
 msgstr ""
 
 #: assets/js/patterns/index.js:1
-#: static/blocks/patterns/components/pattern-detail.jsx:94
+#: static/blocks/patterns/components/pattern-detail.jsx:93
 msgid "Color Mode"
 msgstr ""
 
 #: assets/js/patterns/index.js:1
-#: static/blocks/patterns/components/pattern-detail.jsx:101
+#: static/blocks/patterns/components/pattern-detail.jsx:100
 msgid "Tags"
 msgstr ""
 
 #: assets/js/patterns/index.js:1
-#: static/blocks/patterns/components/pattern-detail.jsx:108
+#: static/blocks/patterns/components/pattern-detail.jsx:107
 msgid "Categories"
 msgstr ""
 
 #: assets/js/patterns/index.js:1
-#: static/blocks/patterns/components/pattern-detail.jsx:115
+#: static/blocks/patterns/components/pattern-detail.jsx:114
 msgid "Required Plugins"
 msgstr ""
 
 #: assets/js/patterns/index.js:1
-#: static/blocks/patterns/components/patterns.jsx:138
+#: static/blocks/patterns/components/patterns.jsx:174
 msgid "Load More"
 msgstr ""
 
 #: assets/js/patterns/index.js:1
-#: static/blocks/patterns/components/patterns.jsx:141
+#: static/blocks/patterns/components/patterns.jsx:177
 msgid "End Of Content"
 msgstr ""
 

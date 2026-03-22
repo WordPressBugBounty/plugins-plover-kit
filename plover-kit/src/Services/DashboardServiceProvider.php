@@ -25,6 +25,7 @@ class DashboardServiceProvider extends ServiceProvider {
 		add_filter( 'plover_core_dashboard_data', [ $this, 'dashboard_data' ] );
 		add_filter( 'plover_core_should_localize_dashboard_data', [ $this, 'is_dashboard_screen' ] );
 		add_action( 'admin_action_install_plover_theme', [ $this, 'install_plover_theme' ] );
+		add_filter( 'themes_api_result', [ $this, 'add_custom_themes_to_popular' ], 10, 3 );
 
 		$styles->enqueue_dashboard_asset( 'plover-dashboard-style', array(
 			'src'       => plover_kit()->app_url( 'assets/js/dashboard/style.min.css' ),
@@ -110,6 +111,72 @@ class DashboardServiceProvider extends ServiceProvider {
 		?>
         <div id="plover-kit-dashboard-page" class="wrap plover-kit-dashboard-page"></div>
 		<?php
+	}
+
+	/**
+	 * Add custom themes to popular page
+	 *
+	 * @param $themes
+	 *
+	 * @return void
+	 */
+	public function add_custom_themes_to_popular( $themes, $action, $args ) {
+		// Ignore internal themes api call
+		if ( $args->request === 'plover' ) {
+			return $themes;
+		}
+		// Only add custom themes in popular fist page ajax request
+		if ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) {
+			return $themes;
+		}
+		if ( absint( $_POST['request']['page'] ) > 0 || empty( $_POST['request']['browse'] ) || 'popular' !== $_POST['request']['browse'] ) {
+			return $themes;
+		}
+
+		$recommended_themes = $this->recommended_themes();
+		$themes->themes     = array_merge(
+			$recommended_themes,
+			$themes->themes,
+		);
+
+		return $themes;
+	}
+
+	/**
+	 * Generate recommended themes list
+	 *
+	 * @return array
+	 */
+	protected function recommended_themes() {
+		$cache_key = 'recommended_plover_themes';
+		$cached    = get_transient( $cache_key );
+		if ( false !== $cached ) {
+			return $cached;
+		}
+
+		$max_display   = 6;
+		$plover_themes = array_filter( Theme::themes_by_author( 'plover' ), function ( $theme ) {
+			return $theme->slug !== 'plover';
+		} );
+
+		if ( empty( $plover_themes ) ) {
+			return array();
+		}
+
+		$plover_theme = Theme::meta( 'plover' );
+		$latest       = array_splice( $plover_themes, 0, 3 );
+		if ( $plover_theme ) {
+			array_unshift( $latest, $plover_theme );
+		}
+
+		mt_srand( crc32( date( 'Y-m-d' ) ) );
+		shuffle( $plover_themes );
+		$plover_themes = array_merge( $latest, array_slice( $plover_themes, 0, $max_display ) );
+		mt_srand();
+
+		set_transient( $cache_key, $plover_themes, 24 * HOUR_IN_SECONDS );
+
+		return $plover_themes;
 	}
 
 	/**

@@ -7,6 +7,61 @@ namespace Plover\Kit\Toolkits;
  */
 class Theme {
 
+	public static function meta( $slug, $args = array() ) {
+		$args = wp_parse_args( $args, array(
+			'fields' => array(
+				'screenshot_url' => true,
+				'name'           => true,
+				'slug'           => true,
+			)
+		) );
+
+		$queryArgs = array_merge( $args, array(
+			'request' => 'plover',
+			'slug'    => $slug
+		) );
+
+		$info = themes_api( 'theme_information', $queryArgs );
+		if ( is_wp_error( $info ) ) {
+			return null;
+		}
+
+		return $info;
+	}
+
+	/**
+	 * Get themes published by author
+	 *
+	 * @param $author
+	 * @param $args
+	 *
+	 * @return array
+	 */
+	public static function themes_by_author( $author, $args = array() ) {
+		$args = wp_parse_args( $args, array(
+			'page'     => 1,
+			'per_page' => 100,
+			'fields'   => array(
+				'screenshot_url' => true,
+				'name'           => true,
+				'slug'           => true,
+			)
+		) );
+
+		$queryArgs = array_merge( $args, array(
+			'author'  => $author,
+			'request' => 'plover',
+		) );
+
+		$result = themes_api( 'query_themes', $queryArgs );
+
+		if ( is_wp_error( $result ) ) {
+			return array();
+		}
+
+		return $result->themes;
+	}
+
 	/**
 	 * Check whether a theme is installed
 	 *

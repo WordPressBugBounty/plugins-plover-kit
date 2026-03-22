@@ -1,7 +1,7 @@
 === Plover Kit – Blocks, Patterns, Responsive Layout and Gutenberg Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.6.1
+Stable tag: 1.6.2
 Tested up to: 6.9
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -18,13 +18,13 @@ Tired of the limitations of the standard WordPress block editor? Plover Kit is a
 
 Go beyond the default settings. Plover Kit adds advanced design options to standard WordPress blocks like **Cover**, **Columns**, **Query Pagination**, **Buttons**, and more. Gain precise control over:
 
-- **Flex Layout**: Add responsive Flexbox Layout controls to WordPress core blocks, allowing you to create advanced and flexible layouts without any code. (**[Flex Layout](https://wpplover.com/docs/plover-kit/modules/advanced-layout/#flex-layout)**).
+- **[Flex Layout](https://wpplover.com/docs/plover-kit/modules/advanced-layout/#flex-layout)**: Add responsive Flexbox Layout controls to WordPress core blocks, allowing you to create advanced and flexible layouts without any code. (**[Flex Layout](https://wpplover.com/docs/plover-kit/modules/advanced-layout/#flex-layout)**).
 - **Layout & Positioning**: Set block position (relative, absolute, sticky, fixed), Z-Index, Order (**[CSS Position](https://wpplover.com/docs/plover-kit/modules/advanced-layout/#css-position)**) and display properties with responsive controls (**[CSS Display](https://wpplover.com/docs/plover-kit/modules/advanced-layout/#css-display)**).
 - **Spacing & Sizing**: Set height, width, min/max dimensions with responsive controls (**[Block Sizing](https://wpplover.com/docs/plover-kit/modules/advanced-layout/#block-sizing)**).
 - **Visual Styles**: Apply advanced text-shadow, drop-shadow, and box-shadow to any blocks (**[Block Shadow](https://wpplover.com/docs/plover-kit/modules/block-shadow/)**).
-- **Block Sticky**: Make elements sticky on scroll (**[Block Sticky](https://wpplover.com/docs/plover-kit/modules/block-sticky/)**).
-- **Event Handler**: Add custom JavaScript event handlers (click, double-click, hover, etc.) to button block for advanced interactions (**[Event Handler](https://wpplover.com/docs/plover-kit/modules/block-event-handler/)**).
-- **Code Highlighting**: Enhance the core Code block with syntax highlighting (**[Code Highlight](https://wpplover.com/docs/plover-kit/modules/code-highlight/)**).
+- **[Block Sticky](https://wpplover.com/docs/plover-kit/modules/block-sticky/)**: Make elements sticky on scroll.
+- **[Event Handler](https://wpplover.com/docs/plover-kit/modules/block-event-handler/)**: Add custom JavaScript event handlers (click, double-click, hover, etc.) to button block for advanced interactions.
+- **[Code Highlight](https://wpplover.com/docs/plover-kit/modules/code-highlight/)**: Enhance the core Code block with syntax highlighting.
 
 #### 🆕 Powerful Custom Blocks
 
@@ -147,6 +147,12 @@ For free users, please use the [WordPress.org support forum](https://wordpress.o
 19. JavaScript Event Handler
 
 == Changelog ==
+
+= 1.6.2 =
+
+* Ref: Improve patterns library user experience
+* Ref: Better sticky style when user logged in
+* Ref: Update core to v1.3.2
 
 = 1.6.1 =
 

@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wp-plover/plover-kit',
-        'pretty_version' => 'v1.6.1',
-        'version' => '1.6.1.0',
-        'reference' => '349696fb8496a11d7867177da68dda052b144cfe',
+        'pretty_version' => 'v1.6.2',
+        'version' => '1.6.2.0',
+        'reference' => 'd553458c4b90a8d170c692887c23f394444f1fad',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'wp-plover/plover-kit' => array(
-            'pretty_version' => 'v1.6.1',
-            'version' => '1.6.1.0',
-            'reference' => '349696fb8496a11d7867177da68dda052b144cfe',
+            'pretty_version' => 'v1.6.2',
+            'version' => '1.6.2.0',
+            'reference' => 'd553458c4b90a8d170c692887c23f394444f1fad',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
