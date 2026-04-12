@@ -26,6 +26,31 @@ class ComposerStaticInita4a6d183ce1253ce2dd355793690dd38
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Plover\\Kit\\Assets\\IconLibrarySource' => __DIR__ . '/../..' . '/src/Assets/IconLibrarySource.php',
+        'Plover\\Kit\\Controllers\\IconLibrariesController' => __DIR__ . '/../..' . '/src/Controllers/IconLibrariesController.php',
+        'Plover\\Kit\\Controllers\\IconsController' => __DIR__ . '/../..' . '/src/Controllers/IconsController.php',
+        'Plover\\Kit\\Extensions\\Breadcrumb' => __DIR__ . '/../..' . '/src/Extensions/Breadcrumb.php',
+        'Plover\\Kit\\Extensions\\CodeSnippets' => __DIR__ . '/../..' . '/src/Extensions/CodeSnippets.php',
+        'Plover\\Kit\\Extensions\\Counter' => __DIR__ . '/../..' . '/src/Extensions/Counter.php',
+        'Plover\\Kit\\Extensions\\IconLibrary' => __DIR__ . '/../..' . '/src/Extensions/IconLibrary.php',
+        'Plover\\Kit\\Extensions\\PatternLibrary' => __DIR__ . '/../..' . '/src/Extensions/PatternLibrary.php',
+        'Plover\\Kit\\Extensions\\Preloader' => __DIR__ . '/../..' . '/src/Extensions/Preloader.php',
+        'Plover\\Kit\\Extensions\\PremiumAdvancedLayout' => __DIR__ . '/../..' . '/src/Extensions/PremiumAdvancedLayout.php',
+        'Plover\\Kit\\Extensions\\PremiumEntranceAnimation' => __DIR__ . '/../..' . '/src/Extensions/PremiumEntranceAnimation.php',
+        'Plover\\Kit\\Extensions\\PremiumHighlight' => __DIR__ . '/../..' . '/src/Extensions/PremiumHighlight.php',
+        'Plover\\Kit\\Extensions\\PremiumHoverAnimation' => __DIR__ . '/../..' . '/src/Extensions/PremiumHoverAnimation.php',
+        'Plover\\Kit\\Extensions\\PremiumIcon' => __DIR__ . '/../..' . '/src/Extensions/PremiumIcon.php',
+        'Plover\\Kit\\Extensions\\PremiumMagazine' => __DIR__ . '/../..' . '/src/Extensions/PremiumMagazine.php',
+        'Plover\\Kit\\Extensions\\PremiumParticles' => __DIR__ . '/../..' . '/src/Extensions/PremiumParticles.php',
+        'Plover\\Kit\\Extensions\\PremiumRoughNotation' => __DIR__ . '/../..' . '/src/Extensions/PremiumRoughNotation.php',
+        'Plover\\Kit\\Extensions\\PremiumShapeDivider' => __DIR__ . '/../..' . '/src/Extensions/PremiumShapeDivider.php',
+        'Plover\\Kit\\Extensions\\PremiumSticky' => __DIR__ . '/../..' . '/src/Extensions/PremiumSticky.php',
+        'Plover\\Kit\\Extensions\\ReadingTime' => __DIR__ . '/../..' . '/src/Extensions/ReadingTime.php',
+        'Plover\\Kit\\Extensions\\TableOfContents' => __DIR__ . '/../..' . '/src/Extensions/TableOfContents.php',
+        'Plover\\Kit\\Extensions\\TypingAnimation' => __DIR__ . '/../..' . '/src/Extensions/TypingAnimation.php',
+        'Plover\\Kit\\Services\\DashboardServiceProvider' => __DIR__ . '/../..' . '/src/Services/DashboardServiceProvider.php',
+        'Plover\\Kit\\Services\\PluginServiceProvider' => __DIR__ . '/../..' . '/src/Services/PluginServiceProvider.php',
+        'Plover\\Kit\\Toolkits\\Theme' => __DIR__ . '/../..' . '/src/Toolkits/Theme.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
