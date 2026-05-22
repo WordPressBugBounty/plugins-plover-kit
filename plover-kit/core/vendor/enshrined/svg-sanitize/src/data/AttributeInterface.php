@@ -1,14 +1,14 @@
 <?php
-namespace enshrined\svgSanitize\data;
+
+namespace Plover\Core\enshrined\svgSanitize\data;
 
 /**
  * Class AttributeInterface
  *
- * @package enshrined\svgSanitize\data
+ * @package \Plover\Core\enshrined\svgSanitize\data
  */
 interface AttributeInterface
 {
-
     /**
      * Returns an array of attributes
      *

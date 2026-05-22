@@ -97,8 +97,8 @@ class Particles extends Extension {
 		if ( isset( $attrs['particleZIndex'] ) ) {
 			$z = intval( $attrs['particleZIndex'] );
 			$wrap->add_styles( [
-				'--plover--particles--canvas-z-index'        => $z,
-				'--plover--particles--inner-content-z-index' => $z + 1,
+				'--plover--particles--canvas-z-index'        => (string) $z,
+				'--plover--particles--inner-content-z-index' => (string) ($z + 1),
 			] );
 		}
 

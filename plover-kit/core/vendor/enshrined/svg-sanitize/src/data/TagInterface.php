@@ -1,19 +1,18 @@
 <?php
-namespace enshrined\svgSanitize\data;
+
+namespace Plover\Core\enshrined\svgSanitize\data;
 
 /**
  * Interface TagInterface
  *
- * @package enshrined\svgSanitize\tags
+ * @package \Plover\Core\enshrined\svgSanitize\tags
  */
 interface TagInterface
 {
-
     /**
      * Returns an array of tags
      *
      * @return array
      */
     public static function getTags();
-
 }

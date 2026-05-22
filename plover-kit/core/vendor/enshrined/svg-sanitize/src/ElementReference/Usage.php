@@ -1,5 +1,5 @@
 <?php
-namespace enshrined\svgSanitize\ElementReference;
+namespace Plover\Core\enshrined\svgSanitize\ElementReference;
 
 class Usage
 {

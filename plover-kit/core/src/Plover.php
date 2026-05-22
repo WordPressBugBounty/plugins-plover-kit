@@ -22,7 +22,7 @@ class Plover extends Container {
 	 * @since 1.0.0
 	 * @var string
 	 */
-	const VERSION = '1.3.2';
+	const VERSION = '1.3.4';
 
 	/**
 	 * The core instance.

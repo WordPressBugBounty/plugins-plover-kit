@@ -160,13 +160,6 @@ class AdvancedLayout extends Extension {
 			'asset' => $this->core->core_path( 'assets/js/block-supports/advanced-layout/index.min.asset.php' )
 		) );
 
-		$this->styles->enqueue_editor_asset( 'plover-advanced-layout', array(
-			'ver'  => 'core',
-			'rtl'  => 'replace',
-			'src'  => $this->core->core_url( 'assets/js/block-supports/advanced-layout/style.min.css' ),
-			'path' => $this->core->core_path( 'assets/js/block-supports/advanced-layout/style.min.css' )
-		) );
-
 		foreach ( Responsive::DEVICES as $device ) {
 			// Enqueue responsive display css
 			if ( $this->settings->checked( self::MODULE_NAME, 'display' ) ) {
@@ -368,7 +361,7 @@ class AdvancedLayout extends Extension {
 					$z_index = $this->sanitize_z_index_value( $value );
 					if ( $z_index !== '' ) {
 						$classnames[]            = "has-z-{$device}";
-						$styles["--z-{$device}"] = $z_index;
+						$styles["--z-{$device}"] = (string) $z_index;
 					}
 				} );
 			}
@@ -378,7 +371,7 @@ class AdvancedLayout extends Extension {
 					$order = $this->sanitize_order_value( $value );
 					if ( $order ) {
 						$classnames[]                = 'has-order-' . $device;
-						$styles["--order-{$device}"] = $order;
+						$styles["--order-{$device}"] = (string) $order;
 					}
 				} );
 			}

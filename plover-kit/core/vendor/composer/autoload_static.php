@@ -11,18 +11,15 @@ class ComposerStaticInit63e561d450393276e1767bfeaf448511
     );
 
     public static $prefixLengthsPsr4 = array (
-        'e' =>
-        array (
-            'enshrined\\svgSanitize\\' => 22,
-        ),
         'P' =>
         array (
+            'Plover\\Core\\enshrined\\svgSanitize\\' => 34,
             'Plover\\Core\\' => 12,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'enshrined\\svgSanitize\\' =>
+        'Plover\\Core\\enshrined\\svgSanitize\\' =>
         array (
             0 => __DIR__ . '/..' . '/enshrined/svg-sanitize/src',
         ),

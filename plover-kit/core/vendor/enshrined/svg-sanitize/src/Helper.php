@@ -1,5 +1,5 @@
 <?php
-namespace enshrined\svgSanitize;
+namespace Plover\Core\enshrined\svgSanitize;
 
 class Helper
 {

@@ -1,9 +1,9 @@
 <?php
-namespace enshrined\svgSanitize\ElementReference;
+namespace Plover\Core\enshrined\svgSanitize\ElementReference;
 
-use enshrined\svgSanitize\data\XPath;
-use enshrined\svgSanitize\Exceptions\NestingException;
-use enshrined\svgSanitize\Helper;
+use Plover\Core\enshrined\svgSanitize\data\XPath;
+use Plover\Core\enshrined\svgSanitize\Exceptions\NestingException;
+use Plover\Core\enshrined\svgSanitize\Helper;
 
 class Resolver
 {

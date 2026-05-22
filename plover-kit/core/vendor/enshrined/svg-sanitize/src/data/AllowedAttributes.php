@@ -1,14 +1,14 @@
 <?php
-namespace enshrined\svgSanitize\data;
+
+namespace Plover\Core\enshrined\svgSanitize\data;
 
 /**
  * Class AllowedAttributes
  *
- * @package enshrined\svgSanitize\data
+ * @package \Plover\Core\enshrined\svgSanitize\data
  */
 class AllowedAttributes implements AttributeInterface
 {
-
     /**
      * Returns an array of attributes
      *
@@ -110,7 +110,6 @@ class AllowedAttributes implements AttributeInterface
             'version',
             'width',
             'xmlns',
-
             // SVG
             'accent-height',
             'accumulate',
@@ -289,7 +288,6 @@ class AllowedAttributes implements AttributeInterface
             'y2',
             'z',
             'zoomandpan',
-
             // MathML
             'accent',
             'accentunder',
@@ -344,7 +342,6 @@ class AllowedAttributes implements AttributeInterface
             'voffset',
             'width',
             'xmlns',
-
             // XML
             'xlink:href',
             'xml:id',

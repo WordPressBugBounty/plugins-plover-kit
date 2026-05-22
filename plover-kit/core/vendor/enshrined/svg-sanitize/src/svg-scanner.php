@@ -92,7 +92,7 @@ if ( empty( $files_to_scan ) ) {
  * Make sure to allow custom attributes,
  * and to remove remote references.
  */
-$sanitizer = new enshrined\svgSanitize\Sanitizer();
+$sanitizer = new \Plover\Core\enshrined\svgSanitize\Sanitizer();
 
 $sanitizer->removeRemoteReferences( true );
 

@@ -155,7 +155,7 @@ class Enqueue {
 
 		global $template_html;
 		if ( ! $template_html ) { // classic theme compatible
-			$template_html = apply_filters( 'the_content', get_the_content() );
+			$template_html = get_the_content();
 			$template_html = str_replace( ']]>', ']]&gt;', $template_html );
 		}
 

@@ -1,5 +1,5 @@
 <?php
-namespace enshrined\svgSanitize\Exceptions;
+namespace Plover\Core\enshrined\svgSanitize\Exceptions;
 
 use Exception;
 

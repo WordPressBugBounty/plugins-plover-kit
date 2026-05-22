@@ -1,14 +1,14 @@
 <?php
-namespace enshrined\svgSanitize\data;
+
+namespace Plover\Core\enshrined\svgSanitize\data;
 
 /**
  * Class AllowedTags
  *
- * @package enshrined\svgSanitize\data
+ * @package \Plover\Core\enshrined\svgSanitize\data
  */
 class AllowedTags implements TagInterface
 {
-
     /**
      * Returns an array of tags
      *
@@ -16,13 +16,12 @@ class AllowedTags implements TagInterface
      */
     public static function getTags()
     {
-        return array (
+        return array(
             // HTML
             'a',
             'font',
             'image',
             'style',
-
             // SVG
             'svg',
             'altglyph',
@@ -66,7 +65,6 @@ class AllowedTags implements TagInterface
             'use',
             'view',
             'vkern',
-
             // SVG Filters
             'feBlend',
             'feColorMatrix',
@@ -91,9 +89,8 @@ class AllowedTags implements TagInterface
             'feSpotLight',
             'feTile',
             'feTurbulence',
-
             //text
-            '#text'
+            '#text',
         );
     }
 }

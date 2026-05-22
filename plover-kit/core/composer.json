@@ -8,10 +8,38 @@
       "src/helpers.php"
     ]
   },
+  "extra": {
+    "strauss": {
+      "namespace_prefix": "Plover\\Core\\",
+      "target_directory": "vendor",
+      "include_root_autoload": true
+    }
+  },
   "require": {
     "ext-dom": "*",
     "ext-libxml": "*",
     "ext-json": "*",
     "enshrined/svg-sanitize": "^0.18.0"
+  },
+  "scripts": {
+    "prod": [
+      "composer install --no-dev --optimize-autoloader --classmap-authoritative --no-interaction"
+    ],
+    "scope": [
+      "sh -c 'test -f strauss.phar || curl -o strauss.phar -L -C - https://github.com/BrianHenryIE/strauss/releases/download/0.27.0/strauss.phar'",
+      "@php strauss.phar replace --from 'Plover\\Nest' --to 'Nest' --paths 'vendor'",
+      "@php strauss.phar replace --from 'Plover\\Toolkit' --to 'Toolkit' --paths 'vendor'",
+      "@php strauss.phar",
+      "@composer dump-autoload"
+    ],
+    "post-install-cmd": [
+      "@scope"
+    ],
+    "post-update-cmd": [
+      "@scope"
+    ],
+    "post-autoload-dump": [
+      "@php strauss.phar include-autoloader"
+    ]
   }
 }

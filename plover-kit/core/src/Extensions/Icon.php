@@ -298,9 +298,9 @@ class Icon extends Extension {
 			return $allowedposttags;
 		}
 
-		$attributes = \enshrined\svgSanitize\data\AllowedAttributes::getAttributes();
+		$attributes = \Plover\Core\enshrined\svgSanitize\data\AllowedAttributes::getAttributes();
 		$attributes = array_fill_keys( array_unique( $attributes ), true );
-		$tags       = \enshrined\svgSanitize\data\AllowedTags::getTags();
+		$tags       = \Plover\Core\enshrined\svgSanitize\data\AllowedTags::getTags();
 
 		// add safe svg support
 		return array_merge(

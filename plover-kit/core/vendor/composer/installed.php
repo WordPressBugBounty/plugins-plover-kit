@@ -1,13 +1,13 @@
 <?php return array(
     'root' => array(
         'name' => 'plover/plover-core',
-        'pretty_version' => 'v1.3.2',
-        'version' => '1.3.2.0',
-        'reference' => '4d73721854dc28c1acfd7fc915176ea8c554ac73',
+        'pretty_version' => 'v1.3.4',
+        'version' => '1.3.4.0',
+        'reference' => '749561915170244dde852168149572adc2dae138',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'dev' => true,
+        'dev' => false,
     ),
     'versions' => array(
         'enshrined/svg-sanitize' => array(
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'plover/plover-core' => array(
-            'pretty_version' => 'v1.3.2',
-            'version' => '1.3.2.0',
-            'reference' => '4d73721854dc28c1acfd7fc915176ea8c554ac73',
+            'pretty_version' => 'v1.3.4',
+            'version' => '1.3.4.0',
+            'reference' => '749561915170244dde852168149572adc2dae138',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

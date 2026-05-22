@@ -1,5 +1,5 @@
 <?php
-namespace enshrined\svgSanitize\data;
+namespace Plover\Core\enshrined\svgSanitize\data;
 
 class XPath extends \DOMXPath
 {

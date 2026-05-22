@@ -335,7 +335,7 @@ class Format {
 		static $sanitizer = null;
 
 		if ( is_null( $sanitizer ) ) {
-			$sanitizer = new \enshrined\svgSanitize\Sanitizer();
+			$sanitizer = new \Plover\Core\enshrined\svgSanitize\Sanitizer();
 			$sanitizer->minify( true );
 			$sanitizer->removeXMLTag( true );
 		}
