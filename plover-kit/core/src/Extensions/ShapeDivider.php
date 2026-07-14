@@ -123,7 +123,7 @@ class ShapeDivider extends Extension {
 
 		$shape_styles = [
 			'--plover-shape-color'   => $attrs['shapeColor'] ?? '',
-			'--plover-shape-z-index' => $attrs['shapeZIndex'] ?? '',
+			'--plover-shape-z-index' => (string) intval( $attrs['shapeZIndex'] ?? '' ),
 		];
 
 		if ( isset( $attrs['shapeWidth'] ) && $attrs['shapeWidth'] ) {

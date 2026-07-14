@@ -22,6 +22,7 @@ class DashboardServiceProvider extends ServiceProvider {
 	 */
 	public function boot( Styles $styles, Scripts $scripts ) {
 		add_action( 'admin_menu', [ $this, 'add_admin_menu' ] );
+		add_action( 'admin_enqueue_scripts', [ $this, 'add_global_styles_to_admin_dashboard' ] );
 		add_filter( 'plover_core_dashboard_data', [ $this, 'dashboard_data' ] );
 		add_filter( 'plover_core_should_localize_dashboard_data', [ $this, 'is_dashboard_screen' ] );
 		add_action( 'admin_action_install_plover_theme', [ $this, 'install_plover_theme' ] );
@@ -73,6 +74,12 @@ class DashboardServiceProvider extends ServiceProvider {
 		);
 	}
 
+	public function add_global_styles_to_admin_dashboard() {
+		if ( $this->is_dashboard_screen() ) {
+			wp_enqueue_global_styles_css_custom_properties();
+		}
+	}
+
 	public function is_dashboard_screen() {
 		if ( ! function_exists( 'get_current_screen' ) ) {
 			return false;
@@ -103,6 +110,8 @@ class DashboardServiceProvider extends ServiceProvider {
 				'screenshot'  => plover_kit()->app_url( 'assets/images/plover-screenshot.png' ),
 			];
 		}
+
+		$data['theme_json'] = \WP_Theme_JSON_Resolver::get_merged_data()->get_settings();
 
 		return $data;
 	}

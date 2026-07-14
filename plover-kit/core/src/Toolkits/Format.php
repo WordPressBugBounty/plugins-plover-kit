@@ -291,6 +291,129 @@ class Format {
 	}
 
 	/**
+	 * Generates a closure to sanitize colors control value.
+	 *
+	 * @param $args
+	 *
+	 * @return \Closure
+	 */
+	public static function create_colors_sanitizer( $args = array() ) {
+		return function ( $value ) use ( $args ) {
+			// 1. Build an index of main color configurations: id => config array (including variant definitions)
+			$colors_config = [];
+			if ( isset( $args['colors'] ) && is_array( $args['colors'] ) ) {
+				foreach ( $args['colors'] as $color ) {
+					if ( ! empty( $color['id'] ) ) {
+						$colors_config[ $color['id'] ] = $color;
+					}
+				}
+			}
+
+			$sanitized = [];
+			foreach ( $value as $id => $val ) {
+				// Only process main color IDs that exist in the configuration
+				if ( ! isset( $colors_config[ $id ] ) ) {
+					continue;
+				}
+
+				$config = $colors_config[ $id ];
+				// 2. Check if the current main color contains variant sub-items
+				if ( ! empty( $config['variant'] ) && is_array( $config['variant'] ) ) {
+					// The expected value is an associative array; otherwise discard
+					if ( ! is_array( $val ) ) {
+						continue;
+					}
+
+					// Collect the list of allowed variant IDs for this main color
+					$allowed_variant_ids = [];
+					foreach ( $config['variant'] as $variant ) {
+						if ( ! empty( $variant['id'] ) ) {
+							$allowed_variant_ids[] = $variant['id'];
+						}
+					}
+					$allowed_variant_ids = array_unique( $allowed_variant_ids );
+
+					// Filter variant data: keep only entries with a valid ID and correct color format
+					$clean_variants = [];
+					foreach ( $val as $variant_id => $variant_color ) {
+						if (
+							in_array( $variant_id, $allowed_variant_ids, true ) &&
+							self::sanitize_color( $variant_color )
+						) {
+							$clean_variants[ $variant_id ] = $variant_color;
+						}
+					}
+
+					// Keep the main color entry only if at least one valid variant remains
+					if ( ! empty( $clean_variants ) ) {
+						$sanitized[ $id ] = $clean_variants;
+					}
+				} else {
+					// 3. No variant – the value should be a color string
+					if ( self::sanitize_color( $val ) ) {
+						$sanitized[ $id ] = $val;
+					}
+				}
+			}
+
+			return $sanitized;
+		};
+	}
+
+	/**
+	 * Validate whether a color value matches one of the allowed formats.
+	 *
+	 *  Allowed formats:
+	 *    - Hexadecimal: #RGB / #RGBA / #RRGGBB / #RRGGBBAA
+	 *    - Gradient function: linear-gradient(...) / radial-gradient(...) (supports nested parentheses, e.g., rgb())
+	 *    - CSS variable: var(--name)
+	 *
+	 * @param $value
+	 *
+	 * @return bool
+	 */
+	public static function sanitize_color( $value ) {
+		if ( ! is_string( $value ) ) {
+			return false;
+		}
+
+		$value = trim( $value );
+		if ( $value === '' ) {
+			return false;
+		}
+
+		// System reserved values
+		if ( in_array( $value, array(
+			'transparent',
+			'inherit',
+			'currentColor',
+			'initial',
+			'unset',
+			'revert',
+			'system'
+		) ) ) {
+			return $value;
+		}
+
+		// Hexadecimal color (3/4/6/8 digits, case-insensitive)
+		if ( preg_match( '/^#([0-9a-fA-F]{3}|[0-9a-fA-F]{4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/', $value ) ) {
+			return true;
+		}
+
+		// Gradient: match linear-gradient / radial-gradient, allowing parentheses inside arguments (e.g., rgb() or var())
+		if ( preg_match( '/^(linear-gradient|radial-gradient)\(.+\)$/i', $value ) ) {
+			return true;
+		}
+
+		// CSS variable: var(--name)
+		if ( preg_match( '/^var\(--[a-zA-Z0-9_-]+\)$/', $value ) ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	/**
 	 * @param $str
 	 *
 	 * @return string

@@ -112,7 +112,7 @@ class Modules {
 			$this->groups[ $slug ] = array(
 				'label'       => $args['label'],
 				'description' => $args['description'],
-				'order'       => absint( $args['order']),
+				'order'       => absint( $args['order'] ),
 			);
 		}
 	}
@@ -176,23 +176,27 @@ class Modules {
 		}
 
 		$field_args = wp_parse_args( $args, array(
-			'label'   => '',
-			'default' => '',
-			'control' => Control::T_TEXT,
+			'is_setting' => true,
+			'label'      => '',
+			'default'    => '',
+			'control'    => Control::T_TEXT,
+			'upsell'     => '',
 		) );
 
-		$this->settings->add_field( $module, $field, array(
-			'default'  => $field_args['default'],
-			'sanitize' => Control::sanitize(
-				$field_args['control'],
-				array_merge(
-					$field_args['control_args'] ?? array(),
-					array( 'default' => $field_args['default'] )
-				)
-			),
-		) );
+		if ( $field_args['is_setting'] ) {
+			$this->settings->add_field( $module, $field, array(
+				'default'  => $field_args['default'],
+				'sanitize' => Control::sanitize(
+					$field_args['control'],
+					array_merge(
+						$field_args['control_args'] ?? array(),
+						array( 'default' => $field_args['default'] )
+					)
+				),
+			) );
 
-		$field_args['value'] = $this->settings->get( $module, $field );
+			$field_args['value'] = $this->settings->get( $module, $field );
+		}
 
 		$this->modules[ $module ]['fields'][ $field ] = $field_args;
 	}

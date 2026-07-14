@@ -26,6 +26,7 @@ return array(
     'Plover\\Kit\\Extensions\\PremiumRoughNotation' => $baseDir . '/src/Extensions/PremiumRoughNotation.php',
     'Plover\\Kit\\Extensions\\PremiumShapeDivider' => $baseDir . '/src/Extensions/PremiumShapeDivider.php',
     'Plover\\Kit\\Extensions\\PremiumSticky' => $baseDir . '/src/Extensions/PremiumSticky.php',
+    'Plover\\Kit\\Extensions\\ReadingProgress' => $baseDir . '/src/Extensions/ReadingProgress.php',
     'Plover\\Kit\\Extensions\\ReadingTime' => $baseDir . '/src/Extensions/ReadingTime.php',
     'Plover\\Kit\\Extensions\\TableOfContents' => $baseDir . '/src/Extensions/TableOfContents.php',
     'Plover\\Kit\\Extensions\\TypingAnimation' => $baseDir . '/src/Extensions/TypingAnimation.php',

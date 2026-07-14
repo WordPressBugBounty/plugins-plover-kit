@@ -1,7 +1,7 @@
 === Plover Kit – Blocks, Patterns, Responsive Layout and Gutenberg Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.6.4
+Stable tag: 1.6.5
 Tested up to: 7.0
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -54,6 +54,7 @@ Add motion and flair without slowing down your site:
 - **[Entrance Animation](https://wpplover.com/docs/plover-kit/modules/entrance-animation/)**: Bring elements to life as they scroll into view.
 - **[Hover Animation](https://wpplover.com/docs/plover-kit/modules/hover-animation/)**: Engage visitors with interactive hover effects.
 - **[Typing Animation](https://wpplover.com/docs/plover-kit/modules/typing-animation/)**: Create dynamic, eye-catching text animations.
+- **[Reading Progress](https://wpplover.com/docs/plover-kit/modules/reading-progress/)**: Track the visitor's reading percentage.
 - **[Shape Divider](https://wpplover.com/docs/plover-kit/modules/shape-divider/)**: Craft beautiful visual separations between sections.
 - **[Particles Effect](https://wpplover.com/docs/plover-kit/modules/particles-effect/)**: Add subtle, modern background particle effects to your design.
 - **[Rough Notation](https://wpplover.com/docs/plover-kit/modules/rough-notation/)**: Mimic hand-drawn annotations like circles and underlines.
@@ -145,8 +146,17 @@ For free users, please use the [WordPress.org support forum](https://wordpress.o
 17. Block Shadow Preview
 18. Block Sticky Options
 19. JavaScript Event Handler
+20. Reading Progress
+21. Reading Progress Settings
 
 == Changelog ==
+
+= 1.6.5 =
+
+* Add: New reading progress module
+* Ref: Update core to v1.3.5
+* Ref: Update Freemius SDK
+* Fix: Hover animation not working on site editor
 
 = 1.6.4 =
 

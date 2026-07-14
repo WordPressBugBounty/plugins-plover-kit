@@ -555,3 +555,92 @@ if ( ! function_exists( 'plover_kit_install_plugin' ) ) {
 		return $status;
 	}
 }
+
+if ( ! function_exists( 'plover_kit_get_current_post_meta' ) ) {
+	/**
+	 * Get post meta value
+	 *
+	 * @param $id
+	 * @param bool $single
+	 *
+	 * @return mixed
+	 *
+	 * @since 1.6.5
+	 */
+	function plover_kit_get_current_post_meta( $id, $single = true ) {
+		if ( ! is_singular() ) {
+			return '';
+		}
+
+		global $post;
+
+		if ( ! $post ) {
+			return '';
+		}
+
+		return get_post_meta( $post->ID, $id, $single );
+	}
+}
+
+if ( ! function_exists( 'plover_kit_get_current_page_type' ) ) {
+	/**
+	 * Get current page type
+	 *
+	 * @return false|string
+	 *
+	 * @since 1.6.5
+	 */
+	function plover_kit_get_current_page_type() {
+		if ( is_front_page() ) {
+			return 'front-page';
+		}
+
+		if ( is_home() ) {
+			return 'blog-home';
+		}
+
+		if ( is_404() ) {
+			return '404';
+		}
+
+		if ( is_search() ) {
+			return 'search';
+		}
+
+		if ( is_page() ) {
+			return 'page';
+		}
+
+		if ( is_single() ) {
+			return get_post_type();
+		}
+
+		if ( is_attachment() ) {
+			return 'attachment';
+		}
+
+		if ( is_archive() ) {
+			if ( is_category() || is_tag() || is_tax() ) {
+				$term      = get_queried_object();
+				$tax_obj   = get_taxonomy( $term->taxonomy );
+				$post_type = is_array( $tax_obj->object_type ) ? reset( $tax_obj->object_type ) : $tax_obj->object_type;
+			} else {
+				$post_type = get_query_var( 'post_type' );
+				if ( empty( $post_type ) ) {
+					$post_type = 'post';
+				} elseif ( is_array( $post_type ) ) {
+					$post_type = reset( $post_type );
+				}
+			}
+
+			return 'archive:' . $post_type;
+		}
+
+		if ( is_preview() ) {
+			return 'preview';
+		}
+
+		return false;
+	}
+}
+

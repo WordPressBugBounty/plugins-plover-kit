@@ -1,1 +1,1 @@
-.plover-hvr-float{transition-duration:0.3s;transition-property:transform;transition-timing-function:ease-out}.plover-hvr-float:hover{transform:translateY(-8px)}
+@media not (prefers-reduced-motion){.is-focus-mode .block-editor-block-list__block:not(.has-child-selected).plover-hvr-float,.plover-hvr-float{transition-duration:0.3s;transition-property:transform;transition-timing-function:ease-out}.is-focus-mode .block-editor-block-list__block:not(.has-child-selected).plover-hvr-float:hover,.plover-hvr-float:hover{transform:translateY(-8px)}}

@@ -2,22 +2,22 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plover Kit 1.6.4\n"
+"Project-Id-Version: Plover Kit 1.6.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plover-kit\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-05-22T08:26:37+00:00\n"
+"POT-Creation-Date: 2026-07-14T09:50:38+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover-kit\n"
 
 #. Plugin Name of the plugin
 #: plover-kit.php
-#: src/Services/DashboardServiceProvider.php:57
 #: src/Services/DashboardServiceProvider.php:58
+#: src/Services/DashboardServiceProvider.php:59
 msgid "Plover Kit"
 msgstr ""
 
@@ -269,6 +269,7 @@ msgid "None"
 msgstr ""
 
 #: src/Extensions/Breadcrumb.php:149
+#: src/Extensions/ReadingProgress.php:135
 #: static/scripts/block-extensions/breadcrumb__premium_only/inspector.jsx:60
 msgid "Text"
 msgstr ""
@@ -629,6 +630,169 @@ msgctxt "Shapes"
 msgid "Clouds (Pro)"
 msgstr ""
 
+#: src/Extensions/ReadingProgress.php:36
+msgid "Preview"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:40
+msgid "Progress bar effects"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:44
+#, php-format
+msgctxt "%s is upsell text and link"
+msgid "Upgrade to the %s edition to access additional pulse, glowy and breath effects."
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:49
+#: src/Extensions/ReadingProgress.php:99
+#: src/Extensions/ReadingProgress.php:287
+#: assets/js/breadcrumb/index.js:2
+#: assets/js/code-snippet/index.js:2
+#: assets/js/counter/index.js:2
+#: assets/js/reading-time/index.js:2
+#: assets/js/toc/index.js:2
+#: assets/js/toc/index.js:3
+#: static/blocks/breadcrumb/edit.jsx:40
+#: static/blocks/code-snippet/edit.jsx:41
+#: static/blocks/counter/edit.jsx:41
+#: static/blocks/reading-time/edit.jsx:46
+#: static/blocks/toc/edit.jsx:254
+#: static/blocks/toc/extension.js:75
+#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:207
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar/entry.js:27
+#: static/scripts/dashboard/upsell/code-highlight-upsell.js:35
+#: static/scripts/dashboard/upsell/table-of-contents-upsell.js:35
+msgid "Premium"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:54
+msgid "Progress bar thickness (pixels)"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:62
+msgid "Progress bar color"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:72
+msgid "Indicator"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:75
+msgid "Track"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:84
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:27
+msgid "Progress bar position"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:89
+#: src/Extensions/TableOfContents.php:66
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:137
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:31
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:97
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:51
+msgid "Top"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:90
+#: src/Extensions/TableOfContents.php:68
+#: static/scripts/block-extensions/icon__premium_only/entry.jsx:138
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:32
+#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:99
+#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:53
+msgid "Bottom"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:94
+#, php-format
+msgctxt "%s is upsell text and link"
+msgid "Upgrade to the %s edition to sticky the progress bar to any element and detect the scroll progress of any scrollable element."
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:106
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:42
+msgid "Sticky to this element"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:107
+msgid "Accept a valid CSS selector. The progress bar will be displayed within this element, the default is the `document.body` element."
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:112
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:56
+msgid "Detect the progress of this element"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:113
+msgid "The progress bar indicates the scroll progress for this element. It can be `auto`, `container`, `window` or any valid CSS selector."
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:122
+msgid "Show percentage text"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:123
+msgid "Display the percentage text in the progress bar."
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:128
+msgid "Percentage text Color"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:140
+msgid "Percentage text position"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:145
+msgid "Left"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:146
+msgid "Right"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:147
+msgid "Left Inner"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:148
+msgid "Right Inner"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:157
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar/entry.js:16
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:10
+msgid "Reading Progress"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:158
+msgid "Track the visitor's reading percentage, so the visitor always know where they stand."
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:274
+msgid "Show progress bar for these post types"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:275
+msgid "Display the reading progress bar only for the selected post types."
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:282
+#, php-format
+msgctxt "%s is upsell text and link"
+msgid "Upgrade to the %s edition to display the progress bars on custom post types, homepage, the blog page and archive pages."
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:293
+msgid "Show progress bar for these templates"
+msgstr ""
+
+#: src/Extensions/ReadingProgress.php:294
+msgid "Display the reading progress bar on specific pages, such as the front page, blog home, or archive pages."
+msgstr ""
+
 #: src/Extensions/ReadingTime.php:28
 msgid "Default Label"
 msgstr ""
@@ -713,25 +877,11 @@ msgstr ""
 msgid "Default alignment of the heading in the resulting viewport. Only works when JavaScript scrolling is enabled."
 msgstr ""
 
-#: src/Extensions/TableOfContents.php:66
-#: static/scripts/block-extensions/icon__premium_only/entry.jsx:137
-#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:97
-#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:51
-msgid "Top"
-msgstr ""
-
 #: src/Extensions/TableOfContents.php:67
 #: static/scripts/block-extensions/icon__premium_only/entry.jsx:136
 #: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:98
 #: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:52
 msgid "Middle"
-msgstr ""
-
-#: src/Extensions/TableOfContents.php:68
-#: static/scripts/block-extensions/icon__premium_only/entry.jsx:138
-#: static/scripts/block-extensions/toc__premium_only/HeadingControls.jsx:99
-#: static/scripts/block-extensions/toc__premium_only/ScrollControls.jsx:53
-msgid "Bottom"
 msgstr ""
 
 #: src/Extensions/TableOfContents.php:74
@@ -780,23 +930,23 @@ msgstr ""
 msgid "Unable to connect to the filesystem. Please confirm your credentials."
 msgstr ""
 
-#: src/Services/DashboardServiceProvider.php:68
+#: src/Services/DashboardServiceProvider.php:69
 msgid "Plover Kit Modules"
 msgstr ""
 
-#: src/Services/DashboardServiceProvider.php:69
+#: src/Services/DashboardServiceProvider.php:70
 msgid "Modules"
 msgstr ""
 
-#: src/Services/DashboardServiceProvider.php:101
+#: src/Services/DashboardServiceProvider.php:108
 msgid "Plover Theme"
 msgstr ""
 
-#: src/Services/DashboardServiceProvider.php:102
+#: src/Services/DashboardServiceProvider.php:109
 msgid "Looking for a WordPress theme? Plover Theme works perfectly with Plover Kit. As a Full Site Editing theme, Plover utilizes the WordPress block editor and the extensions provided by the Plover Kit to create unique and eye-catching web design."
 msgstr ""
 
-#: src/Services/DashboardServiceProvider.php:195
+#: src/Services/DashboardServiceProvider.php:204
 msgid "Sorry, you are not allowed to install this theme."
 msgstr ""
 
@@ -862,28 +1012,11 @@ msgstr ""
 #: assets/js/code-snippet/index.js:2
 #: assets/js/counter/index.js:2
 #: assets/js/reading-time/index.js:2
-#: assets/js/toc/index.js:2
-#: assets/js/toc/index.js:3
-#: static/blocks/breadcrumb/edit.jsx:40
-#: static/blocks/code-snippet/edit.jsx:41
-#: static/blocks/counter/edit.jsx:41
-#: static/blocks/reading-time/edit.jsx:46
-#: static/blocks/toc/edit.jsx:254
-#: static/blocks/toc/extension.js:75
-#: static/scripts/block-extensions/code-snippets/components/CodeSnippetEditor.js:207
-#: static/scripts/dashboard/upsell/code-highlight-upsell.js:35
-#: static/scripts/dashboard/upsell/table-of-contents-upsell.js:35
-msgid "Premium"
-msgstr ""
-
-#: assets/js/breadcrumb/index.js:2
-#: assets/js/code-snippet/index.js:2
-#: assets/js/counter/index.js:2
-#: assets/js/reading-time/index.js:2
 #: static/blocks/breadcrumb/edit.jsx:49
 #: static/blocks/code-snippet/edit.jsx:50
 #: static/blocks/counter/edit.jsx:50
 #: static/blocks/reading-time/edit.jsx:55
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar/entry.js:44
 msgid "Learn More ↗"
 msgstr ""
 
@@ -1097,7 +1230,7 @@ msgstr ""
 #: static/blocks/toc/edit.jsx:200
 #: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:74
 #: static/scripts/dashboard/Module.jsx:108
-#: static/scripts/dashboard/ModuleSettings.jsx:181
+#: static/scripts/dashboard/ModuleSettings.jsx:214
 msgid "Settings"
 msgstr ""
 
@@ -1250,11 +1383,11 @@ msgstr ""
 msgid "Add more blocks"
 msgstr ""
 
-#: static/packages/dashboard/generic-controls/index.jsx:63
+#: static/packages/dashboard/generic-controls/index.jsx:62
 msgid "More actions menu"
 msgstr ""
 
-#: static/packages/dashboard/generic-controls/index.jsx:75
+#: static/packages/dashboard/generic-controls/index.jsx:74
 msgid "Reset to Default value"
 msgstr ""
 
@@ -1478,10 +1611,12 @@ msgid "The \"%s\" is %s."
 msgstr ""
 
 #: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:110
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:17
 msgid "Enabled"
 msgstr ""
 
 #: static/scripts/block-extensions/code-snippets/components/CodeSnippetList.js:110
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:16
 msgid "Disabled"
 msgstr ""
 
@@ -1919,8 +2054,47 @@ msgid "Loader"
 msgstr ""
 
 #: static/scripts/block-extensions/preloader/layout/Settings.jsx:88
-#: static/scripts/dashboard/ModuleSettings.jsx:160
+#: static/scripts/dashboard/ModuleSettings.jsx:193
 msgid "Save Changes"
+msgstr ""
+
+#. translators: %s is the premium text and link.
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar/entry.js:21
+#, js-format
+msgid "Upgrade to %s to access these individual reading progress settings on this page:"
+msgstr ""
+
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar/entry.js:31
+msgid "Enable/Disable progress bar."
+msgstr ""
+
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar/entry.js:32
+msgid "Change progress bar position."
+msgstr ""
+
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar/entry.js:33
+msgid "Display progress bar within the specified element."
+msgstr ""
+
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar/entry.js:36
+msgid "Detect the progress of the specified element."
+msgstr ""
+
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:12
+msgid "Show reading progress bar on this page"
+msgstr ""
+
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:15
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:30
+msgid "Inherit"
+msgstr ""
+
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:44
+msgid "Accept a valid CSS selector. The progress bar will be displayed within this element, leave empty to use the global value."
+msgstr ""
+
+#: static/scripts/block-extensions/reading-progress/block-editor-sidebar__premium_only/entry.js:58
+msgid "The progress bar indicates the scroll progress for this element. It can be `auto`, `container`, `window` or any valid CSS selector. Leave empty to use the global value."
 msgstr ""
 
 #: static/scripts/block-extensions/reading-time__premium_only/edit.jsx:76
@@ -2160,7 +2334,7 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
-#: static/scripts/dashboard/ModuleSettings.jsx:85
+#: static/scripts/dashboard/ModuleSettings.jsx:97
 msgid "Reset to default"
 msgstr ""
 

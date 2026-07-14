@@ -24,6 +24,7 @@ use Plover\Kit\Extensions\ReadingTime;
 use Plover\Kit\Extensions\PremiumRoughNotation;
 use Plover\Kit\Extensions\TableOfContents;
 use Plover\Kit\Extensions\TypingAnimation;
+use Plover\Kit\Extensions\ReadingProgress;
 /**
  * Bootstrap plugin features.
  *
@@ -54,6 +55,7 @@ class PluginServiceProvider extends ServiceProvider {
         $extensions->register( 'plover-kit-patterns', PatternLibrary::class );
         $extensions->register( 'plover-kit-counter', Counter::class );
         $extensions->register( 'plover-kit-typing-animation', TypingAnimation::class );
+        $extensions->register( 'plover-kit-reading-progress', ReadingProgress::class );
     }
 
     /**

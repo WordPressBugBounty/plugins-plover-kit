@@ -1,3 +1,12 @@
+= 1.3.5 =
+
+* Add: Divider and colors control
+* Add: Global plugin sidebar
+* Ref: Update colors component
+* Fix: Hover animation conflict with entrance animation
+* Fix: Hover animation not working on site editor
+* Fix: Shape divider z-index not working
+
 = 1.3.4 =
 
 * Ref: WordPress 7.0 compatible

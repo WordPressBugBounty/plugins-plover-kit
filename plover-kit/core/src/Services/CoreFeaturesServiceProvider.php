@@ -2,6 +2,8 @@
 
 namespace Plover\Core\Services;
 
+use Plover\Core\Assets\Scripts;
+use Plover\Core\Assets\Styles;
 use Plover\Core\Framework\ServiceProvider;
 use Plover\Core\Services\Blocks\Blocks;
 use Plover\Core\Services\Extensions\Extensions;
@@ -268,6 +270,30 @@ class CoreFeaturesServiceProvider extends ServiceProvider {
 			$extensions->register( 'rough-notation', \Plover\Core\Extensions\RoughNotation::class );
 			$extensions->register( 'magazine-template', \Plover\Core\Extensions\Magazine::class );
 		}, 5 );
+	}
+
+	/**
+	 * @param Scripts $scripts
+	 * @param Styles $styles
+	 *
+	 * @return void
+	 */
+	public function boot( Scripts $scripts, Styles $styles ) {
+		// editor sidebar
+		$scripts->enqueue_editor_asset( 'plover-editor-sidebar', array(
+			'ver'      => 'core',
+			'src'      => $this->core->core_url( "assets/js/block-editor-sidebar/index.min.js" ),
+			'path'     => $this->core->core_path( "assets/js/block-editor-sidebar/index.min.js" ),
+			'asset'    => $this->core->core_path( "assets/js/block-editor-sidebar/index.min.asset.php" ),
+			'keywords' => [],
+		) );
+
+		$styles->enqueue_editor_asset( 'plover-editor-sidebar', array(
+			'ver'  => 'core',
+			'rtl'  => 'replace',
+			'src'  => $this->core->core_url( 'assets/js/block-editor-sidebar/style.min.css' ),
+			'path' => $this->core->core_path( 'assets/js/block-editor-sidebar/style.min.css' ),
+		) );
 	}
 
 	/**

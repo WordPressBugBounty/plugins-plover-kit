@@ -10,6 +10,10 @@ use Plover\Core\Toolkits\Format;
 class Control {
 
 	const T_PLACEHOLDER = 'placeholder';
+	/**
+	 * @since 1.3.5
+	 */
+	const T_INLINE_PLACEHOLDER = 'inline-placeholder';
 	const T_TEXT = 'text';
 	const T_SELECT = 'select';
 	const T_SWITCH = 'switch';
@@ -19,6 +23,14 @@ class Control {
 	 * @since 1.3.0
 	 */
 	const T_BLOCK_SELECTOR = 'block_selector';
+	/**
+	 * @since 1.3.5
+	 */
+	const T_COLORS = 'colors';
+	/**
+	 * @since 1.3.5
+	 */
+	const T_DIVIDER = 'divider';
 
 	/**
 	 * @param $control

@@ -45,6 +45,7 @@ class ComposerStaticInita4a6d183ce1253ce2dd355793690dd38
         'Plover\\Kit\\Extensions\\PremiumRoughNotation' => __DIR__ . '/../..' . '/src/Extensions/PremiumRoughNotation.php',
         'Plover\\Kit\\Extensions\\PremiumShapeDivider' => __DIR__ . '/../..' . '/src/Extensions/PremiumShapeDivider.php',
         'Plover\\Kit\\Extensions\\PremiumSticky' => __DIR__ . '/../..' . '/src/Extensions/PremiumSticky.php',
+        'Plover\\Kit\\Extensions\\ReadingProgress' => __DIR__ . '/../..' . '/src/Extensions/ReadingProgress.php',
         'Plover\\Kit\\Extensions\\ReadingTime' => __DIR__ . '/../..' . '/src/Extensions/ReadingTime.php',
         'Plover\\Kit\\Extensions\\TableOfContents' => __DIR__ . '/../..' . '/src/Extensions/TableOfContents.php',
         'Plover\\Kit\\Extensions\\TypingAnimation' => __DIR__ . '/../..' . '/src/Extensions/TypingAnimation.php',
