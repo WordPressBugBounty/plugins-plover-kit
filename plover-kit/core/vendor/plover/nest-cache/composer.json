@@ -1,0 +1,26 @@
+{
+    "name": "plover/nest-cache",
+    "type": "library",
+    "keywords": [
+        "wordpress",
+        "plover",
+        "nest",
+        "cache"
+    ],
+    "homepage": "https://wpplover.com/",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nest\\Cache\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "WP Plover",
+            "email": "team@wpplover.com"
+        }
+    ],
+    "require": {
+        "plover/nest": "^1.1"
+    }
+}

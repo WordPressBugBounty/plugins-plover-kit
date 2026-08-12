@@ -1,0 +1,26 @@
+{
+    "name": "plover/nest-router",
+    "type": "library",
+    "keywords": [
+        "wordpress",
+        "plover",
+        "router",
+        "nest"
+    ],
+    "homepage": "https://wpplover.com/",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nest\\Router\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "WP Plover",
+            "email": "team@wpplover.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5"
+    }
+}

@@ -14,10 +14,17 @@
   "attributes": {
     "snippet": {
       "type": "number"
+    },
+    "token": {
+      "type": "string",
+      "default": ""
     }
   },
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.min.css",
   "style": "file:./style-index.min.css",
-  "render": "file:./render.php"
+  "usesContext": [
+    "postId",
+    "postType"
+  ]
 }

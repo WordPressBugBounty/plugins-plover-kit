@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-14T09:48:09+00:00\n"
+"POT-Creation-Date: 2026-08-12T09:11:02+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plover\n"
@@ -418,11 +418,6 @@ msgstr ""
 msgid "Make your content in the page visible at all times, making it permanently visible while scrolling."
 msgstr ""
 
-#: src/Router/Auth.php:19
-#: src/Router/Auth.php:35
-msgid "Forbidden"
-msgstr ""
-
 #: src/Services/Blocks/BlocksServiceProvider.php:100
 msgid "Plover Blocks"
 msgstr ""
@@ -480,43 +475,6 @@ msgstr ""
 
 #: src/Services/Settings/Modules.php:68
 msgid "Take your WordPress editing experience to the next level!"
-msgstr ""
-
-#: src/Toolkits/Plugin.php:72
-msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
-msgstr ""
-
-#: src/Toolkits/Plugin.php:83
-#, php-format
-msgid "Upgrading %s ..."
-msgstr ""
-
-#: src/Toolkits/Plugin.php:89
-#, php-format
-msgid "Installing %s ..."
-msgstr ""
-
-#: src/Toolkits/Plugin.php:96
-#, php-format
-msgid "Activating %s ..."
-msgstr ""
-
-#: src/Toolkits/Plugin.php:100
-#, php-format
-msgid "%s installed successfully"
-msgstr ""
-
-#: src/Toolkits/Plugin.php:104
-#, php-format
-msgid "Could not install the %s plugin."
-msgstr ""
-
-#: src/Toolkits/Plugin.php:112
-msgid "All Done!"
-msgstr ""
-
-#: src/Toolkits/Plugin.php:114
-msgid "Return To Theme Page"
 msgstr ""
 
 #: static/packages/components/color-popover/color-picker.js:64

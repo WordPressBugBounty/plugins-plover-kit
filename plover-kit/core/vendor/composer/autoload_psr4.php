@@ -7,5 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Plover\\Core\\enshrined\\svgSanitize\\' => array($vendorDir . '/enshrined/svg-sanitize/src'),
+    'Plover\\Core\\Toolkit\\' => array($vendorDir . '/plover/toolkit/src'),
+    'Plover\\Core\\Nest\\Router\\' => array($vendorDir . '/plover/nest-router/src'),
+    'Plover\\Core\\Nest\\Cache\\' => array($vendorDir . '/plover/nest-cache/src'),
+    'Plover\\Core\\Nest\\' => array($vendorDir . '/plover/nest/src'),
     'Plover\\Core\\' => array($baseDir . '/src'),
 );

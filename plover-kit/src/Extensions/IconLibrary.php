@@ -2,8 +2,8 @@
 
 namespace Plover\Kit\Extensions;
 
-use Plover\Core\Router\Auth;
-use Plover\Core\Router\Router;
+use Plover\Core\Nest\Router\Auth;
+use Plover\Core\Nest\Router\Router;
 use Plover\Core\Services\Extensions\Contract\Extension;
 use Plover\Core\Services\Settings\Control;
 use Plover\Kit\Assets\IconLibrarySource;
@@ -76,7 +76,7 @@ class IconLibrary extends Extension {
 				'name'          => __( 'Icon Libraries', 'plover-kit' ),
 				'singular_name' => __( 'Icon Library', 'plover-kit' ),
 			),
-			'public'                         => plover_kit_is_debug(),
+			'public'                         => false,
 			'hierarchical'                   => false,
 			'capabilities'                   => array(
 				'read'                   => 'manage_options',

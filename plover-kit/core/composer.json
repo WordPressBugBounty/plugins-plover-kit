@@ -5,7 +5,8 @@
       "Plover\\Core\\": "src/"
     },
     "files": [
-      "src/helpers.php"
+      "src/helpers.php",
+      "src/compat.php"
     ]
   },
   "extra": {
@@ -19,14 +20,18 @@
     "ext-dom": "*",
     "ext-libxml": "*",
     "ext-json": "*",
-    "enshrined/svg-sanitize": "^0.18.0"
+    "enshrined/svg-sanitize": "^0.22.0",
+    "plover/nest": "^1.1",
+    "plover/toolkit": "^1.0",
+    "plover/nest-cache": "^1.0",
+    "plover/nest-router": "^1.0"
   },
   "scripts": {
     "prod": [
       "composer install --no-dev --optimize-autoloader --classmap-authoritative --no-interaction"
     ],
     "scope": [
-      "sh -c 'test -f strauss.phar || curl -o strauss.phar -L -C - https://github.com/BrianHenryIE/strauss/releases/download/0.27.0/strauss.phar'",
+      "sh -c 'test -f strauss.phar || curl -o strauss.phar -L -C - https://github.com/BrianHenryIE/strauss/releases/download/0.27.4/strauss.phar'",
       "@php strauss.phar replace --from 'Plover\\Nest' --to 'Nest' --paths 'vendor'",
       "@php strauss.phar replace --from 'Plover\\Toolkit' --to 'Toolkit' --paths 'vendor'",
       "@php strauss.phar",

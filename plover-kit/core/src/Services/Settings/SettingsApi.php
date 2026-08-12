@@ -2,8 +2,8 @@
 
 namespace Plover\Core\Services\Settings;
 
-use Plover\Core\Router\Auth;
-use Plover\Core\Router\Router;
+use Plover\Core\Nest\Router\Auth;
+use Plover\Core\Nest\Router\Router;
 
 /**
  * @since 1.0.0
@@ -30,7 +30,7 @@ class SettingsApi {
 	}
 
 	public function register_reset_api() {
-		$router = Router::v1();
+		$router = new Router( 'plover/v1' );
 
 		$router->create( '/settings/(?P<group>[0-9|a-z|_-]+)', array( $this, 'update_setting_fields' ) )
 		       ->use( array( Auth::class, 'can_manage_options' ) );

@@ -4,16 +4,21 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit63e561d450393276e1767bfeaf448511
+class ComposerStaticInitd209500c0d1983d26727eb7aa6d66346
 {
     public static $files = array (
         '76e4e0453b31de80bf7bc104ce48f9c3' => __DIR__ . '/../..' . '/src/helpers.php',
+        '52d5ab9779cec73b5f1ae5e5cd5770f9' => __DIR__ . '/../..' . '/src/compat.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'P' =>
         array (
             'Plover\\Core\\enshrined\\svgSanitize\\' => 34,
+            'Plover\\Core\\Toolkit\\' => 20,
+            'Plover\\Core\\Nest\\Router\\' => 24,
+            'Plover\\Core\\Nest\\Cache\\' => 23,
+            'Plover\\Core\\Nest\\' => 17,
             'Plover\\Core\\' => 12,
         ),
     );
@@ -22,6 +27,22 @@ class ComposerStaticInit63e561d450393276e1767bfeaf448511
         'Plover\\Core\\enshrined\\svgSanitize\\' =>
         array (
             0 => __DIR__ . '/..' . '/enshrined/svg-sanitize/src',
+        ),
+        'Plover\\Core\\Toolkit\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/plover/toolkit/src',
+        ),
+        'Plover\\Core\\Nest\\Router\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/plover/nest-router/src',
+        ),
+        'Plover\\Core\\Nest\\Cache\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/plover/nest-cache/src',
+        ),
+        'Plover\\Core\\Nest\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/plover/nest/src',
         ),
         'Plover\\Core\\' =>
         array (
@@ -36,9 +57,9 @@ class ComposerStaticInit63e561d450393276e1767bfeaf448511
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit63e561d450393276e1767bfeaf448511::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit63e561d450393276e1767bfeaf448511::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit63e561d450393276e1767bfeaf448511::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd209500c0d1983d26727eb7aa6d66346::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd209500c0d1983d26727eb7aa6d66346::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitd209500c0d1983d26727eb7aa6d66346::$classMap;
 
         }, null, ClassLoader::class);
     }

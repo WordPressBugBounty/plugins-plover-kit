@@ -1,0 +1,24 @@
+{
+    "name": "plover/toolkit",
+    "type": "library",
+    "keywords": [
+        "toolkit",
+        "wordpress"
+    ],
+    "homepage": "https://wpplover.com/",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Toolkit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "WP Plover",
+            "email": "team@wpplover.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5"
+    }
+}

@@ -57,6 +57,18 @@ if ( ! function_exists( 'plover_kit_is_debug' ) ) {
 	}
 }
 
+if ( ! function_exists( 'plover_kit_is_safe_mode' ) ) {
+	/**
+	 * Check if the plugin is running in safe mode.
+	 *
+	 * @return bool
+	 */
+	function plover_kit_is_safe_mode() {
+		return ( defined( 'PLOVER_KIT_SAFE_MODE' ) && PLOVER_KIT_SAFE_MODE )
+		       || apply_filters( 'plover-kit/is_safe_mode', false );
+	}
+}
+
 if ( ! function_exists( 'plover_kit_compress_algorithm' ) ) {
 	/**
 	 * Get the compression algorithm

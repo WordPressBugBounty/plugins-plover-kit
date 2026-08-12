@@ -128,6 +128,362 @@ namespace Plover\Core {
     array (
     ),
   ),
+  'Nest\\Cache\\CacheManager' => 
+  array (
+    'type' => 'class',
+    'classname' => 'CacheManager',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Cache',
+    'extends' => 'Plover\\Core\\Nest\\Cache\\CacheManager',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Cache\\CacheRepository' => 
+  array (
+    'type' => 'class',
+    'classname' => 'CacheRepository',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Cache',
+    'extends' => 'Plover\\Core\\Nest\\Cache\\CacheRepository',
+    'implements' => 
+    array (
+      0 => 'Nest\\Cache\\Contracts\\Store',
+    ),
+  ),
+  'Nest\\Cache\\CacheServiceProvider' => 
+  array (
+    'type' => 'class',
+    'classname' => 'CacheServiceProvider',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Cache',
+    'extends' => 'Plover\\Core\\Nest\\Cache\\CacheServiceProvider',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Cache\\Facades\\Cache' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Cache',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Cache\\Facades',
+    'extends' => 'Plover\\Core\\Nest\\Cache\\Facades\\Cache',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Cache\\Stores\\MemoryStore' => 
+  array (
+    'type' => 'class',
+    'classname' => 'MemoryStore',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Cache\\Stores',
+    'extends' => 'Plover\\Core\\Nest\\Cache\\Stores\\MemoryStore',
+    'implements' => 
+    array (
+      0 => 'Nest\\Cache\\Contracts\\Store',
+    ),
+  ),
+  'Nest\\Cache\\Stores\\WordPressObjectCacheStore' => 
+  array (
+    'type' => 'class',
+    'classname' => 'WordPressObjectCacheStore',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Cache\\Stores',
+    'extends' => 'Plover\\Core\\Nest\\Cache\\Stores\\WordPressObjectCacheStore',
+    'implements' => 
+    array (
+      0 => 'Nest\\Cache\\Contracts\\Store',
+    ),
+  ),
+  'Nest\\Cache\\Stores\\WordPressTransientStore' => 
+  array (
+    'type' => 'class',
+    'classname' => 'WordPressTransientStore',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Cache\\Stores',
+    'extends' => 'Plover\\Core\\Nest\\Cache\\Stores\\WordPressTransientStore',
+    'implements' => 
+    array (
+      0 => 'Nest\\Cache\\Contracts\\Store',
+    ),
+  ),
+  'Nest\\Router\\Auth' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Auth',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Router',
+    'extends' => 'Plover\\Core\\Nest\\Router\\Auth',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Router\\Endpoint' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Endpoint',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Router',
+    'extends' => 'Plover\\Core\\Nest\\Router\\Endpoint',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Router\\Exception\\EndpointExistedException' => 
+  array (
+    'type' => 'class',
+    'classname' => 'EndpointExistedException',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Router\\Exception',
+    'extends' => 'Plover\\Core\\Nest\\Router\\Exception\\EndpointExistedException',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Router\\Router' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Router',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Router',
+    'extends' => 'Plover\\Core\\Nest\\Router\\Router',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Composer\\Autoload\\ClassLoader' => 
+  array (
+    'type' => 'class',
+    'classname' => 'ClassLoader',
+    'isabstract' => false,
+    'namespace' => 'Composer\\Autoload',
+    'extends' => 'Plover\\Core\\Composer\\Autoload\\ClassLoader',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Composer\\Autoload\\ComposerStaticInitcd5b4b843695be842af2564b9266ddb4' => 
+  array (
+    'type' => 'class',
+    'classname' => 'ComposerStaticInitcd5b4b843695be842af2564b9266ddb4',
+    'isabstract' => false,
+    'namespace' => 'Composer\\Autoload',
+    'extends' => 'Plover\\Core\\Composer\\Autoload\\ComposerStaticInitcd5b4b843695be842af2564b9266ddb4',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Bootstrap' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Bootstrap',
+    'isabstract' => false,
+    'namespace' => 'Nest',
+    'extends' => 'Plover\\Core\\Nest\\Bootstrap',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Container\\BindingResolutionException' => 
+  array (
+    'type' => 'class',
+    'classname' => 'BindingResolutionException',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Container',
+    'extends' => 'Plover\\Core\\Nest\\Container\\BindingResolutionException',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Container\\BoundMethod' => 
+  array (
+    'type' => 'class',
+    'classname' => 'BoundMethod',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Container',
+    'extends' => 'Plover\\Core\\Nest\\Container\\BoundMethod',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Container\\Container' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Container',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Container',
+    'extends' => 'Plover\\Core\\Nest\\Container\\Container',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Container\\EntryNotFoundException' => 
+  array (
+    'type' => 'class',
+    'classname' => 'EntryNotFoundException',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Container',
+    'extends' => 'Plover\\Core\\Nest\\Container\\EntryNotFoundException',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Container\\Util' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Util',
+    'isabstract' => false,
+    'namespace' => 'Nest\\Container',
+    'extends' => 'Plover\\Core\\Nest\\Container\\Util',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Nest' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Nest',
+    'isabstract' => false,
+    'namespace' => 'Nest',
+    'extends' => 'Plover\\Core\\Nest\\Nest',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Support\\Facade' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Facade',
+    'isabstract' => true,
+    'namespace' => 'Nest\\Support',
+    'extends' => 'Plover\\Core\\Nest\\Support\\Facade',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Nest\\Support\\ServiceProvider' => 
+  array (
+    'type' => 'class',
+    'classname' => 'ServiceProvider',
+    'isabstract' => true,
+    'namespace' => 'Nest\\Support',
+    'extends' => 'Plover\\Core\\Nest\\Support\\ServiceProvider',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Toolkit\\Arr' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Arr',
+    'isabstract' => false,
+    'namespace' => 'Toolkit',
+    'extends' => 'Plover\\Core\\Toolkit\\Arr',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Toolkit\\Filesystem' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Filesystem',
+    'isabstract' => false,
+    'namespace' => 'Toolkit',
+    'extends' => 'Plover\\Core\\Toolkit\\Filesystem',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Toolkit\\Html\\Document' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Document',
+    'isabstract' => false,
+    'namespace' => 'Toolkit\\Html',
+    'extends' => 'Plover\\Core\\Toolkit\\Html\\Document',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Toolkit\\Html\\Element' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Element',
+    'isabstract' => false,
+    'namespace' => 'Toolkit\\Html',
+    'extends' => 'Plover\\Core\\Toolkit\\Html\\Element',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Toolkit\\Path' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Path',
+    'isabstract' => false,
+    'namespace' => 'Toolkit',
+    'extends' => 'Plover\\Core\\Toolkit\\Path',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Toolkit\\Plugin' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Plugin',
+    'isabstract' => false,
+    'namespace' => 'Toolkit',
+    'extends' => 'Plover\\Core\\Toolkit\\Plugin',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Toolkit\\Responsive' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Responsive',
+    'isabstract' => false,
+    'namespace' => 'Toolkit',
+    'extends' => 'Plover\\Core\\Toolkit\\Responsive',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Toolkit\\Str' => 
+  array (
+    'type' => 'class',
+    'classname' => 'Str',
+    'isabstract' => false,
+    'namespace' => 'Toolkit',
+    'extends' => 'Plover\\Core\\Toolkit\\Str',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Toolkit\\StyleEngine' => 
+  array (
+    'type' => 'class',
+    'classname' => 'StyleEngine',
+    'isabstract' => false,
+    'namespace' => 'Toolkit',
+    'extends' => 'Plover\\Core\\Toolkit\\StyleEngine',
+    'implements' => 
+    array (
+    ),
+  ),
+  'Toolkit\\ThemeJson' => 
+  array (
+    'type' => 'class',
+    'classname' => 'ThemeJson',
+    'isabstract' => false,
+    'namespace' => 'Toolkit',
+    'extends' => 'Plover\\Core\\Toolkit\\ThemeJson',
+    'implements' => 
+    array (
+    ),
+  ),
   'enshrined\\svgSanitize\\data\\AttributeInterface' => 
   array (
     'type' => 'interface',
@@ -146,6 +502,16 @@ namespace Plover\Core {
     'extends' => 
     array (
       0 => 'Plover\\Core\\enshrined\\svgSanitize\\data\\TagInterface',
+    ),
+  ),
+  'Nest\\Cache\\Contracts\\Store' => 
+  array (
+    'type' => 'interface',
+    'interfacename' => 'Store',
+    'namespace' => 'Nest\\Cache\\Contracts',
+    'extends' => 
+    array (
+      0 => 'Plover\\Core\\Nest\\Cache\\Contracts\\Store',
     ),
   ),
 );

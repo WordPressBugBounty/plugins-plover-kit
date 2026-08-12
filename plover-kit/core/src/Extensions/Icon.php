@@ -3,8 +3,8 @@
 namespace Plover\Core\Extensions;
 
 use Plover\Core\Assets\Icons;
-use Plover\Core\Router\Auth;
-use Plover\Core\Router\Router;
+use Plover\Core\Nest\Router\Auth;
+use Plover\Core\Nest\Router\Router;
 use Plover\Core\Services\Extensions\Contract\Extension;
 use Plover\Core\Toolkits\Html\Document;
 use Plover\Core\Toolkits\StyleEngine;
@@ -462,7 +462,7 @@ class Icon extends Extension {
 	 * @return void
 	 */
 	public function register_reset_api() {
-		$router = Router::v1();
+		$router = new Router( 'plover/v1' );
 
 		$router->read( '/icon-libraries', array( $this, 'icon_libraries_api' ) )
 		       ->use( array( Auth::class, 'can_edit_posts' ) );

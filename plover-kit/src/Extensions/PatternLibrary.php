@@ -2,8 +2,8 @@
 
 namespace Plover\Kit\Extensions;
 
-use Plover\Core\Router\Auth;
-use Plover\Core\Router\Router;
+use Plover\Core\Nest\Router\Auth;
+use Plover\Core\Nest\Router\Router;
 use Plover\Core\Services\Extensions\Contract\Extension;
 
 /**

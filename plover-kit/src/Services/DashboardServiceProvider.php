@@ -28,6 +28,12 @@ class DashboardServiceProvider extends ServiceProvider {
 		add_action( 'admin_action_install_plover_theme', [ $this, 'install_plover_theme' ] );
 		add_filter( 'themes_api_result', [ $this, 'add_custom_themes_to_popular' ], 10, 3 );
 
+		// Show release note
+		if ( self::release_note() ) {
+			add_filter( 'plugin_action_links', [ $this, 'add_plugin_action_links' ], 10, 2 );
+			add_action( 'admin_notices', [ $this, 'release_note_notice' ], 1 );
+		}
+
 		$styles->enqueue_dashboard_asset( 'plover-dashboard-style', array(
 			'src'       => plover_kit()->app_url( 'assets/js/dashboard/style.min.css' ),
 			'path'      => plover_kit()->app_path( 'assets/js/dashboard/style.min.css' ),
@@ -118,8 +124,54 @@ class DashboardServiceProvider extends ServiceProvider {
 
 	public function show_admin_menu() {
 		?>
+        <div class="wrap plover-dashboard__wrap">
+            <h2 class="screen-reader-text"><?php esc_html_e( 'Plover Kit Dashboard', 'plover-kit' ); ?></h2>
+        </div>
         <div id="plover-kit-dashboard-page" class="wrap plover-kit-dashboard-page"></div>
 		<?php
+	}
+
+	/**
+	 * Add custom plugin action links
+	 *
+	 * @param $links
+	 * @param $plugin_file
+	 *
+	 * @return mixed
+	 */
+	public function add_plugin_action_links( $links, $plugin_file ) {
+		$release_note = self::release_note();
+
+		if ( $release_note && PLOVER_KIT_PLUGIN_FILE === $plugin_file ) {
+			$links[] = '<a target="_blank" href="' . esc_url( $release_note['link'] ) . '">' . __( 'Release Note', 'plover-kit' ) . '</a>';
+		}
+
+		return $links;
+	}
+
+	/**
+	 * Show release note notice
+	 *
+	 * @return void
+	 */
+	public function release_note_notice() {
+		$release_note = self::release_note();
+		if ( ! $release_note || ! function_exists( 'wp_admin_notice' ) ) {
+			return;
+		}
+
+		$user_id     = get_current_user_id();
+		$dismisse_id = 'plover_kit_' . PLOVER_KIT_VERSION . '_release_note_notice';
+		$dismissed   = get_user_meta( $user_id, 'dismissed_admin_notices', true );
+		if ( is_array( $dismissed ) && in_array( $dismisse_id, $dismissed, true ) ) {
+			return;
+		}
+
+		wp_admin_notice( $release_note['excerpt'], [
+			'type'        => 'warning',
+			'dismissible' => true,
+			'id'          => $dismisse_id,
+		] );
 	}
 
 	/**
@@ -227,5 +279,20 @@ class DashboardServiceProvider extends ServiceProvider {
 		}
 
 		return $registered_blocks;
+	}
+
+	/**
+	 * @return string[]|null
+	 */
+	public static function release_note() {
+		$link = 'https://wpplover.com/plover-kit/v170-more-code-snippet-types-safer-embedding-and-security-control/';
+
+		return [
+			'link'    => $link,
+			'excerpt' => sprintf(
+				__( '%s Major updates to the code snippets module. More Code Snippet Types, Safer Embedding, and Security Control.', 'plover-kit' ),
+				'<a target="_blank" href="' . esc_url( $link ) . '">' . __( 'Plover Kit v1.7.0 release note:', 'plover-kit' ) . '</a>'
+			),
+		];
 	}
 }

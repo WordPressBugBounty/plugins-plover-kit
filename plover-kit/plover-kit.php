@@ -6,7 +6,7 @@
  * Description:         Plover kit have pluggable modules that enhance the Gutenberg core blocks and also provide extended features.
  * Author:              WP Plover
  * Author URI:          https://www.wpplover.com
- * Version:             1.6.5
+ * Version:             1.7.0
  * Requires at least:   6.4
  * Requires PHP:        7.4
  * License:             GPLv2
@@ -22,7 +22,13 @@ if ( !defined( 'PLOVER_KIT_SLUG' ) ) {
     define( 'PLOVER_KIT_SLUG', 'plover-kit' );
 }
 if ( !defined( 'PLOVER_KIT_VERSION' ) ) {
-    define( 'PLOVER_KIT_VERSION', '1.6.5' );
+    define( 'PLOVER_KIT_VERSION', '1.7.0' );
+}
+if ( !defined( 'PLOVER_KIT_PLUGIN_FILE' ) ) {
+    /**
+     * @since 1.7.0
+     */
+    define( 'PLOVER_KIT_PLUGIN_FILE', plugin_basename( __FILE__ ) );
 }
 if ( !defined( 'PLOVER_KIT_PLUGIN_PATH' ) ) {
     define( 'PLOVER_KIT_PLUGIN_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -86,6 +92,11 @@ if ( function_exists( 'plover_fs' ) ) {
     require_once PLOVER_KIT_PLUGIN_PATH . '/vendor/autoload.php';
     // Bootstrap plover core
     $bootstrap = \Plover\Core\Bootstrap::make( PLOVER_KIT_SLUG, dirname( __FILE__ ), ( version_compare( \Plover\Core\Plover::VERSION, '1.0.6', '>=' ) ? untrailingslashit( plugin_dir_url( __FILE__ ) ) : [] ) );
-    $bootstrap->withProviders( [\Plover\Core\Services\CoreFeaturesServiceProvider::class, \Plover\Kit\Services\PluginServiceProvider::class, \Plover\Kit\Services\DashboardServiceProvider::class] );
+    $bootstrap->withProviders( [
+        \Plover\Core\Nest\Cache\CacheServiceProvider::class,
+        \Plover\Core\Services\CoreFeaturesServiceProvider::class,
+        \Plover\Kit\Services\PluginServiceProvider::class,
+        \Plover\Kit\Services\DashboardServiceProvider::class
+    ] );
     $bootstrap->boot();
 }

@@ -1,7 +1,7 @@
 === Plover Kit – Blocks, Patterns, Responsive Layout and Gutenberg Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.6.5
+Stable tag: 1.7.0
 Tested up to: 7.0
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -64,7 +64,7 @@ Add motion and flair without slowing down your site:
 
 - **[Pattern Library](https://wpplover.com/docs/plover-kit/modules/pattern-library/)**: Insert ready-made, professional layouts with a single click.
 - **[Icon Library](https://wpplover.com/docs/plover-kit/modules/icon-library/)**: Choose from 2000+ online icons or upload and manage your own custom SVG icons.
-- **[Code Snippets](https://wpplover.com/docs/plover-kit/modules/code-snippets/)**: Create and insert HTML, JavaScript, or CSS snippets to site header or footer section like Google Analytics code, AdSense Code, Facebook Pixels code, and more. No more editing theme files such as `header.php` — your code stays safe even when switching themes.
+- **[Code Snippets](https://wpplover.com/docs/plover-kit/modules/code-snippets/)**: Create and insert HTML, JavaScript, CSS or PHP snippets to site header or footer section like Google Analytics code, AdSense Code, Facebook Pixels code, and more. No more editing theme files such as `header.php` — your code stays safe even when switching themes.
 
 ## Why Choose Plover Kit?
 
@@ -150,6 +150,10 @@ For free users, please use the [WordPress.org support forum](https://wordpress.o
 21. Reading Progress Settings
 
 == Changelog ==
+
+= 1.7.0 =
+
+* Ref: [Major updates to the code snippets module.](https://wpplover.com/plover-kit/v170-more-code-snippet-types-safer-embedding-and-security-control/) More Code Snippet Types, Safer Embedding, and Security Control.
 
 = 1.6.5 =
 

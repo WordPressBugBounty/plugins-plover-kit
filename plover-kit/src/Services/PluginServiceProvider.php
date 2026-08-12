@@ -4,6 +4,7 @@ namespace Plover\Kit\Services;
 
 use Plover\Core\Assets\Styles;
 use Plover\Core\Framework\ServiceProvider;
+use Plover\Core\Nest\Cache\Facades\Cache;
 use Plover\Core\Services\Extensions\Extensions;
 use Plover\Kit\Extensions\Breadcrumb;
 use Plover\Kit\Extensions\CodeSnippets;
@@ -35,6 +36,18 @@ class PluginServiceProvider extends ServiceProvider {
      * All plugin packages.
      */
     protected const PLUGIN_PACKAGES = ['dashboard', 'data', 'route'];
+
+    /**
+     * @return void
+     */
+    public function register() {
+        $this->core->registered( function () {
+            Cache::setCachePrefix( PLOVER_KIT_SLUG );
+            if ( !plover_kit_is_debug() ) {
+                Cache::setDefaultDriver( ( wp_using_ext_object_cache() ? 'wp-cache' : 'wp-transient' ) );
+            }
+        } );
+    }
 
     /**
      * @param Extensions $extensions

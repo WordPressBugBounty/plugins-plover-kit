@@ -27,6 +27,7 @@ class ComposerStaticInita4a6d183ce1253ce2dd355793690dd38
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Plover\\Kit\\Assets\\IconLibrarySource' => __DIR__ . '/../..' . '/src/Assets/IconLibrarySource.php',
+        'Plover\\Kit\\Controllers\\CodeSnippetsController' => __DIR__ . '/../..' . '/src/Controllers/CodeSnippetsController.php',
         'Plover\\Kit\\Controllers\\IconLibrariesController' => __DIR__ . '/../..' . '/src/Controllers/IconLibrariesController.php',
         'Plover\\Kit\\Controllers\\IconsController' => __DIR__ . '/../..' . '/src/Controllers/IconsController.php',
         'Plover\\Kit\\Extensions\\Breadcrumb' => __DIR__ . '/../..' . '/src/Extensions/Breadcrumb.php',
@@ -51,6 +52,7 @@ class ComposerStaticInita4a6d183ce1253ce2dd355793690dd38
         'Plover\\Kit\\Extensions\\TypingAnimation' => __DIR__ . '/../..' . '/src/Extensions/TypingAnimation.php',
         'Plover\\Kit\\Services\\DashboardServiceProvider' => __DIR__ . '/../..' . '/src/Services/DashboardServiceProvider.php',
         'Plover\\Kit\\Services\\PluginServiceProvider' => __DIR__ . '/../..' . '/src/Services/PluginServiceProvider.php',
+        'Plover\\Kit\\Toolkits\\Context' => __DIR__ . '/../..' . '/src/Toolkits/Context.php',
         'Plover\\Kit\\Toolkits\\Theme' => __DIR__ . '/../..' . '/src/Toolkits/Theme.php',
     );
 

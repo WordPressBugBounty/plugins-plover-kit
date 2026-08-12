@@ -1,0 +1,25 @@
+{
+    "name": "plover/nest",
+    "type": "library",
+    "keywords": [
+        "dependency injection",
+        "container",
+        "service provider"
+    ],
+    "homepage": "https://wpplover.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WP Plover",
+            "email": "team@wpplover.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nest\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.2.5"
+    }
+}

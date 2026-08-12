@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Plover\\Kit\\Assets\\IconLibrarySource' => $baseDir . '/src/Assets/IconLibrarySource.php',
+    'Plover\\Kit\\Controllers\\CodeSnippetsController' => $baseDir . '/src/Controllers/CodeSnippetsController.php',
     'Plover\\Kit\\Controllers\\IconLibrariesController' => $baseDir . '/src/Controllers/IconLibrariesController.php',
     'Plover\\Kit\\Controllers\\IconsController' => $baseDir . '/src/Controllers/IconsController.php',
     'Plover\\Kit\\Extensions\\Breadcrumb' => $baseDir . '/src/Extensions/Breadcrumb.php',
@@ -32,5 +33,6 @@ return array(
     'Plover\\Kit\\Extensions\\TypingAnimation' => $baseDir . '/src/Extensions/TypingAnimation.php',
     'Plover\\Kit\\Services\\DashboardServiceProvider' => $baseDir . '/src/Services/DashboardServiceProvider.php',
     'Plover\\Kit\\Services\\PluginServiceProvider' => $baseDir . '/src/Services/PluginServiceProvider.php',
+    'Plover\\Kit\\Toolkits\\Context' => $baseDir . '/src/Toolkits/Context.php',
     'Plover\\Kit\\Toolkits\\Theme' => $baseDir . '/src/Toolkits/Theme.php',
 );
