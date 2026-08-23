@@ -81,7 +81,8 @@ class Sticky extends Extension {
 		if ( $offsetTop ) {
 			$wrap->set_attribute( 'data-sticky-offset-top', (int) $offsetTop );
 		}
-		if ( $zIndex ) {
+
+		if ( $zIndex !== "" ) {
 			$wrap->set_attribute( 'data-sticky-z-index', (int) $zIndex );
 		}
 		if ( $container ) {

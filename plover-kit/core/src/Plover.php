@@ -22,7 +22,7 @@ class Plover extends Nest {
 	 * @since 1.0.0
 	 * @var string
 	 */
-	const VERSION = '1.3.6';
+	const VERSION = '1.3.7';
 
 	/**
 	 * Create a new plover core instance.

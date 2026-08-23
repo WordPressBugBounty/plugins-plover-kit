@@ -202,7 +202,7 @@ class AdvancedLayout extends Extension {
 			if ( ! empty( $typography_blocks ) ) {
 				foreach ( [ 'left', 'center', 'right', 'justify' ] as $align ) {
 					$this->styles->enqueue_asset( "plover-has-text-align-{$align}-{$device}", array(
-						'raw'      => ".has-text-align-{$align}-{$device}{text-align:{$align};}",
+						'raw'      => ":root .has-text-align-{$align}-{$device}{text-align:{$align};}",
 						'device'   => $device,
 						'keywords' => [ "has-text-align-{$align}-{$device}" ],
 					) );
@@ -443,6 +443,10 @@ class AdvancedLayout extends Extension {
 	 * @return string
 	 */
 	protected function sanitize_text_align_value( $value ) {
+		if ( ! is_string( $value ) ) {
+			return '';
+		}
+	
 		$value = strtolower( $value );
 
 		return in_array( $value, [ 'left', 'center', 'right', 'justify' ] ) ? $value : '';

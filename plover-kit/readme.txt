@@ -1,8 +1,8 @@
 === Plover Kit – Blocks, Patterns, Responsive Layout and Gutenberg Editor Enhancements ===
 Contributors: plover
 Tags: gutenberg, block, pattern, page builder, full-site-editing
-Stable tag: 1.7.0
-Tested up to: 7.0
+Stable tag: 1.7.1
+Tested up to: 7.1
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -150,6 +150,11 @@ For free users, please use the [WordPress.org support forum](https://wordpress.o
 21. Reading Progress Settings
 
 == Changelog ==
+
+= 1.7.1 =
+
+* Ref: WordPress v7.1 compatible
+* Ref: Update core to v1.3.7
 
 = 1.7.0 =
 
