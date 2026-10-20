@@ -65,7 +65,7 @@ if ( ! function_exists( 'plover_upsell_url' ) ) {
 	function plover_upsell_url( $args = array() ) {
 		$args = wp_parse_args( $args, array(
 			'utm_source'   => 'product_upsell',
-			'utm_medium'   => 'wordpress',
+			'utm_medium'   => 'wp',
 			'utm_campaign' => 'product_upsell',
 		) );
 
